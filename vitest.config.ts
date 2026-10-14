@@ -4,6 +4,10 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    'import.meta.env.VITE_SNAPSHOT_VERSION': JSON.stringify('test-snapshot'),
+    'import.meta.env.VITE_APP_VERSION': JSON.stringify('test-build'),
+  },
   resolve: {
     alias: { '@': path.resolve(import.meta.dirname, './src') },
   },

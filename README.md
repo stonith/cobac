@@ -89,8 +89,9 @@ existing `dist/` without rebuilding the app.
 | `/data/activities/{id}.json` | One activity in full: plain-text description, fees, centre, calendar, sessions and cobac links                                    |
 | `/data/snapshot.json`        | The whole snapshot the app loads (~16 MB)                                                                                         |
 
-All `/data/*` responses carry `Access-Control-Allow-Origin: *` and five minutes of edge caching
-(`public/_headers`). Times are Burnaby local time (Pacific) with no offset, as everywhere in the snapshot. The
+All `/data/*` responses carry `Access-Control-Allow-Origin: *` and require revalidation
+(`Cache-Control: public, max-age=0, must-revalidate` in `public/_headers`). ETags allow unchanged
+responses to reuse cached bodies without serving deliberately stale data. Times are Burnaby local time (Pacific) with no offset, as everywhere in the snapshot. The
 shapes are the TypeScript interfaces in `src/data/catalog.ts`.
 
 ### Prerendered pages and structured data
@@ -271,6 +272,29 @@ The build generates `dist/data/snapshot.json` and the machine-readable files fro
 split files. `pnpm dev:cf` builds and serves `dist/` with `wrangler pages dev`, which is also
 what the e2e suite runs against, so Pages behaviour (`_headers`, redirects, Functions) is
 exercised locally.
+
+### Deployment freshness
+
+Every Vite build embeds the SHA-256 hash of the minified snapshot in the app's request URL:
+`/data/snapshot.json?v=<content-hash>`. Changed data gets a new cache key; identical data keeps
+its key across rebuilds. The loader also requests `cache: 'no-cache'` to require revalidation.
+Stable `/data/*` URLs revalidate with ETags; they no longer allow stale-while-revalidate.
+The app shell revalidates on navigation, and Vite's JS/CSS filenames remain content-hashed.
+
+The build emits a tiny `/version.json` containing the snapshot hash and a unique per-build
+ID, served with `Cache-Control: no-store`. This catches code-only deployments as well as data
+changes. It is generated only into `dist/` (or served by Vite's dev middleware), never committed
+or written into `public/`. `pnpm site:generate` does not change these build-coupled versions.
+
+Once loaded, the app checks this manifest immediately, on window focus/visibility changes,
+and every five minutes while visible and online. A newer build shows **An update is available.**
+with a **Reload** button. Reload preserves the current URL and filters; it never reloads
+automatically or interrupts an open activity. Offline, failed and malformed checks are ignored
+and retried later. Overlapping checks are deduplicated and requests time out after ten seconds.
+
+An already-open client running code from before this feature cannot detect updates; one initial
+reload/hard-refresh is needed to adopt the new behavior. Cloudflare cache purges alone cannot
+refresh a browser's existing in-memory snapshot.
 
 GitHub Actions:
 

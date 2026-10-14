@@ -1,8 +1,12 @@
 # Cloudflare Pages headers. Generated data and text files are meant for machine readers on other
-# origins, so they get CORS; five minutes of edge caching matches how often the data can change.
+# origins, so they get CORS. Stable data URLs must revalidate; ETags avoid unchanged transfers.
 /data/*
-  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+  Cache-Control: public, max-age=0, must-revalidate
   Access-Control-Allow-Origin: *
+
+# Open tabs check this tiny manifest for both data and code-only deployments.
+/version.json
+  Cache-Control: no-store
 
 /llms.txt
   Content-Type: text/plain; charset=utf-8

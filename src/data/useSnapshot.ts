@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import type { Snapshot } from '@/types/snapshot'
 import { buildIndex, type SnapshotIndex } from './index'
 
-export const SNAPSHOT_URL = `${import.meta.env.BASE_URL}data/snapshot.json`
+export const SNAPSHOT_VERSION: string = import.meta.env.VITE_SNAPSHOT_VERSION
+export const SNAPSHOT_URL = `${import.meta.env.BASE_URL}data/snapshot.json?v=${SNAPSHOT_VERSION}`
 
 export type SnapshotState =
   | { status: 'loading' }
@@ -13,7 +14,8 @@ export async function loadSnapshot(
   url = SNAPSHOT_URL,
   fetchFn: typeof fetch = fetch,
 ): Promise<Snapshot> {
-  const res = await fetchFn(url)
+  // Revalidate even if a pre-update client cached the stable path with stale-while-revalidate.
+  const res = await fetchFn(url, { cache: 'no-cache' })
   if (!res.ok) throw new Error(`Failed to load ${url}: HTTP ${res.status}`)
   return (await res.json()) as Snapshot
 }

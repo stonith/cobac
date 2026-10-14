@@ -98,7 +98,7 @@ test('Pages serving rules apply: redirects and headers', async ({ request }) => 
   expect([301, 308]).toContain(bare.status())
   expect(bare.headers()['location']).toMatch(new RegExp(`/activities/${activity.id}/$`))
   const catalog = await request.get('/data/catalog.json')
-  expect(catalog.headers()['cache-control']).toContain('max-age=300')
+  expect(catalog.headers()['cache-control']).toBe('public, max-age=0, must-revalidate')
   expect(catalog.headers()['access-control-allow-origin']).toBe('*')
   const centre = await request.get(`/llms/centres/${activity.centerId}.md`)
   expect(centre.headers()['content-type']).toContain('text/markdown')

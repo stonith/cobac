@@ -65,7 +65,7 @@ test('supplemental drop-in dance is searchable and its calendar filter survives 
   const snapshot = buildSnapshot([], '2026-10-14T06:00:00Z')
   snapshot.period = { start: '2026-10-12', end: '2026-10-18' }
   mergePrograms(snapshot, [record], [{ id: '26', desc: 'Dance' }])
-  await page.route('**/data/snapshot.json', (route) => route.fulfill({ json: snapshot }))
+  await page.route('**/data/snapshot.json*', (route) => route.fulfill({ json: snapshot }))
   await page.goto('/?week=2026-10-12&q=drop&cal=-26')
   await expect(
     page.getByRole('table').getByRole('button', { name: /Drop-In Modern Dance/ }),
@@ -111,7 +111,7 @@ test('the blue Drop-in toggle spans calendars, survives reload and clears indepe
     { a: 138792, s: '2026-10-14T14:00', e: '2026-10-14T15:00' },
     { a: 138793, s: '2026-10-14T16:00', e: '2026-10-14T17:00' },
   )
-  await page.route('**/data/snapshot.json', (route) => route.fulfill({ json: snapshot }))
+  await page.route('**/data/snapshot.json*', (route) => route.fulfill({ json: snapshot }))
   await page.goto('/?week=2026-10-12')
   const toggle = page.getByRole('button', { name: 'Drop-in', exact: true })
   const chips = page.getByRole('table').getByRole('button')

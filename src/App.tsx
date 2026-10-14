@@ -19,6 +19,7 @@ import {
 } from '@/data/filters'
 import type { SnapshotIndex } from '@/data/index'
 import { useSnapshot } from '@/data/useSnapshot'
+import { useDeploymentUpdate } from '@/data/useDeploymentUpdate'
 import { useUrlFilters } from '@/data/useUrlFilters'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 
@@ -28,6 +29,7 @@ const CenterMap = lazy(() =>
 
 export function App() {
   const state = useSnapshot()
+  const updateAvailable = useDeploymentUpdate(state.status === 'ready')
 
   return (
     <div className="mx-auto flex max-w-screen-2xl flex-col gap-4 px-4 py-6 min-[700px]:h-dvh">
@@ -48,6 +50,17 @@ export function App() {
           </p>
         )}
       </header>
+      {state.status === 'ready' && updateAvailable && (
+        <div
+          role="status"
+          className="bg-muted flex flex-wrap items-center justify-between gap-2 rounded-md border px-3 py-2 text-sm"
+        >
+          <p>An update is available.</p>
+          <Button variant="outline" size="sm" onClick={() => window.location.reload()}>
+            Reload
+          </Button>
+        </div>
+      )}
       {state.status === 'loading' && <p className="text-muted-foreground">Loading activities…</p>}
       {state.status === 'error' && (
         <p role="alert" className="text-destructive">

@@ -10,6 +10,7 @@ import {
   collectionFile,
   readSnapshotFiles,
 } from './scripts/snapshot/files.ts'
+import { createDeploymentVersion } from './scripts/snapshot/version.ts'
 import { buildSiteMeta } from './src/data/catalog.ts'
 import { datasetNode, jsonLdScript, webSiteNode } from './src/data/jsonld.ts'
 import { vancouverToday } from './src/data/tz.ts'
@@ -21,7 +22,7 @@ import { vancouverToday } from './src/data/tz.ts'
  * generates the machine-readable site (data shards and friends, see `scripts/site/build.ts`)
  * into it. Those generated files exist only in `dist/`, never in `public/`.
  */
-function snapshotBundle(): Plugin {
+function snapshotBundle(versions: ReturnType<typeof createDeploymentVersion>): Plugin {
   let isBuild = false
   let outDir = 'dist'
   let dataDir = 'public/data'
@@ -32,7 +33,20 @@ function snapshotBundle(): Plugin {
       outDir = config.build.outDir
       dataDir = path.join(config.publicDir, 'data')
     },
-    buildStart: () => bundleSnapshot(dataDir),
+    async buildStart() {
+      await bundleSnapshot(dataDir)
+      if (isBuild) {
+        this.emitFile({ type: 'asset', fileName: 'version.json', source: JSON.stringify(versions) })
+      }
+    },
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if (req.url?.split('?')[0] !== `${server.config.base}version.json`) return next()
+        res.setHeader('Content-Type', 'application/json')
+        res.setHeader('Cache-Control', 'no-store')
+        res.end(JSON.stringify(versions))
+      })
+    },
     /**
      * Give the app shell structured data and no-JS links to the prerendered pages, so crawlers
      * that do not run the app still learn what the site is and where the content lives.
@@ -70,9 +84,16 @@ function snapshotBundle(): Plugin {
 }
 
 // https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(), tailwindcss(), snapshotBundle()],
-  resolve: {
-    alias: { '@': path.resolve(import.meta.dirname, './src') },
-  },
+export default defineConfig(async () => {
+  const versions = createDeploymentVersion(JSON.stringify(await readSnapshotFiles('public/data')))
+  return {
+    define: {
+      'import.meta.env.VITE_SNAPSHOT_VERSION': JSON.stringify(versions.snapshot),
+      'import.meta.env.VITE_APP_VERSION': JSON.stringify(versions.build),
+    },
+    plugins: [react(), tailwindcss(), snapshotBundle(versions)],
+    resolve: {
+      alias: { '@': path.resolve(import.meta.dirname, './src') },
+    },
+  }
 })
