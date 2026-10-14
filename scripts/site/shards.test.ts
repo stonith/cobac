@@ -46,7 +46,7 @@ describe('writeShards', () => {
     expect(detail.descriptionText).toBe('Open gym for everyone.')
     expect(detail.sessions).toHaveLength(2)
     expect(detail.link).toBe(
-      'https://cobac.fyi/?week=2026-09-07&centers=63&q=Multi-sport&activity=1',
+      'https://cobac-g3k.pages.dev/?week=2026-09-07&centers=63&q=Multi-sport&activity=1',
     )
   })
 })
@@ -67,10 +67,10 @@ describe('generateSite', () => {
       const card = JSON.parse(
         await readFile(path.join(out, '.well-known', 'mcp', 'server-card.json'), 'utf8'),
       )
-      expect(card.transport.endpoint).toBe('https://cobac.fyi/mcp')
+      expect(card.transport.endpoint).toBe('https://cobac-g3k.pages.dev/mcp')
       const sitemap = await readFile(path.join(out, 'sitemap.xml'), 'utf8')
-      expect(sitemap).toContain('<loc>https://cobac.fyi/activities/2/</loc>')
-      expect(sitemap).toContain('<loc>https://cobac.fyi/centres/63/</loc>')
+      expect(sitemap).toContain('<loc>https://cobac-g3k.pages.dev/activities/2/</loc>')
+      expect(sitemap).toContain('<loc>https://cobac-g3k.pages.dev/centres/63/</loc>')
       await readFile(path.join(out, 'activities', '1', 'index.html'), 'utf8')
       await readFile(path.join(out, 'centres', 'index.html'), 'utf8')
       expect(await readFile(path.join(out, 'llms.txt'), 'utf8')).toContain('# cobac')

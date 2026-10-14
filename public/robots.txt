@@ -42,4 +42,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://cobac.fyi/sitemap.xml
+Sitemap: https://cobac-g3k.pages.dev/sitemap.xml

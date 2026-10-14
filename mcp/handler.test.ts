@@ -65,6 +65,25 @@ const parsedText = (json: RpcResult) => JSON.parse(json.result!.content![0]!.tex
 beforeEach(resetShardCache)
 
 describe('transport', () => {
+  it.each(['cobac-g3k.pages.dev', 'preview-123.cobac-g3k.pages.dev'])(
+    'serves MCP discovery on %s',
+    async (host) => {
+      const { response } = await modern('server/discover', {}, env(), `https://${host}`)
+      expect(response.status).toBe(200)
+    },
+  )
+
+  it.each([
+    'cobac.fyi',
+    'covac.fyi',
+    'covac.pages.dev',
+    'cobac.pages.dev',
+    'cobac-g3k.pages.dev.evil.example',
+  ])('rejects obsolete or spoofed host %s', async (host) => {
+    const response = await handleMcp(new Request(`https://${host}/mcp`), env())
+    expect(response.status).toBe(404)
+  })
+
   it('rejects unknown hosts and answers CORS preflights', async () => {
     const e = env()
     const bad = await handleMcp(new Request('https://evil.example/mcp', { method: 'POST' }), e)

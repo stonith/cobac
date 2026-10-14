@@ -17,7 +17,7 @@ import {
 import { sitemapXml } from './sitemap.ts'
 
 const ctx: PageContext = {
-  site: 'https://cobac.fyi',
+  site: 'https://cobac-g3k.pages.dev',
   generatedAt: snapshot.generatedAt,
   today: '2026-09-08',
   calendarById: index.calendarById,
@@ -39,16 +39,18 @@ describe('activityPage', () => {
 
   it('has the essentials for crawlers and people', () => {
     expect(html).toContain('<title>Multi-sport at Bonsor Recreation Complex (BON) · cobac</title>')
-    expect(html).toContain('<link rel="canonical" href="https://cobac.fyi/activities/1/">')
+    expect(html).toContain(
+      '<link rel="canonical" href="https://cobac-g3k.pages.dev/activities/1/">',
+    )
     expect(html).toContain('<h1>Multi-sport</h1>')
     expect(html).toContain(
       'href="https://ca.apm.activecommunities.com/burnaby/Activity_Search/multi-sport/1"',
     )
     expect(html).toContain(
-      'href="https://cobac.fyi/?week=2026-09-07&amp;centers=63&amp;q=Multi-sport&amp;activity=1"',
+      'href="https://cobac-g3k.pages.dev/?week=2026-09-07&amp;centers=63&amp;q=Multi-sport&amp;activity=1"',
     )
     expect(html).toContain('<time datetime="2026-09-07T07:00:00-07:00">7:00 am</time>')
-    expect(html).toContain('href="https://cobac.fyi/data/activities/1.json"')
+    expect(html).toContain('href="https://cobac-g3k.pages.dev/data/activities/1.json"')
     expect(html).toContain('<div class="card"><p>Open gym for <b>everyone</b>.</p></div>')
   })
 
@@ -87,8 +89,8 @@ describe('centrePage', () => {
     )
     expect(html).toContain('<h1>Bonsor Recreation Complex (BON)</h1>')
     expect(html).toContain('<address>6550 Bonsor Avenue, Burnaby</address>')
-    expect(html).toContain('href="https://cobac.fyi/?centers=63"')
-    expect(html).toContain('href="https://cobac.fyi/activities/1/"')
+    expect(html).toContain('href="https://cobac-g3k.pages.dev/?centers=63"')
+    expect(html).toContain('href="https://cobac-g3k.pages.dev/activities/1/"')
     const graph = graphOf(html)
     expect(graph.map((n) => n['@type'])).toEqual([
       'BreadcrumbList',
@@ -102,14 +104,14 @@ describe('centrePage', () => {
 describe('index pages', () => {
   it('link every centre and activity', () => {
     const centresHtml = centresIndexPage(centres, ctx)
-    expect(centresHtml).toContain('href="https://cobac.fyi/centres/63/"')
-    expect(centresHtml).toContain('href="https://cobac.fyi/centres/180/"')
+    expect(centresHtml).toContain('href="https://cobac-g3k.pages.dev/centres/63/"')
+    expect(centresHtml).toContain('href="https://cobac-g3k.pages.dev/centres/180/"')
     const byCentre = new Map<number, typeof catalog.activities>()
     for (const a of catalog.activities)
       byCentre.set(a.centerId, [...(byCentre.get(a.centerId) ?? []), a])
     const activitiesHtml = activitiesIndexPage(centres, byCentre, ctx)
-    expect(activitiesHtml).toContain('href="https://cobac.fyi/activities/1/"')
-    expect(activitiesHtml).toContain('href="https://cobac.fyi/activities/2/"')
+    expect(activitiesHtml).toContain('href="https://cobac-g3k.pages.dev/activities/1/"')
+    expect(activitiesHtml).toContain('href="https://cobac-g3k.pages.dev/activities/2/"')
     expect(graphOf(activitiesHtml)[1]).toMatchObject({ '@type': 'CollectionPage' })
   })
 })
@@ -117,11 +119,13 @@ describe('index pages', () => {
 describe('sitemapXml', () => {
   it('renders url entries with lastmod', () => {
     const xml = sitemapXml([
-      { loc: 'https://cobac.fyi/', lastmod: '2026-09-09' },
-      { loc: 'https://cobac.fyi/a&b/' },
+      { loc: 'https://cobac-g3k.pages.dev/', lastmod: '2026-09-09' },
+      { loc: 'https://cobac-g3k.pages.dev/a&b/' },
     ])
-    expect(xml).toContain('<url><loc>https://cobac.fyi/</loc><lastmod>2026-09-09</lastmod></url>')
-    expect(xml).toContain('<loc>https://cobac.fyi/a&amp;b/</loc>')
+    expect(xml).toContain(
+      '<url><loc>https://cobac-g3k.pages.dev/</loc><lastmod>2026-09-09</lastmod></url>',
+    )
+    expect(xml).toContain('<loc>https://cobac-g3k.pages.dev/a&amp;b/</loc>')
     expect(xml.startsWith('<?xml')).toBe(true)
   })
 })

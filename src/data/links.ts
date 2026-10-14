@@ -1,9 +1,9 @@
-/** Canonical cobac.fyi URLs: prerendered pages and shareable calendar deep links. */
+/** Canonical cobac-g3k.pages.dev URLs: prerendered pages and shareable calendar deep links. */
 import { startOfWeek, type DateString } from './dates'
 import { emptyFilters, type Filters } from './filters'
 import { filtersToSearch } from './url'
 
-export const SITE_URL = 'https://cobac.fyi'
+export const SITE_URL = 'https://cobac-g3k.pages.dev'
 
 export const activityPagePath = (id: number) => `/activities/${id}/`
 export const centrePagePath = (id: number) => `/centres/${id}/`

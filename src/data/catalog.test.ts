@@ -100,9 +100,9 @@ describe('buildActivityDetail', () => {
     expect(detail.facilities).toEqual(['BON Gym 1/2/3'])
     expect(detail.descriptionText).toBe('Open gym for everyone.')
     expect(detail.sessions).toHaveLength(2)
-    expect(detail.pageUrl).toBe('https://cobac.fyi/activities/1/')
+    expect(detail.pageUrl).toBe('https://cobac-g3k.pages.dev/activities/1/')
     expect(detail.link).toBe(
-      'https://cobac.fyi/?week=2026-09-07&centers=63&q=Multi-sport&activity=1',
+      'https://cobac-g3k.pages.dev/?week=2026-09-07&centers=63&q=Multi-sport&activity=1',
     )
   })
 })

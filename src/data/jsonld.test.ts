@@ -16,9 +16,9 @@ describe('placeNode', () => {
   it('maps address, geo and phone', () => {
     expect(placeNode(snapshot.centers[0]!)).toEqual({
       '@type': 'SportsActivityLocation',
-      '@id': 'https://cobac.fyi/centres/63/#place',
+      '@id': 'https://cobac-g3k.pages.dev/centres/63/#place',
       name: 'Bonsor Recreation Complex (BON)',
-      url: 'https://cobac.fyi/centres/63/',
+      url: 'https://cobac-g3k.pages.dev/centres/63/',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '6550 Bonsor Avenue',
@@ -62,7 +62,7 @@ describe('eventNodes', () => {
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       eventStatus: 'https://schema.org/EventScheduled',
       isAccessibleForFree: true,
-      url: 'https://cobac.fyi/activities/1/',
+      url: 'https://cobac-g3k.pages.dev/activities/1/',
       offers: { price: 0, priceCurrency: 'CAD', availability: 'https://schema.org/InStock' },
       performer: [{ '@type': 'Person', name: 'Ada Lovelace' }],
     })
@@ -100,7 +100,7 @@ describe('eventNodes', () => {
 
 describe('site nodes', () => {
   it('describe the site and dataset', () => {
-    expect(webSiteNode()).toMatchObject({ '@type': 'WebSite', url: 'https://cobac.fyi/' })
+    expect(webSiteNode()).toMatchObject({ '@type': 'WebSite', url: 'https://cobac-g3k.pages.dev/' })
     const dataset = datasetNode(buildSiteMeta(snapshot, '1'))
     expect(dataset).toMatchObject({
       '@type': 'Dataset',

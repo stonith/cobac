@@ -32,7 +32,7 @@ describe('activityLine', () => {
   it('summarises an activity with its link', () => {
     const swim = catalog.activities[0]!
     expect(activityLine(swim, index.centerById.get(63), index.calendarById.get(6))).toBe(
-      '- [Multi-sport](https://cobac.fyi/activities/1/) · Bonsor Recreation Complex (BON) · Multi-sport · Free · All ages · 2 sessions, next Mon Sep 7 7:00 am · with Ada Lovelace',
+      '- [Multi-sport](https://cobac-g3k.pages.dev/activities/1/) · Bonsor Recreation Complex (BON) · Multi-sport · Free · All ages · 2 sessions, next Mon Sep 7 7:00 am · with Ada Lovelace',
     )
   })
 })
@@ -57,7 +57,7 @@ describe('activityMarkdown', () => {
     expect(md).toContain(
       'https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-adult-badminton/2',
     )
-    expect(md).toContain('https://cobac.fyi/activities/2/')
+    expect(md).toContain('https://cobac-g3k.pages.dev/activities/2/')
   })
 
   it('says when nothing is upcoming', () => {

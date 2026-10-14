@@ -23,7 +23,7 @@ export function instructions(period: { start: string; end: string }, today: stri
   return [
     `cobac mirrors the City of Burnaby recreation calendar (ActiveNet). The snapshot covers ${period.start} to ${period.end}; today in Burnaby is ${today}. All times are Burnaby local time (Pacific).`,
     'Use find_activities for "what can I do when/where" questions (filters: text, group, centres, dates, days, times, price, age), get_schedule for everything on one date, search + fetch or get_activity for details of one activity, list_centres and list_calendars for the ids the filters take.',
-    'Always give the user the cobac.fyi page URL or the ActiveNet URL from the result so they can register and confirm details; this data is an unofficial nightly mirror, and openings change during the day.',
+    'Always give the user the cobac-g3k.pages.dev page URL or the ActiveNet URL from the result so they can register and confirm details; this data is an unofficial nightly mirror, and openings change during the day.',
   ].join('\n')
 }
 
@@ -171,7 +171,7 @@ export async function createServer(ctx: ToolContext): Promise<McpServer> {
             text: [
               `Help me find City of Burnaby recreation activities ${when}${interests ? ` for ${interests}` : ''}${near ? ` near ${near}` : ''}.`,
               'Call snapshot_info once to learn the date range, use list_centres to map the neighbourhood to centre ids, then find_activities with the matching filters (dates, days, times, group, price or age if I mentioned them).',
-              'Present the best options grouped by day with times, centre, price and the cobac.fyi link for each, mention how to register on ActiveNet, and note that openings can change during the day.',
+              'Present the best options grouped by day with times, centre, price and the cobac-g3k.pages.dev link for each, mention how to register on ActiveNet, and note that openings can change during the day.',
             ].join(' '),
           },
         },

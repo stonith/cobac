@@ -7,15 +7,18 @@ import { TOOLS } from '../../mcp/tools/index.ts'
 import { writeServerCard } from './discovery.ts'
 
 describe('serverCard', () => {
-  const card = serverCard('https://cobac.fyi', '1.2.3', { start: '2026-09-06', end: '2026-11-01' })
+  const card = serverCard('https://cobac-g3k.pages.dev', '1.2.3', {
+    start: '2026-09-06',
+    end: '2026-11-01',
+  })
 
   it('mirrors the server and its tools', () => {
     expect(card).toMatchObject({
       protocolVersion: '2026-07-28',
       serverInfo: { name: 'cobac', version: '1.2.3' },
-      transport: { type: 'streamable-http', endpoint: 'https://cobac.fyi/mcp' },
+      transport: { type: 'streamable-http', endpoint: 'https://cobac-g3k.pages.dev/mcp' },
       authentication: { required: false },
-      documentationUrl: 'https://cobac.fyi/llms.txt',
+      documentationUrl: 'https://cobac-g3k.pages.dev/llms.txt',
     })
     expect(card.tools.map((t) => t.name)).toEqual(TOOLS.map((t) => t.name))
     for (const tool of card.tools) {
@@ -47,10 +50,10 @@ describe('serverCard', () => {
 
 describe('manifest', () => {
   it('points at the endpoint and the card', () => {
-    expect(manifest('https://cobac.fyi')).toMatchObject({
+    expect(manifest('https://cobac-g3k.pages.dev')).toMatchObject({
       mcp_version: '2026-07-28',
-      endpoints: { streamable_http: 'https://cobac.fyi/mcp' },
-      server_card: 'https://cobac.fyi/.well-known/mcp/server-card.json',
+      endpoints: { streamable_http: 'https://cobac-g3k.pages.dev/mcp' },
+      server_card: 'https://cobac-g3k.pages.dev/.well-known/mcp/server-card.json',
     })
   })
 })
@@ -61,7 +64,7 @@ describe('writeServerCard', () => {
     try {
       const rel = await writeServerCard({
         outDir: dir,
-        site: 'https://cobac.fyi',
+        site: 'https://cobac-g3k.pages.dev',
         version: '0',
         period: { start: '2026-09-06', end: '2026-11-01' },
       })

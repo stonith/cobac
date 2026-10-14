@@ -74,7 +74,7 @@ export interface ActivityDetail extends Activity {
   calendar: Calendar
   facilities: string[]
   sessions: Occurrence[]
-  /** Prerendered page on cobac.fyi. */
+  /** Prerendered page on cobac-g3k.pages.dev. */
   pageUrl: string
   /** Calendar deep link for the week of the first upcoming (or last) session. */
   link: string

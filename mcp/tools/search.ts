@@ -8,7 +8,7 @@ export const search = defineTool({
   name: 'search',
   title: 'Search activities',
   description:
-    'Full-text search over City of Burnaby recreation activities in the current cobac snapshot: group fitness, indoor cycling, yoga, badminton, basketball, hockey, ringette, figure skating and other programs at community centres, pools and rinks. Matches the title, instructor, centre and calendar names and the start of the description. Returns up to 20 results whose ids work with `fetch` and `get_activity`, each with the cobac.fyi page URL.',
+    'Full-text search over City of Burnaby recreation activities in the current cobac snapshot: group fitness, indoor cycling, yoga, badminton, basketball, hockey, ringette, figure skating and other programs at community centres, pools and rinks. Matches the title, instructor, centre and calendar names and the start of the description. Returns up to 20 results whose ids work with `fetch` and `get_activity`, each with the cobac-g3k.pages.dev page URL.',
   inputSchema: z.object({
     query: z.string().min(1).describe('Words to look for, e.g. "yoga", "badminton", "Bonsor"'),
   }),
@@ -17,7 +17,7 @@ export const search = defineTool({
       z.object({
         id: z.string().describe('Activity id, for fetch / get_activity'),
         title: z.string().describe('Title — centre (calendar, price)'),
-        url: z.string().describe('cobac.fyi page for the activity'),
+        url: z.string().describe('cobac-g3k.pages.dev page for the activity'),
       }),
     ),
   }),

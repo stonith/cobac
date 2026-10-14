@@ -12,7 +12,7 @@ import { createServer } from './server.ts'
 
 /** Hosts this deployment answers on: production, Pages previews and local development. */
 export const ALLOWED_HOSTNAME =
-  /^(cobac\.fyi|www\.cobac\.fyi|cobac\.pages\.dev|[a-z0-9-]+\.cobac\.pages\.dev|localhost|127\.0\.0\.1|\[::1\])$/
+  /^(cobac-g3k\.pages\.dev|[a-z0-9-]+\.cobac-g3k\.pages\.dev|localhost|127\.0\.0\.1|\[::1\])$/
 
 export const CORS_HEADERS: Record<string, string> = {
   'Access-Control-Allow-Origin': '*',
@@ -31,7 +31,7 @@ function handlerFor(assets: Assets): McpHttpHandler {
   if (!handler) {
     handler = createMcpHandler(
       (ctx) => {
-        const origin = new URL(ctx.requestInfo?.url ?? 'https://cobac.fyi/').origin
+        const origin = new URL(ctx.requestInfo?.url ?? 'https://cobac-g3k.pages.dev/').origin
         return createServer({
           shards: new Shards(assets, origin),
           site: origin,

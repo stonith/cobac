@@ -4,14 +4,16 @@ import { filtersFromSearch } from './url'
 
 describe('page URLs', () => {
   it('point at the prerendered pages', () => {
-    expect(activityPageUrl(389427)).toBe('https://cobac.fyi/activities/389427/')
+    expect(activityPageUrl(389427)).toBe('https://cobac-g3k.pages.dev/activities/389427/')
     expect(centrePageUrl(37, 'http://localhost:8788')).toBe('http://localhost:8788/centres/37/')
   })
 })
 
 describe('deepLink', () => {
   it('always spells out the week and snaps it to Monday', () => {
-    expect(deepLink({ weekStart: '2026-09-16' })).toBe('https://cobac.fyi/?week=2026-09-14')
+    expect(deepLink({ weekStart: '2026-09-16' })).toBe(
+      'https://cobac-g3k.pages.dev/?week=2026-09-14',
+    )
   })
 
   it('round-trips through the app URL parser', () => {
@@ -36,7 +38,9 @@ describe('deepLink', () => {
 describe('activityDeepLink', () => {
   it('shows the centre in the week of the session, filtered to the title', () => {
     const url = activityDeepLink({ id: 1, title: 'Free Swim', centerId: 37 }, '2026-09-19')
-    expect(url).toBe('https://cobac.fyi/?week=2026-09-14&centers=37&q=Free+Swim&activity=1')
+    expect(url).toBe(
+      'https://cobac-g3k.pages.dev/?week=2026-09-14&centers=37&q=Free+Swim&activity=1',
+    )
     const parsed = filtersFromSearch(new URL(url).search, '2000-01-03')
     expect(parsed.activity).toBe(1)
   })
