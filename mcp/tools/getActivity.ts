@@ -8,7 +8,7 @@ export const getActivity = defineTool({
   name: 'get_activity',
   title: 'Get an activity',
   description:
-    'Everything the snapshot knows about one activity by numeric id: description, fee table, age range, openings, instructors, facilities, centre with address and phone, every scheduled session (Vancouver local time, with UTC offsets), the covac.fyi page and the ActiveNet registration URL.',
+    'Everything the snapshot knows about one activity by numeric id: description, fee table, age range, openings, instructors, facilities, centre with address and phone, every scheduled session (Burnaby local time, with UTC offsets), the cobac.fyi page and the ActiveNet registration URL.',
   inputSchema: z.object({
     id: id.describe('Activity id from search, find_activities or get_schedule'),
   }),
@@ -41,8 +41,8 @@ export const getActivity = defineTool({
     instructors: z.array(z.string()),
     runs: z.object({ first: z.string(), last: z.string() }).optional(),
     sessions: z.array(session.extend({ startIso: z.string(), endIso: z.string() })),
-    url: z.string().describe('covac.fyi page'),
-    calendarLink: z.string().describe('covac.fyi calendar showing this activity'),
+    url: z.string().describe('cobac.fyi page'),
+    calendarLink: z.string().describe('cobac.fyi calendar showing this activity'),
     activenetUrl: z.string().describe('Details and registration on ActiveNet'),
   }),
   async handler({ id }, ctx) {

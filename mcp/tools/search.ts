@@ -8,16 +8,16 @@ export const search = defineTool({
   name: 'search',
   title: 'Search activities',
   description:
-    'Full-text search over City of Vancouver recreation activities in the current covac snapshot: drop-in swims, skates and gyms, fitness classes, sports, arts and other programs at community centres, pools and rinks. Matches the title, instructor, centre and calendar names and the start of the description. Returns up to 20 results whose ids work with `fetch` and `get_activity`, each with the covac.fyi page URL.',
+    'Full-text search over City of Burnaby recreation activities in the current cobac snapshot: group fitness, indoor cycling, yoga, badminton, basketball, hockey, ringette, figure skating and other programs at community centres, pools and rinks. Matches the title, instructor, centre and calendar names and the start of the description. Returns up to 20 results whose ids work with `fetch` and `get_activity`, each with the cobac.fyi page URL.',
   inputSchema: z.object({
-    query: z.string().min(1).describe('Words to look for, e.g. "lane swim", "yoga", "Hillcrest"'),
+    query: z.string().min(1).describe('Words to look for, e.g. "yoga", "badminton", "Bonsor"'),
   }),
   outputSchema: z.object({
     results: z.array(
       z.object({
         id: z.string().describe('Activity id, for fetch / get_activity'),
         title: z.string().describe('Title — centre (calendar, price)'),
-        url: z.string().describe('covac.fyi page for the activity'),
+        url: z.string().describe('cobac.fyi page for the activity'),
       }),
     ),
   }),

@@ -10,14 +10,11 @@ export const getSchedule = defineTool({
   name: 'get_schedule',
   title: 'Get a day’s schedule',
   description:
-    'Every session on one date (default today in Vancouver), optionally at one centre and/or in one calendar group, ordered by start time and grouped by centre. Good for "what is on at Hillcrest on Saturday" or "everything happening tonight".',
+    'Every session on one date (default today in Burnaby), optionally at one centre and/or in one calendar group, ordered by start time and grouped by centre. Good for "what is on at Bonsor on Saturday" or "everything happening tonight".',
   inputSchema: z.object({
     date: dateString.optional().describe('Defaults to today'),
     centerId: id.optional().describe('Centre id from list_centres'),
-    group: z
-      .string()
-      .optional()
-      .describe('Calendar group: Drop-in, Fitness, Sports or Art & Culture'),
+    group: z.string().optional().describe('Calendar group: Drop-in, Fitness or Sports'),
     calendarIds: idList.optional(),
     limit: z.number().int().min(1).max(500).optional().describe('Maximum sessions (default 200)'),
   }),
@@ -25,7 +22,7 @@ export const getSchedule = defineTool({
     date: dateString,
     total: z.number(),
     truncated: z.boolean(),
-    link: z.string().describe('covac.fyi calendar for that week'),
+    link: z.string().describe('cobac.fyi calendar for that week'),
     centres: z.array(
       z.object({
         id: z.number(),

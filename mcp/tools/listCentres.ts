@@ -5,7 +5,7 @@ export const listCentres = defineTool({
   name: 'list_centres',
   title: 'List centres',
   description:
-    'Every City of Vancouver community centre, pool and rink in the snapshot with id, address, phone, coordinates, activity count and covac.fyi page. Use the ids as centerIds in find_activities and get_schedule.',
+    'Every City of Burnaby recreation centre, pool and rink in the snapshot with id, address, phone, coordinates, activity count and cobac.fyi page. Use the ids as centerIds in find_activities and get_schedule.',
   inputSchema: z.object({}),
   outputSchema: z.object({
     centres: z.array(

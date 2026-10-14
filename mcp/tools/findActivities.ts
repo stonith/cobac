@@ -41,16 +41,13 @@ export const findActivities = defineTool({
   name: 'find_activities',
   title: 'Find activities',
   description:
-    'Find sessions of City of Vancouver recreation activities that match filters, for questions like "what can I do near Kitsilano on Saturday morning", "free drop-in swims this week" or "yoga for a 70-year-old under $10". Filters: free text, calendar group (Drop-in, Fitness, Sports, Art & Culture) or calendar ids, centre ids (see list_centres), a date range (defaults to today through six days ahead; at most eight weeks and within the snapshot period), days of week, a start-time window, a maximum price in CAD, free only, available only (drops full, closed and cancelled activities), and participant age. Returns activities with their matching sessions in Vancouver local time, page URLs, and a covac.fyi calendar link showing the same filters.',
+    'Find sessions of City of Burnaby recreation activities that match filters, for questions like "what can I do near Central Burnaby on Saturday morning", "group fitness this week" or "yoga for a 70-year-old under $10". Filters: free text, calendar group (Drop-in, Fitness, Sports) or calendar ids, centre ids (see list_centres), a date range (defaults to today through six days ahead; at most eight weeks and within the snapshot period), days of week, a start-time window, a maximum price in CAD, free only, available only (drops full, closed and cancelled activities), and participant age. Returns activities with their matching sessions in Burnaby local time (Pacific), page URLs, and a cobac.fyi calendar link showing the same filters.',
   inputSchema: z.object({
     query: z
       .string()
       .optional()
       .describe('Words to match in title, instructor, centre, calendar or description'),
-    group: z
-      .string()
-      .optional()
-      .describe('Calendar group: Drop-in, Fitness, Sports or Art & Culture'),
+    group: z.string().optional().describe('Calendar group: Drop-in, Fitness or Sports'),
     calendarIds: idList.optional().describe('Calendar ids from list_calendars'),
     centerIds: idList.optional().describe('Centre ids from list_centres'),
     dateFrom: dateString.optional().describe('First date to include (default today)'),
@@ -85,7 +82,7 @@ export const findActivities = defineTool({
     note: z.string().optional(),
     total: z.number().describe('Matching activities before the limit'),
     truncated: z.boolean(),
-    link: z.string().describe('covac.fyi calendar with these filters applied'),
+    link: z.string().describe('cobac.fyi calendar with these filters applied'),
     results: z.array(result),
   }),
   async handler(args, ctx) {

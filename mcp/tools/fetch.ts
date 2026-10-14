@@ -8,7 +8,7 @@ export const fetchTool = defineTool({
   name: 'fetch',
   title: 'Fetch an activity',
   description:
-    'Fetch one activity by id (from `search`) as a markdown document: description, prices, age range, openings, instructors, every scheduled session in the snapshot window in Vancouver local time, the covac.fyi page URL and the ActiveNet registration URL.',
+    'Fetch one activity by id (from `search`) as a markdown document: description, prices, age range, openings, instructors, every scheduled session in the snapshot window in Burnaby local time (Pacific), the cobac.fyi page URL and the ActiveNet registration URL.',
   inputSchema: z.object({
     id: z.string().describe('Activity id returned by search'),
   }),

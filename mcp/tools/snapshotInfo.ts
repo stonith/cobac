@@ -11,7 +11,7 @@ export const snapshotInfo = defineTool({
   outputSchema: z.object({
     generatedAt: z.string(),
     period: z.object({ start: dateString, end: dateString }),
-    today: dateString.describe('Today in Vancouver, as the server sees it'),
+    today: dateString.describe('Today in Burnaby (Pacific time), as the server sees it'),
     counts: z.object({
       calendars: z.number(),
       centers: z.number(),
@@ -48,12 +48,12 @@ export const snapshotInfo = defineTool({
         dataApi: `${ctx.site}/data/meta.json`,
         activities: `${ctx.site}/activities/`,
         centres: `${ctx.site}/centres/`,
-        source: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars',
+        source: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration',
       },
       notice:
-        'Unofficial mirror of City of Vancouver recreation data published through ActiveNet. Confirm details and register on ActiveNet.',
+        'Unofficial mirror of City of Burnaby recreation data published through ActiveNet. Confirm details and register on ActiveNet.',
     }
-    const text = `Snapshot scraped ${meta.generatedAt}, covering ${meta.period.start} to ${meta.period.end} (today in Vancouver is ${ctx.today}): ${meta.counts.activities} activities, ${meta.counts.occurrences} sessions, ${meta.counts.centers} centres, ${meta.counts.calendars} calendars. Weeks with sessions start ${meta.weeks.join(', ')}. Data API: ${ctx.site}/data/meta.json · llms.txt: ${ctx.site}/llms.txt · Pages: ${ctx.site}/activities/ and ${ctx.site}/centres/. ${structuredContent.notice}`
+    const text = `Snapshot scraped ${meta.generatedAt}, covering ${meta.period.start} to ${meta.period.end} (today in Burnaby is ${ctx.today}): ${meta.counts.activities} activities, ${meta.counts.occurrences} sessions, ${meta.counts.centers} centres, ${meta.counts.calendars} calendars. Weeks with sessions start ${meta.weeks.join(', ')}. Data API: ${ctx.site}/data/meta.json · llms.txt: ${ctx.site}/llms.txt · Pages: ${ctx.site}/activities/ and ${ctx.site}/centres/. ${structuredContent.notice}`
     return { structuredContent, text }
   },
 })

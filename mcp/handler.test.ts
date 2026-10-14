@@ -116,7 +116,7 @@ describe('transport', () => {
     const json = JSON.parse(data!.slice('data: '.length)) as RpcResult
     expect(json.result).toMatchObject({
       protocolVersion: '2025-06-18',
-      serverInfo: { name: 'covac' },
+      serverInfo: { name: 'cobac' },
     })
   })
 })
@@ -126,7 +126,7 @@ describe('server/discover and tools/list', () => {
     const { json: discover } = await modern('server/discover')
     expect(discover.result).toMatchObject({
       supportedVersions: ['2026-07-28'],
-      _meta: { 'io.modelcontextprotocol/serverInfo': { name: 'covac', version: '0.0.1' } },
+      _meta: { 'io.modelcontextprotocol/serverInfo': { name: 'cobac', version: '0.0.1' } },
     })
     const { json } = await modern('tools/list')
     expect(json.result!.tools!.map((t) => t.name)).toEqual(TOOLS.map((t) => t.name))
@@ -149,14 +149,14 @@ describe('server/discover and tools/list', () => {
 
 describe('search and fetch (ChatGPT contract)', () => {
   it('search returns ids, titles and page URLs as structured content and JSON text', async () => {
-    const { json } = await call('search', { query: 'swim' })
+    const { json } = await call('search', { query: 'sport' })
     const structured = json.result!.structuredContent as {
       results: { id: string; title: string; url: string }[]
     }
     expect(structured.results).toEqual([
       {
         id: '1',
-        title: 'Free Swim — Britannia Pool (Public Swimming, Free)',
+        title: 'Multi-sport — Bonsor Recreation Complex (BON) (Multi-sport, Free)',
         url: `${ORIGIN}/activities/1/`,
       },
     ])
@@ -168,11 +168,15 @@ describe('search and fetch (ChatGPT contract)', () => {
     const doc = json.result!.structuredContent as Record<string, unknown>
     expect(doc).toMatchObject({
       id: '2',
-      title: 'Basketball Drop-in',
+      title: 'Reserve In Advance: Adult Badminton',
       url: `${ORIGIN}/activities/2/`,
-      metadata: { centre: 'Hastings Community Centre', price: 'from $5.00', sessionCount: 1 },
+      metadata: {
+        centre: 'Rosemary Brown Recreation Centre (RBR)',
+        price: 'from $5.55',
+        sessionCount: 1,
+      },
     })
-    expect(doc.text).toContain('# Basketball Drop-in')
+    expect(doc.text).toContain('# Reserve In Advance: Adult Badminton')
     expect(parsedText(json)).toEqual(doc)
     const { json: missing } = await call('fetch', { id: '999' })
     expect(missing.result!.isError).toBe(true)
@@ -195,7 +199,9 @@ describe('domain tools', () => {
     expect(out.total).toBe(1)
     expect(out.results[0]).toMatchObject({ id: 1, sessionCount: 2 })
     expect(out.link).toBe(`${ORIGIN}/?week=2026-09-07`)
-    expect(json.result!.content![0]!.text).toContain('Free Swim — Britannia Pool')
+    expect(json.result!.content![0]!.text).toContain(
+      'Multi-sport — Bonsor Recreation Complex (BON)',
+    )
   })
 
   it('find_activities reports availability and can hide unavailable activities', async () => {
@@ -246,12 +252,14 @@ describe('domain tools', () => {
       availability?: string
       spaces?: number
     }
-    expect(out.centre.name).toBe('Britannia Pool')
+    expect(out.centre.name).toBe('Bonsor Recreation Complex (BON)')
     expect(out.availability).toBe('open')
     expect(out.spaces).toBe(100)
     expect(out.sessions[0]!.startIso).toBe('2026-09-07T07:00:00-07:00')
-    expect(out.activenetUrl).toBe('https://example.com/free-swim/1')
-    expect(json.result!.content![0]!.text).toContain('# Free Swim')
+    expect(out.activenetUrl).toBe(
+      'https://ca.apm.activecommunities.com/burnaby/Activity_Search/multi-sport/1',
+    )
+    expect(json.result!.content![0]!.text).toContain('# Multi-sport')
   })
 
   it('get_schedule groups a day by centre', async () => {
@@ -261,8 +269,8 @@ describe('domain tools', () => {
       centres: { name: string; sessions: { title: string }[] }[]
     }
     expect(out.total).toBe(1)
-    expect(out.centres[0]).toMatchObject({ name: 'Hastings Community Centre' })
-    expect(out.centres[0]!.sessions[0]!.title).toBe('Basketball Drop-in')
+    expect(out.centres[0]).toMatchObject({ name: 'Rosemary Brown Recreation Centre (RBR)' })
+    expect(out.centres[0]!.sessions[0]!.title).toBe('Reserve In Advance: Adult Badminton')
     const { json: outside } = await call('get_schedule', { date: '2027-01-01' })
     expect(outside.result!.isError).toBe(true)
   })
@@ -274,10 +282,11 @@ describe('domain tools', () => {
       (centres.result!.structuredContent as { centres: { name: string }[] }).centres.map(
         (c) => c.name,
       ),
-    ).toEqual(['Britannia Pool', 'Hastings Community Centre'])
+    ).toEqual(['Bonsor Recreation Complex (BON)', 'Rosemary Brown Recreation Centre (RBR)'])
     const { json: calendars } = await call('list_calendars', {}, e)
     expect((calendars.result!.structuredContent as { groups: string[] }).groups).toEqual([
       'Drop-in',
+      'Fitness',
       'Sports',
     ])
     const { json: info } = await call('snapshot_info', {}, e)
@@ -294,15 +303,15 @@ describe('resources and prompts', () => {
     const e = env()
     const { json: list } = await modern('resources/list', {}, e)
     expect((list.result!.resources as { uri: string }[]).map((r) => r.uri)).toEqual([
-      'covac://snapshot',
-      'covac://centres',
-      'covac://calendars',
+      'cobac://snapshot',
+      'cobac://centres',
+      'cobac://calendars',
     ])
-    const { json: read } = await modern('resources/read', { uri: 'covac://calendars' }, e)
+    const { json: read } = await modern('resources/read', { uri: 'cobac://calendars' }, e)
     const contents = read.result!.contents as { text: string }[]
     expect(JSON.parse(contents[0]!.text)).toEqual(snapshot.calendars)
-    const { json: activity } = await modern('resources/read', { uri: 'covac://activities/1' }, e)
-    expect((activity.result!.contents as { text: string }[])[0]!.text).toContain('# Free Swim')
+    const { json: activity } = await modern('resources/read', { uri: 'cobac://activities/1' }, e)
+    expect((activity.result!.contents as { text: string }[])[0]!.text).toContain('# Multi-sport')
   })
 
   it('renders the planning prompt', async () => {

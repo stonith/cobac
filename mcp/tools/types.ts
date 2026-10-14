@@ -6,7 +6,7 @@ export interface ToolContext {
   shards: Shards
   /** Origin the request arrived on, used for absolute URLs in results. */
   site: string
-  /** Today's date in Vancouver. */
+  /** Today's date in Burnaby (Pacific time). */
   today: DateString
 }
 

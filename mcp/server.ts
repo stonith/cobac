@@ -10,10 +10,10 @@ import type { Shards } from './data.ts'
 import { TOOLS } from './tools/index.ts'
 import type { ToolContext } from './tools/types.ts'
 
-export const SERVER_NAME = 'covac'
-export const SERVER_TITLE = 'covac · City of Vancouver recreation activities'
+export const SERVER_NAME = 'cobac'
+export const SERVER_TITLE = 'cobac · City of Burnaby recreation activities'
 export const SERVER_DESCRIPTION =
-  'Search and browse City of Vancouver recreation activities (drop-in swims, skates and gyms, fitness classes, sports, arts and other programs at community centres, pools and rinks) from a nightly snapshot of the ActiveNet calendar.'
+  'Search and browse City of Burnaby recreation activities (group fitness, indoor cycling, yoga, badminton, basketball, hockey, ringette, figure skating and other programs at community centres, pools and rinks) from a nightly snapshot of the ActiveNet calendar.'
 
 /** Cache hints for list results: the data changes at most once a day, on deploy. */
 const HOUR = 3_600_000
@@ -21,32 +21,32 @@ const CACHE_HINT = { ttlMs: HOUR, cacheScope: 'public' as const }
 
 export function instructions(period: { start: string; end: string }, today: string): string {
   return [
-    `covac mirrors the City of Vancouver recreation calendar (ActiveNet). The snapshot covers ${period.start} to ${period.end}; today in Vancouver is ${today}. All times are Vancouver local time.`,
+    `cobac mirrors the City of Burnaby recreation calendar (ActiveNet). The snapshot covers ${period.start} to ${period.end}; today in Burnaby is ${today}. All times are Burnaby local time (Pacific).`,
     'Use find_activities for "what can I do when/where" questions (filters: text, group, centres, dates, days, times, price, age), get_schedule for everything on one date, search + fetch or get_activity for details of one activity, list_centres and list_calendars for the ids the filters take.',
-    'Always give the user the covac.fyi page URL or the ActiveNet URL from the result so they can register and confirm details; this data is an unofficial nightly mirror, and openings change during the day.',
+    'Always give the user the cobac.fyi page URL or the ActiveNet URL from the result so they can register and confirm details; this data is an unofficial nightly mirror, and openings change during the day.',
   ].join('\n')
 }
 
 /** Everything registered on a fresh server; exported so the server card can mirror it. */
 export const RESOURCES = [
   {
-    uri: 'covac://snapshot',
+    uri: 'cobac://snapshot',
     name: 'snapshot',
     title: 'Snapshot metadata',
     mimeType: 'application/json',
   },
   {
-    uri: 'covac://centres',
+    uri: 'cobac://centres',
     name: 'centres',
     title: 'Centres and facilities',
     mimeType: 'application/json',
   },
-  { uri: 'covac://calendars', name: 'calendars', title: 'Calendars', mimeType: 'application/json' },
+  { uri: 'cobac://calendars', name: 'calendars', title: 'Calendars', mimeType: 'application/json' },
 ] as const
 
 export const RESOURCE_TEMPLATES = [
   {
-    uriTemplate: 'covac://activities/{id}',
+    uriTemplate: 'cobac://activities/{id}',
     name: 'activity',
     title: 'One activity as markdown',
     mimeType: 'text/markdown',
@@ -58,7 +58,7 @@ export const PROMPTS = [
     name: 'plan_activities',
     title: 'Plan recreation activities',
     description:
-      'Find City of Vancouver recreation activities for a time, interests and neighbourhood, and present them with links.',
+      'Find City of Burnaby recreation activities for a time, interests and area, and present them with links.',
   },
 ] as const
 
@@ -159,7 +159,7 @@ export async function createServer(ctx: ToolContext): Promise<McpServer> {
           .string()
           .describe('When, e.g. "this Saturday morning" or "weekday evenings next week"'),
         interests: z.string().optional().describe('What they enjoy, e.g. "swimming and yoga"'),
-        near: z.string().optional().describe('Neighbourhood or centre, e.g. "Kitsilano"'),
+        near: z.string().optional().describe('Area or centre, e.g. "Central Burnaby"'),
       }),
     },
     ({ when, interests, near }) => ({
@@ -169,9 +169,9 @@ export async function createServer(ctx: ToolContext): Promise<McpServer> {
           content: {
             type: 'text' as const,
             text: [
-              `Help me find City of Vancouver recreation activities ${when}${interests ? ` for ${interests}` : ''}${near ? ` near ${near}` : ''}.`,
+              `Help me find City of Burnaby recreation activities ${when}${interests ? ` for ${interests}` : ''}${near ? ` near ${near}` : ''}.`,
               'Call snapshot_info once to learn the date range, use list_centres to map the neighbourhood to centre ids, then find_activities with the matching filters (dates, days, times, group, price or age if I mentioned them).',
-              'Present the best options grouped by day with times, centre, price and the covac.fyi link for each, mention how to register on ActiveNet, and note that openings can change during the day.',
+              'Present the best options grouped by day with times, centre, price and the cobac.fyi link for each, mention how to register on ActiveNet, and note that openings can change during the day.',
             ].join(' '),
           },
         },
