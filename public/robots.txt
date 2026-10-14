@@ -1,4 +1,4 @@
-# covac publishes public City of Vancouver recreation data for people and their assistants alike.
+# cobac publishes public City of Burnaby recreation data for people and their assistants alike.
 # Every crawler is welcome; the AI crawlers are listed so their opt-in is explicit.
 User-agent: *
 Allow: /
@@ -42,4 +42,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://covac.fyi/sitemap.xml
+Sitemap: https://cobac.fyi/sitemap.xml

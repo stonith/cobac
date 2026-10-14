@@ -30,7 +30,7 @@ export interface ShardOptions {
   snapshot: Snapshot
   outDir: string
   version: string
-  /** Today's date in Vancouver, used to pick each activity's "next" session for links. */
+  /** Today's date in Burnaby, used to pick each activity's "next" session for links. */
   today: DateString
   /** Origin for absolute URLs inside the shards. */
   site?: string

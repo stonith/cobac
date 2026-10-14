@@ -35,7 +35,7 @@ export function sessionLines(sessions: Occurrence[], max = Infinity): string[] {
   return lines
 }
 
-/** One-line summary with a link to the covac page. */
+/** One-line summary with a link to the cobac page. */
 export function activityLine(
   activity: CatalogActivity,
   centre?: Center,
@@ -80,7 +80,7 @@ export function activityMarkdown(detail: ActivityDetail, today?: DateString): st
       ),
     )
   }
-  const heading = today ? `## Upcoming sessions (Vancouver time)` : `## Sessions (Vancouver time)`
+  const heading = today ? `## Upcoming sessions (Pacific time)` : `## Sessions (Pacific time)`
   const lines = sessionLines(upcoming)
   sections.push(
     [
@@ -92,8 +92,8 @@ export function activityMarkdown(detail: ActivityDetail, today?: DateString): st
     [
       '## Links',
       `- Register or see details on ActiveNet: ${detail.url}`,
-      `- covac page: ${detail.pageUrl}`,
-      `- Open in the covac calendar: ${detail.link}`,
+      `- cobac page: ${detail.pageUrl}`,
+      `- Open in the cobac calendar: ${detail.link}`,
     ].join('\n'),
   )
   return sections.join('\n\n')

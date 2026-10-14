@@ -66,11 +66,11 @@ export function layout(page: Layout): string {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(page.title)} · covac</title>
+<title>${esc(page.title)} · cobac</title>
 <meta name="description" content="${esc(page.description)}">
 <link rel="canonical" href="${esc(page.canonical)}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="covac">
+<meta property="og:site_name" content="cobac">
 <meta property="og:title" content="${esc(page.title)}">
 <meta property="og:description" content="${esc(page.description)}">
 <meta property="og:url" content="${esc(page.canonical)}">
@@ -85,11 +85,11 @@ ${page.head ?? ''}
 ${page.jsonLd}
 </head>
 <body>
-<header class="site"><div><a class="brand" href="${esc(page.site)}/">covac</a><span>City of Vancouver Active Communities</span><span><a href="${esc(page.site)}/centres/">Centres</a> · <a href="${esc(page.site)}/activities/">Activities</a></span></div></header>
+<header class="site"><div><a class="brand" href="${esc(page.site)}/">cobac</a><span>City of Burnaby recreation</span><span><a href="${esc(page.site)}/centres/">Centres</a> · <a href="${esc(page.site)}/activities/">Activities</a></span></div></header>
 <main>
 ${page.body}
 </main>
-<footer>Unofficial mirror of City of Vancouver recreation data published through ActiveNet. Activity data belongs to the Vancouver Board of Parks and Recreation; confirm details and register on ActiveNet before attending. Data as of ${esc(page.generatedAt.slice(0, 10))}. <a href="${esc(page.site)}/llms.txt">llms.txt</a> · <a href="https://github.com/patsissons/covac">Source</a></footer>
+<footer>Unofficial mirror of City of Burnaby recreation data published through ActiveNet. Activity data belongs to the City of Burnaby; confirm details and register on ActiveNet before attending. Data as of ${esc(page.generatedAt.slice(0, 10))}. <a href="${esc(page.site)}/llms.txt">llms.txt</a> · <a href="https://github.com/stonith/cobac">Source</a></footer>
 </body>
 </html>
 `

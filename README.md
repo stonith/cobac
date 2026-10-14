@@ -1,11 +1,10 @@
-# covac
+# cobac
 
-**City of Vancouver Active Communities** – a better calendar for City of Vancouver recreation
-activities.
+**City of Burnaby recreation** – a better calendar for City of Burnaby recreation activities.
 
 The city publishes drop-in activities and registered programs through ActiveNet at
-<https://anc.ca.apm.activecommunities.com/vancouver/calendars>. That UI makes you pick one
-calendar, then add centres one at a time, before anything renders. covac shows a week grid of
+<https://ca.apm.activecommunities.com/burnaby/>. That UI makes you pick one
+calendar, then add centres one at a time, before anything renders. cobac shows a week grid of
 **locations × days** across every calendar at once, with filters, an activity detail panel that
 links back to ActiveNet for registration, and a map of centres.
 
@@ -29,12 +28,12 @@ ActiveNet REST API ──(pnpm scrape, nightly via GitHub Actions)──▶ publ
    each activity with age range, openings (kept verbatim and parsed into an availability status
    plus remaining spaces) and centre coordinates from the per-activity details endpoint. It writes one pretty-printed file per collection to `public/data/`
    (`snapshot.calendars.json`, `.centers`, `.facilities`, `.activities`, `.occurrences`; about
-   5 MB in total) plus a small `snapshot.meta.json` with the scrape time, period and counts, so
+   20 MB in total) plus a small `snapshot.meta.json` with the scrape time, period and counts, so
    each nightly commit shows the lines that actually changed.
 2. The scrape workflow runs nightly and commits the files when the data changed. Cloudflare
    Pages redeploys on push.
 3. A Vite plugin (`vite.config.ts`) merges the files into `public/data/snapshot.json` (about
-   4 MB, 550 KB gzipped) before every dev server start and build. That bundle is gitignored, and
+   9 MB, 150 KB gzipped) before every dev server start and build. That bundle is gitignored, and
    the build output contains only the bundle, not the split files.
 4. The build also writes machine-readable views of the same data (data shards, prerendered
    pages, `llms.txt`, see below) and a Cloudflare Pages Function serves an MCP endpoint over the
@@ -43,7 +42,7 @@ ActiveNet REST API ──(pnpm scrape, nightly via GitHub Actions)──▶ publ
    view stacks every location into hourly rows so a glance down the Monday column shows everything
    between, say, 4 pm and 8 pm; **By location** gives one row per centre. Filters, the view and
    the selected week live in the query string
-   (`?week=2026-09-14&view=location&cal=55&centers=37&from=12:00&days=6,0&q=swim&pmin=5&pmax=20&open=1`),
+   (`?week=2026-10-12&view=location&cal=6&centers=63&from=12:00&days=6,0&q=gym&pmin=5&pmax=20&open=1`),
    and `activity=<id>` opens that activity's detail panel, which is how the prerendered pages and
    MCP results deep-link into the calendar
    so any view can be shared. The price slider filters on each activity's lowest price (free
@@ -61,18 +60,18 @@ Pages Function on the free plan can parse what one request needs inside its 10 m
 and they double as a public read-only data API. `pnpm site:generate` regenerates them into an
 existing `dist/` without rebuilding the app.
 
-| URL                          | Contents                                                                                                                                  |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `/data/meta.json`            | Scrape time, period, counts, the Mondays of every week with sessions, generator version                                                   |
-| `/data/calendars.json`       | The calendars with their group (`Drop-in`, `Fitness`, `Sports`, `Art & Culture`)                                                          |
-| `/data/centres.json`         | Centres with address, phone, coordinates and activity count, plus facilities                                                              |
-| `/data/catalog.json`         | Every activity without its description HTML, fee table or URL: enough to search and filter, including `availability` and `spaces` (~2 MB) |
-| `/data/weeks/{monday}.json`  | All sessions (`{a, s, e}`) in one Monday-based week                                                                                       |
-| `/data/activities/{id}.json` | One activity in full: plain-text description, fees, centre, calendar, sessions and covac links                                            |
-| `/data/snapshot.json`        | The whole snapshot the app loads (~4 MB)                                                                                                  |
+| URL                          | Contents                                                                                                                                    |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/data/meta.json`            | Scrape time, period, counts, the Mondays of every week with sessions, generator version                                                     |
+| `/data/calendars.json`       | The calendars with their group (`Drop-in`, `Fitness`, `Sports`)                                                                             |
+| `/data/centres.json`         | Centres with address, phone, coordinates and activity count, plus facilities                                                                |
+| `/data/catalog.json`         | Every activity without its description HTML, fee table or URL: enough to search and filter, including `availability` and `spaces` (~1.5 MB) |
+| `/data/weeks/{monday}.json`  | All sessions (`{a, s, e}`) in one Monday-based week                                                                                         |
+| `/data/activities/{id}.json` | One activity in full: plain-text description, fees, centre, calendar, sessions and cobac links                                              |
+| `/data/snapshot.json`        | The whole snapshot the app loads (~9 MB)                                                                                                    |
 
 All `/data/*` responses carry `Access-Control-Allow-Origin: *` and five minutes of edge caching
-(`public/_headers`). Times are Vancouver local with no offset, as everywhere in the snapshot. The
+(`public/_headers`). Times are Burnaby local time (Pacific) with no offset, as everywhere in the snapshot. The
 shapes are the TypeScript interfaces in `src/data/catalog.ts`.
 
 ### Prerendered pages and structured data
@@ -80,7 +79,7 @@ shapes are the TypeScript interfaces in `src/data/catalog.ts`.
 Search engines and AI crawlers do not run the app's JavaScript, so the build also prerenders
 plain HTML for every activity (`/activities/{id}/`) and centre (`/centres/{id}/`), plus two index
 pages, from `scripts/site/pages.ts`. Each page carries schema.org JSON-LD (one `Event` per
-upcoming session with Vancouver offsets, the centre as a `SportsActivityLocation`, breadcrumbs),
+upcoming session with Pacific offsets, the centre as a `SportsActivityLocation`, breadcrumbs),
 a canonical URL, Open Graph tags, a link to the activity's JSON, the ActiveNet registration link
 and a deep link into the calendar. `sitemap.xml` lists them all; `public/robots.txt` allows every
 crawler explicitly, AI search bots included; the app shell in `index.html` gets `WebSite` and
@@ -97,14 +96,14 @@ shell links `llms.txt` as an alternate representation.
 
 ### MCP server
 
-`https://covac.fyi/mcp` is a remote [Model Context Protocol](https://modelcontextprotocol.io)
+`https://cobac.fyi/mcp` is a remote [Model Context Protocol](https://modelcontextprotocol.io)
 server (Streamable HTTP, no authentication, read-only) so agents can query the data directly.
 It speaks the 2026-07-28 stateless protocol and still answers 2025-era clients through the SDK's
 stateless legacy path. Add it to a client with its URL, for example:
 
 ```sh
-claude mcp add --transport http covac https://covac.fyi/mcp
-npx @modelcontextprotocol/inspector   # then connect to https://covac.fyi/mcp
+claude mcp add --transport http cobac https://cobac.fyi/mcp
+npx @modelcontextprotocol/inspector   # then connect to https://cobac.fyi/mcp
 ```
 
 In ChatGPT it works as a custom connector (Settings → Connectors → Developer mode) and follows
@@ -116,17 +115,17 @@ returns `{ id, title, text, url, metadata }`, both as structured content and as 
 | `search`          | Free-text search over titles, instructors, centres, calendars and descriptions; ids + page URLs               |
 | `fetch`           | One activity as a markdown document with metadata                                                             |
 | `find_activities` | Filter sessions by text, group, calendars, centres, dates, days, times, price, free only, available only, age |
-| `get_activity`    | Full structured record for one activity, sessions with UTC offsets                                            |
+| `get_activity`    | Full structured record for one activity, sessions with timezone offsets                                       |
 | `list_centres`    | Centres with address, phone, coordinates, activity counts                                                     |
 | `list_calendars`  | Calendars and their groups                                                                                    |
 | `get_schedule`    | Everything on one date, grouped by centre                                                                     |
 | `snapshot_info`   | Scrape time, period, counts, weeks, links                                                                     |
 
-It also exposes resources (`covac://snapshot`, `covac://centres`, `covac://calendars`,
-`covac://activities/{id}`) and a `plan_activities` prompt.
+It also exposes resources (`cobac://snapshot`, `cobac://centres`, `cobac://calendars`,
+`cobac://activities/{id}`) and a `plan_activities` prompt.
 
 The server is a Cloudflare Pages Function (`functions/mcp.ts`, code in `mcp/`) built on
-`@modelcontextprotocol/server`. It never parses the 4 MB snapshot: each tool reads only the
+`@modelcontextprotocol/server`. It never parses the 9 MB snapshot: each tool reads only the
 shards it needs through the `ASSETS` binding and caches them per isolate, which keeps a cold
 request within the Workers free plan's 10 ms CPU budget. `public/_routes.json` sends only
 `/mcp` and `/.well-known/mcp` to Functions; every other path is a free static request.
@@ -138,23 +137,24 @@ serving them.
 
 ### The ActiveNet API
 
-The calendar page at `anc.ca.apm.activecommunities.com/vancouver/calendars` is a React app backed
-by an unauthenticated JSON API under `/vancouver/rest/onlinecalendar`. The scraper uses:
+The calendar page at `ca.apm.activecommunities.com/burnaby/` is a React app backed by an
+unauthenticated JSON API under `anc.ca.apm.activecommunities.com/burnaby/rest/onlinecalendar`.
+The scraper uses:
 
 | Endpoint                                 | Method | Notes                                                                                                |
 | ---------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------- |
-| `/calendars`                             | GET    | 24 calendars; id 23 is a "Choose a Calendar" placeholder                                             |
+| `/calendars`                             | GET    | 17 calendars across the `Drop-in`, `Fitness` and `Sports` groups                                     |
 | `/filters`                               | POST   | `{"calendar_id": N}` → centres, facilities, categories and the calendar's date range                 |
-| `/multicenter/events`                    | POST   | calendar id + all its centre ids → every session in the ~8 week window, in one response              |
+| `/multicenter/events`                    | POST   | calendar id + all its centre ids → every session in the rolling window, in one response              |
 | `/activity-details/{id}?selected_date=…` | GET    | age range, openings (`space_status` label and `space_type` code), price, centre address and lat/long |
 
-There are no date parameters; each calendar returns its whole rolling window. A full pull is 46
-bulk requests plus one details request per activity (about 3,200), and takes around two minutes
+There are no date parameters; each calendar returns its whole rolling window. A full pull is 35
+bulk requests plus one details request per activity (about 4,600), and takes around two minutes
 with four concurrent requests. The API rejects browser CORS preflights, which is why the site
 reads a committed snapshot instead of calling ActiveNet directly.
 
-Times in the data are Vancouver local time with no timezone; the app stores and renders them
-as-is.
+Times in the data are Burnaby local time (Pacific) with no timezone; the app stores and renders
+them as-is.
 
 ## Setup
 
@@ -218,7 +218,7 @@ Vite, React, TypeScript, Tailwind CSS v4, shadcn/ui, Vitest, Playwright, ESLint,
 
 ## Deployment
 
-The site lives at <https://covac.fyi> and deploys to Cloudflare Pages from the `main` branch.
+The site lives at <https://cobac.fyi> and deploys to Cloudflare Pages from the `main` branch.
 Build command `pnpm build`, output directory `dist`; runtime settings (compatibility date and
 flags) come from `wrangler.toml`, which Pages reads because it sets `pages_build_output_dir`.
 The build generates `dist/data/snapshot.json` and the machine-readable files from the committed
@@ -234,6 +234,6 @@ GitHub Actions:
 
 ## Data notice
 
-This is an unofficial mirror. Activity data belongs to the City of Vancouver Board of Parks and
-Recreation and is published through ActiveNet; always confirm details there before attending, and
-register there. Nothing here is affiliated with the City or with Active Network.
+This is an unofficial mirror. Activity data belongs to the City of Burnaby and is published
+through ActiveNet; always confirm details there before attending, and register there. Nothing
+here is affiliated with the City or with Active Network.

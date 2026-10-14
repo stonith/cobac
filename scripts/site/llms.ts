@@ -24,7 +24,7 @@ export interface LlmsContext {
 }
 
 function summary(meta: SiteMeta): string {
-  return `covac (City of Vancouver Active Communities) is an unofficial, read-only mirror of the City of Vancouver's recreation calendar: ${meta.counts.activities} drop-in activities and registered programs with ${meta.counts.occurrences} scheduled sessions at ${meta.counts.centers} community centres, pools and rinks, covering ${meta.period.start} to ${meta.period.end}. The data is scraped nightly from ActiveNet (last scrape ${meta.generatedAt}); times are Vancouver local time. Registration happens on ActiveNet, never here.`
+  return `cobac (City of Burnaby recreation) is an unofficial, read-only mirror of the City of Burnaby's recreation calendar: ${meta.counts.activities} registered programs and drop-in multi-sport sessions with ${meta.counts.occurrences} scheduled sessions at ${meta.counts.centers} community centres, pools and rinks, covering ${meta.period.start} to ${meta.period.end}. The data is scraped nightly from ActiveNet (last scrape ${meta.generatedAt}); times are Burnaby local time (Pacific). Registration happens on ActiveNet, never here.`
 }
 
 function howToQuery(site: string): string {
@@ -56,11 +56,11 @@ export function llmsTxt(ctx: LlmsContext): string {
         `- [${c.name}](${site}${centreMarkdownPath(c.id)}): ${c.activities} activities${c.address ? `, ${c.address}` : ''}${c.phone ? `, ${c.phone}` : ''}`,
     )
   return [
-    '# covac',
+    '# cobac',
     '',
     `> ${summary(ctx.meta)}`,
     '',
-    `covac shows one week of every City of Vancouver recreation centre at once at ${site}/, with filters for calendar, centre, day, time and price. Everything below is generated from the same snapshot the app uses. Activity data belongs to the Vancouver Board of Parks and Recreation and is published through ActiveNet; confirm details there before attending.`,
+    `cobac shows one week of every City of Burnaby recreation centre at once at ${site}/, with filters for calendar, centre, day, time and price. Everything below is generated from the same snapshot the app uses. Activity data belongs to the City of Burnaby and is published through ActiveNet; confirm details there before attending.`,
     '',
     howToQuery(site),
     '',
@@ -78,8 +78,8 @@ export function llmsTxt(ctx: LlmsContext): string {
     '',
     `- [All activities, one line each](${site}/llms-full.txt): title, centre, calendar, price, ages, next session`,
     `- [Sitemap](${site}/sitemap.xml)`,
-    `- [ActiveNet calendars](https://anc.ca.apm.activecommunities.com/vancouver/calendars): the source of the data and where to register`,
-    `- [Source code](https://github.com/patsissons/covac)`,
+    `- [City of Burnaby activities and registration](https://www.burnaby.ca/recreation-and-arts/activities-and-registration): the source of the data and where to register`,
+    `- [Source code](https://github.com/stonith/cobac)`,
     '',
   ].join('\n')
 }
@@ -107,7 +107,7 @@ export function llmsFullTxt(
       ]
     })
   return [
-    '# covac: every City of Vancouver recreation activity',
+    '# cobac: every City of Burnaby recreation activity',
     '',
     `> ${summary(ctx.meta)}`,
     '',

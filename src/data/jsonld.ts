@@ -15,8 +15,8 @@ export type JsonLd = Record<string, unknown>
 
 export const ORGANIZER: JsonLd = {
   '@type': 'Organization',
-  name: 'Vancouver Board of Parks and Recreation',
-  url: 'https://vancouver.ca/parks-recreation-culture.aspx',
+  name: 'City of Burnaby',
+  url: 'https://www.burnaby.ca',
 }
 
 /** A recreation centre, pool or rink as a Place. */
@@ -30,8 +30,8 @@ export function placeNode(center: Center, site = SITE_URL): JsonLd {
   if (center.address) {
     node.address = {
       '@type': 'PostalAddress',
-      streetAddress: center.address.replace(/,\s*Vancouver$/i, ''),
-      addressLocality: 'Vancouver',
+      streetAddress: center.address.replace(/,\s*Burnaby$/i, ''),
+      addressLocality: 'Burnaby',
       addressRegion: 'BC',
       addressCountry: 'CA',
     }
@@ -114,11 +114,11 @@ export function webSiteNode(site = SITE_URL): JsonLd {
   return {
     '@type': 'WebSite',
     '@id': `${site}/#website`,
-    name: 'covac',
-    alternateName: 'City of Vancouver Active Communities',
+    name: 'cobac',
+    alternateName: 'City of Burnaby recreation',
     url: `${site}/`,
     description:
-      'A week-grid calendar of City of Vancouver recreation activities: every recreation centre, one week at a time.',
+      'A week-grid calendar of City of Burnaby recreation activities: every recreation centre, one week at a time.',
     inLanguage: 'en-CA',
     potentialAction: {
       '@type': 'SearchAction',
@@ -132,15 +132,15 @@ export function datasetNode(meta: SiteMeta, site = SITE_URL): JsonLd {
   return {
     '@type': 'Dataset',
     '@id': `${site}/#dataset`,
-    name: 'City of Vancouver recreation activities (covac snapshot)',
-    description: `Drop-in activities and registered programs at ${meta.counts.centers} City of Vancouver recreation centres, pools and rinks: ${meta.counts.activities} activities and ${meta.counts.occurrences} sessions between ${meta.period.start} and ${meta.period.end}, scraped nightly from ActiveNet. Unofficial mirror; confirm and register on ActiveNet.`,
+    name: 'City of Burnaby recreation activities (cobac snapshot)',
+    description: `Registered programs and drop-in activities at ${meta.counts.centers} City of Burnaby recreation centres, pools and rinks: ${meta.counts.activities} activities and ${meta.counts.occurrences} sessions between ${meta.period.start} and ${meta.period.end}, scraped nightly from ActiveNet. Unofficial mirror; confirm and register on ActiveNet.`,
     url: `${site}/`,
-    sameAs: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars',
+    sameAs: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration',
     creator: ORGANIZER,
     isAccessibleForFree: true,
     inLanguage: 'en-CA',
     temporalCoverage: `${meta.period.start}/${meta.period.end}`,
-    spatialCoverage: { '@type': 'Place', name: 'Vancouver, BC, Canada' },
+    spatialCoverage: { '@type': 'Place', name: 'Burnaby, BC, Canada' },
     dateModified: meta.generatedAt,
     distribution: [
       {

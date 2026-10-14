@@ -26,7 +26,7 @@ function snapshotBundle(): Plugin {
   let outDir = 'dist'
   let dataDir = 'public/data'
   return {
-    name: 'covac:snapshot-bundle',
+    name: 'cobac:snapshot-bundle',
     configResolved(config) {
       isBuild = config.command === 'build'
       outDir = config.build.outDir
@@ -42,7 +42,7 @@ function snapshotBundle(): Plugin {
       const meta = buildSiteMeta(await readSnapshotFiles(dataDir), pkg.version)
       const jsonLd = jsonLdScript([webSiteNode(), datasetNode(meta)])
       const noscript =
-        '<noscript><p>covac needs JavaScript for the calendar. Browse the static pages instead: ' +
+        '<noscript><p>cobac needs JavaScript for the calendar. Browse the static pages instead: ' +
         '<a href="/activities/">all activities</a> or <a href="/centres/">recreation centres</a>.</p></noscript>'
       const alternate =
         '<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />'

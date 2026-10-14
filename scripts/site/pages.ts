@@ -61,7 +61,7 @@ export function activityPage(detail: ActivityDetail, ctx: PageContext): string {
   const centreUrl = centrePageUrl(detail.center.id, site)
   const description = blurb(
     detail.descriptionText ||
-      `${detail.title} at ${detail.center.name}, a City of Vancouver ${detail.calendar.name} activity.`,
+      `${detail.title} at ${detail.center.name}, a City of Burnaby ${detail.calendar.name} activity.`,
     160,
   )
   const facts = [
@@ -88,7 +88,7 @@ export function activityPage(detail: ActivityDetail, ctx: PageContext): string {
     .join('')
   const body = `
 ${breadcrumbs([
-  { name: 'covac', url: `${site}/` },
+  { name: 'cobac', url: `${site}/` },
   { name: 'Centres', url: `${site}/centres/` },
   { name: detail.center.name, url: centreUrl },
   { name: detail.title },
@@ -97,17 +97,17 @@ ${breadcrumbs([
 <ul class="facts">${facts}</ul>
 <div class="actions">
 <a class="primary" href="${esc(detail.url)}" rel="noopener">Register / details on ActiveNet</a>
-<a href="${esc(detail.link)}">Open in the covac calendar</a>
+<a href="${esc(detail.link)}">Open in the cobac calendar</a>
 </div>
 ${detail.description ? `<div class="card">${detail.description}</div>` : ''}
 ${details ? `<ul class="facts">${details}</ul>` : ''}
 ${fees}
-<h2>Sessions <span class="muted">(Vancouver time)</span></h2>
+<h2>Sessions <span class="muted">(Pacific time)</span></h2>
 ${sessionList(detail, ctx.today)}
 `
   const graph: JsonLd[] = [
     breadcrumbNode([
-      { name: 'covac', url: `${site}/` },
+      { name: 'cobac', url: `${site}/` },
       { name: 'Centres', url: `${site}/centres/` },
       { name: detail.center.name, url: centreUrl },
       { name: detail.title, url: canonical },
@@ -178,9 +178,9 @@ export function centrePage(
     centre.lat !== undefined && centre.lng !== undefined
       ? `<a href="https://www.openstreetmap.org/?mlat=${centre.lat}&amp;mlon=${centre.lng}#map=17/${centre.lat}/${centre.lng}" rel="noopener">Map</a>`
       : ''
-  const description = `${centre.activities} recreation activities at ${centre.name}${centre.address ? `, ${centre.address}` : ''}: drop-in swims, skates, fitness, sports and programs from the City of Vancouver.`
+  const description = `${centre.activities} recreation activities at ${centre.name}${centre.address ? `, ${centre.address}` : ''}: fitness, sports, drop-in multi-sport and programs from the City of Burnaby.`
   const body = `
-${breadcrumbs([{ name: 'covac', url: `${site}/` }, { name: 'Centres', url: `${site}/centres/` }, { name: centre.name }])}
+${breadcrumbs([{ name: 'cobac', url: `${site}/` }, { name: 'Centres', url: `${site}/centres/` }, { name: centre.name }])}
 <h1>${esc(centre.name)}</h1>
 <ul class="facts">
 ${centre.address ? `<li><address>${esc(centre.address)}</address></li>` : ''}
@@ -188,14 +188,14 @@ ${centre.phone ? `<li><a href="tel:${esc(centre.phone.replace(/[^\d+]/g, ''))}">
 <li>${centre.activities} activities</li>
 </ul>
 <div class="actions">
-<a class="primary" href="${esc(site)}/?centers=${centre.id}">Open in the covac calendar</a>
+<a class="primary" href="${esc(site)}/?centers=${centre.id}">Open in the cobac calendar</a>
 ${map ? `<span>${map}</span>` : ''}
 </div>
 ${sections || '<p class="muted">No activities in the current snapshot.</p>'}
 `
   const graph: JsonLd[] = [
     breadcrumbNode([
-      { name: 'covac', url: `${site}/` },
+      { name: 'cobac', url: `${site}/` },
       { name: 'Centres', url: `${site}/centres/` },
       { name: centre.name, url: canonical },
     ]),
@@ -233,26 +233,26 @@ export function centresIndexPage(centres: CentreSummary[], ctx: PageContext): st
         `<li><a href="${esc(site)}${centrePagePath(c.id)}">${esc(c.name)}</a> <span class="muted">${esc(c.address ?? '')}${c.address ? ' · ' : ''}${c.activities} activities</span></li>`,
     )
     .join('')
-  const description = `All ${centres.length} City of Vancouver recreation centres, pools and rinks with their current activities.`
+  const description = `All ${centres.length} City of Burnaby recreation centres, pools and rinks with their current activities.`
   return layout({
-    title: 'Recreation centres in Vancouver',
+    title: 'Recreation centres in Burnaby',
     description,
     canonical,
     jsonLd: jsonLdScript([
       breadcrumbNode([
-        { name: 'covac', url: `${site}/` },
+        { name: 'cobac', url: `${site}/` },
         { name: 'Centres', url: canonical },
       ]),
       {
         '@type': 'CollectionPage',
         '@id': canonical,
         url: canonical,
-        name: 'Recreation centres in Vancouver',
+        name: 'Recreation centres in Burnaby',
         description,
         isPartOf: { '@id': `${site}/#website` },
       },
     ]),
-    body: `${breadcrumbs([{ name: 'covac', url: `${site}/` }, { name: 'Centres' }])}<h1>Recreation centres</h1><p class="muted">${esc(description)}</p><ul class="plain">${items}</ul>`,
+    body: `${breadcrumbs([{ name: 'cobac', url: `${site}/` }, { name: 'Centres' }])}<h1>Recreation centres</h1><p class="muted">${esc(description)}</p><ul class="plain">${items}</ul>`,
     site,
     generatedAt: ctx.generatedAt,
   })
@@ -278,26 +278,26 @@ export function activitiesIndexPage(
         .join('')}</ul>`
     })
     .join('')
-  const description = `All ${total} City of Vancouver recreation activities in the current snapshot, grouped by centre.`
+  const description = `All ${total} City of Burnaby recreation activities in the current snapshot, grouped by centre.`
   return layout({
-    title: 'Recreation activities in Vancouver',
+    title: 'Recreation activities in Burnaby',
     description,
     canonical,
     jsonLd: jsonLdScript([
       breadcrumbNode([
-        { name: 'covac', url: `${site}/` },
+        { name: 'cobac', url: `${site}/` },
         { name: 'Activities', url: canonical },
       ]),
       {
         '@type': 'CollectionPage',
         '@id': canonical,
         url: canonical,
-        name: 'Recreation activities in Vancouver',
+        name: 'Recreation activities in Burnaby',
         description,
         isPartOf: { '@id': `${site}/#website` },
       },
     ]),
-    body: `${breadcrumbs([{ name: 'covac', url: `${site}/` }, { name: 'Activities' }])}<h1>Recreation activities</h1><p class="muted">${esc(description)} Data as of ${esc(ctx.generatedAt.slice(0, 10))}.</p>${sections}`,
+    body: `${breadcrumbs([{ name: 'cobac', url: `${site}/` }, { name: 'Activities' }])}<h1>Recreation activities</h1><p class="muted">${esc(description)} Data as of ${esc(ctx.generatedAt.slice(0, 10))}.</p>${sections}`,
     site,
     generatedAt: ctx.generatedAt,
   })

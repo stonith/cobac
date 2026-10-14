@@ -1,7 +1,7 @@
 /**
- * Vancouver time helpers. The snapshot stores naive local times; these turn them into offset-aware
- * ISO strings for structured data, and give "today" in Vancouver for code that runs in UTC
- * (Cloudflare Workers, CI).
+ * Pacific time helpers (Burnaby uses the `America/Vancouver` IANA zone). The snapshot stores
+ * naive local times; these turn them into offset-aware ISO strings for structured data, and
+ * give "today" in Burnaby for code that runs in UTC (Cloudflare Workers, CI).
  */
 import type { DateString } from './dates'
 

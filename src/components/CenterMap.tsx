@@ -10,7 +10,7 @@ interface CenterMapProps {
   onToggleCenter: (centerId: number) => void
 }
 
-const VANCOUVER: [number, number] = [49.2527, -123.1207]
+const BURNABY: [number, number] = [49.224, -122.94]
 
 export function CenterMap({ index, counts, selectedCenterIds, onToggleCenter }: CenterMapProps) {
   const selected = new Set(selectedCenterIds)
@@ -25,7 +25,7 @@ export function CenterMap({ index, counts, selectedCenterIds, onToggleCenter }: 
       className="isolate z-0 h-80 shrink-0 overflow-hidden rounded-lg border"
       data-testid="center-map"
     >
-      <MapContainer center={VANCOUVER} zoom={12} scrollWheelZoom={false} className="h-full w-full">
+      <MapContainer center={BURNABY} zoom={12} scrollWheelZoom={false} className="h-full w-full">
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"

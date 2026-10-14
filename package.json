@@ -1,6 +1,6 @@
 {
-  "name": "covac",
-  "description": "City of Vancouver Active Communities: a week-grid calendar of City of Vancouver recreation activities",
+  "name": "cobac",
+  "description": "City of Burnaby recreation: a week-grid calendar of City of Burnaby recreation activities",
   "private": true,
   "version": "0.1.0",
   "type": "module",

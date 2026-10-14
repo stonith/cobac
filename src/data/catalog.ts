@@ -67,14 +67,14 @@ export interface WeekShard {
   occurrences: Occurrence[]
 }
 
-/** Everything about one activity, including its sessions and covac links. */
+/** Everything about one activity, including its sessions and cobac links. */
 export interface ActivityDetail extends Activity {
   descriptionText: string
   center: Center
   calendar: Calendar
   facilities: string[]
   sessions: Occurrence[]
-  /** Prerendered page on covac.fyi. */
+  /** Prerendered page on cobac.fyi. */
   pageUrl: string
   /** Calendar deep link for the week of the first upcoming (or last) session. */
   link: string
@@ -83,7 +83,7 @@ export interface ActivityDetail extends Activity {
 export interface SiteMeta extends SnapshotMeta {
   /** Mondays of every week that has at least one session. */
   weeks: DateString[]
-  /** covac package version that generated the shards. */
+  /** cobac package version that generated the shards. */
   version: string
 }
 

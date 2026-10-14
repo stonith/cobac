@@ -82,7 +82,7 @@ describe('formatCollection', () => {
 describe('snapshot files', () => {
   let dir: string
   beforeEach(async () => {
-    dir = await mkdtemp(path.join(os.tmpdir(), 'covac-snapshot-'))
+    dir = await mkdtemp(path.join(os.tmpdir(), `cobac-snapshot-`))
   })
   afterEach(() => rm(dir, { recursive: true, force: true }))
 

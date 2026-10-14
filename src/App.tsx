@@ -33,9 +33,9 @@ export function App() {
     <div className="mx-auto flex max-w-screen-2xl flex-col gap-4 px-4 py-6 min-[700px]:h-dvh">
       <header className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
-          <h1 className="text-2xl font-semibold">covac</h1>
+          <h1 className="text-2xl font-semibold">cobac</h1>
           <p className="text-muted-foreground text-sm">
-            City of Vancouver Active Communities: every recreation centre, one week at a time.
+            City of Burnaby recreation: every recreation centre, one week at a time.
           </p>
         </div>
         {state.status === 'ready' && (
@@ -190,20 +190,21 @@ function Calendar({ index }: { index: SnapshotIndex }) {
       />
       <footer className="text-muted-foreground flex flex-wrap justify-between gap-x-4 gap-y-1 text-xs">
         <span>
-          Unofficial. Activity data belongs to the City of Vancouver and is mirrored from{' '}
+          Unofficial. Activity data belongs to the City of Burnaby and is mirrored from the City's
+          ActiveNet registration system. Always confirm details on{' '}
           <a
             className="underline"
-            href="https://anc.ca.apm.activecommunities.com/vancouver/calendars"
+            href="https://www.burnaby.ca/recreation-and-arts/activities-and-registration"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ActiveNet
-          </a>
-          . Always confirm details there before attending.
+            the City's activities page
+          </a>{' '}
+          before attending.
         </span>
         <a
           className="underline"
-          href="https://github.com/patsissons/covac"
+          href="https://github.com/stonith/cobac"
           target="_blank"
           rel="noopener noreferrer"
         >
