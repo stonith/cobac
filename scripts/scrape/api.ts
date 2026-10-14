@@ -74,7 +74,10 @@ export interface RawPrice {
   estimate_price: string
   free: boolean
   show_price_info_online?: boolean
-  /** Full fee table; only present on the activity details endpoint. */
+  /**
+   * Full fee table; present on the activity details endpoint and, on the City of Burnaby
+   * tenant, inline on /multicenter/events.
+   */
   prices?: RawPriceList[]
 }
 

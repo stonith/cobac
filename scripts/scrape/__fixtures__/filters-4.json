@@ -1,0 +1,202 @@
+{
+  "headers": {
+    "sessionRefreshedOn": null,
+    "sessionExtendedCount": 0,
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "total_page": 1,
+      "order_option": "ASC",
+      "total_records_per_page": 20,
+      "total_records": 0,
+      "page_number": 1
+    }
+  },
+  "body": {
+    "center": [
+      {
+        "id": 63,
+        "name": "Bonsor Recreation Complex (BON)"
+      },
+      {
+        "id": 54,
+        "name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)"
+      }
+    ],
+    "activity": [
+      {
+        "id": 110282,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110283,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110284,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110285,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110286,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110287,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110288,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110289,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 110290,
+        "name": "Reserve In Advance:  Active Aging Yoga & Core",
+        "category_id": 50,
+        "sub_category_id": 3,
+        "center_ids": [
+          63
+        ]
+      },
+      {
+        "id": 137680,
+        "name": "Reserve In Advance: Cardio Workout",
+        "category_id": 32,
+        "sub_category_id": 3,
+        "center_ids": [
+          54
+        ]
+      },
+      {
+        "id": 137681,
+        "name": "Reserve In Advance: Cardio Workout",
+        "category_id": 32,
+        "sub_category_id": 3,
+        "center_ids": [
+          54
+        ]
+      },
+      {
+        "id": 137684,
+        "name": "Reserve In Advance: Cardio Workout",
+        "category_id": 32,
+        "sub_category_id": 3,
+        "center_ids": [
+          54
+        ]
+      }
+    ],
+    "activity_category": [
+      {
+        "id": 32,
+        "name": "Group Fitness",
+        "centerIds": [
+          54
+        ]
+      },
+      {
+        "id": 50,
+        "name": "Yoga",
+        "centerIds": [
+          63
+        ]
+      }
+    ],
+    "facilities": [
+      {
+        "facility_id": 229,
+        "facility_name": "BON Yoga/Pilates Studio",
+        "center_id": 63,
+        "center_name": "Bonsor Recreation Complex (BON)",
+        "is_center_valid": true,
+        "event_type_ids": [
+          0
+        ]
+      },
+      {
+        "facility_id": 307,
+        "facility_name": "EDP Multi-purpose Room",
+        "center_id": 54,
+        "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+        "is_center_valid": true,
+        "event_type_ids": [
+          0
+        ]
+      }
+    ],
+    "calendar_period": {
+      "start_date": "2026-10-12",
+      "end_date": "2027-01-25"
+    },
+    "event_types": [],
+    "activity_center": [
+      {
+        "id": 63,
+        "name": "Bonsor Recreation Complex (BON)"
+      },
+      {
+        "id": 54,
+        "name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)"
+      }
+    ],
+    "activity_sub_category": [
+      {
+        "id": 3,
+        "name": "Adult",
+        "centerIds": [
+          54,
+          63
+        ]
+      }
+    ],
+    "permit_center": []
+  }
+}

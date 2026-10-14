@@ -7,12 +7,12 @@ import type {
   FiltersBody,
 } from './api'
 
-export const API_BASE = 'https://anc.ca.apm.activecommunities.com/vancouver/rest/onlinecalendar'
+export const API_BASE = 'https://anc.ca.apm.activecommunities.com/burnaby/rest/onlinecalendar'
 
 const HEADERS = {
   Accept: 'application/json',
   'Content-Type': 'application/json',
-  'User-Agent': 'covac scraper (+https://github.com/patsissons/covac)',
+  'User-Agent': 'cobac scraper (+https://github.com/stonith/cobac)',
 }
 
 export interface ClientOptions {

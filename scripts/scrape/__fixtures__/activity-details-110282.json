@@ -1,0 +1,162 @@
+{
+  "headers": {
+    "sessionRefreshedOn": null,
+    "sessionExtendedCount": 0,
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "order_option": "ASC",
+      "total_page": 1,
+      "total_records_per_page": 20,
+      "total_records": 0,
+      "page_number": 1
+    }
+  },
+  "body": {
+    "activity_detail": {
+      "activity_id": 110282,
+      "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+      "activity_number": "115769",
+      "wish_list_id": 0,
+      "show_wish_list": true,
+      "centers": [
+        {
+          "id": 63,
+          "name": "Bonsor Recreation Complex (BON)",
+          "address1": "6550 Bonsor Ave",
+          "address2": "",
+          "city": "Burnaby",
+          "state": "BC",
+          "zip_code": "V5H 3G4",
+          "country": "CA",
+          "phone": "(604) 297-4597",
+          "latitude": 49.2242,
+          "longitude": -122.9969
+        }
+      ],
+      "facilities": [
+        {
+          "id": 229,
+          "name": "BON Yoga/Pilates Studio",
+          "detail_url": "https://anc.ca.apm.activecommunities.com/burnaby/reservation/search/detail/simple/229?onlineSiteId=0&from_original_cui=true&online=true",
+          "address1": "6550 Bonsor Ave",
+          "address2": "",
+          "city": "Burnaby",
+          "state": "BC",
+          "zip_code": "V5H 3G4",
+          "country": "CA",
+          "phone": "(604) 297-4597",
+          "center_id": 63
+        }
+      ],
+      "allowed_gender": "Mixed",
+      "age_min_year": 40,
+      "age_min_month": 0,
+      "age_min_week": 0,
+      "age_max_year": 0,
+      "age_max_month": 0,
+      "age_max_week": 0,
+      "min_grade": null,
+      "max_grade": null,
+      "description": "<div><div>Enjoy this energizing blend of yoga and core focused exercises, with the strength of other parts of the body will also be enhanced such as the back and legs. Breathing practice will also be introduced for balancing the energy level and nervous system. Suitable for both beginners and participants with yoga experience core exercises and yoga stretches for seniors. A Thera-band may be used. End the class with a beautiful relaxing savasana. Be strong from the inside out in this moderate level yoga/moving meditation class with core exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+      "price": {
+        "show_price_info_online": true,
+        "estimate_price": "",
+        "prices": [
+          {
+            "list_name": "",
+            "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+            "details": [
+              {
+                "price": "$7.40",
+                "description": "Adult (40-64 yrs) fee for up to 64 years old"
+              },
+              {
+                "price": "$5.55",
+                "description": "Senior (65+ yrs) fee for 65 or more years old"
+              }
+            ]
+          }
+        ],
+        "registration_type_prices": [],
+        "private_lesson_enroll_now": "",
+        "not_allow_online_team_enroll": false,
+        "search_from_price": null,
+        "search_from_price_desc": "",
+        "show_all_inclusive_pricing": false,
+        "all_inclusive_total_price": null,
+        "is_package": false,
+        "free": false,
+        "simple_fee": false
+      },
+      "meeting_and_registration_dates": {
+        "activity_id": 110282,
+        "no_meeting_dates": false,
+        "user_entered": false,
+        "online_activity_date_description": "",
+        "current_date": "2026-10-13 17:24:26",
+        "additional_dates": [],
+        "activity_patterns": [
+          {
+            "beginning_date": "2026-10-14",
+            "ending_date": "2026-10-14",
+            "weeks_of_month": "",
+            "exception_dates": [],
+            "pattern_dates": [
+              {
+                "weekdays": "Wed",
+                "starting_time": "12:30:00",
+                "ending_time": "13:30:00"
+              }
+            ]
+          }
+        ],
+        "priority_enrollment_datetimes": {
+          "first_daytime_internet": null,
+          "first_daytime_internet_nonresidents": null,
+          "first_daytime_internet_members": null,
+          "last_daytime_internet": null,
+          "drop_in_first_daytime_internet": null,
+          "drop_in_first_daytime_internet_nonresidents": null,
+          "drop_in_first_daytime_internet_members": null,
+          "drop_in_last_daytime_internet": null,
+          "for_drop_in_activity": false
+        },
+        "local_priority_enrollment_datetimes": {
+          "first_daytime_internet": null,
+          "first_daytime_internet_nonresidents": null,
+          "first_daytime_internet_members": null,
+          "last_daytime_internet": null,
+          "drop_in_first_daytime_internet": null,
+          "drop_in_first_daytime_internet_nonresidents": null,
+          "drop_in_first_daytime_internet_members": null,
+          "drop_in_last_daytime_internet": null,
+          "for_drop_in_activity": false
+        },
+        "enrollment_datetimes": [
+          {
+            "first_daytime_internet": "2026-10-12 10:00:00",
+            "first_daytime_internet_nonresidents": "2026-10-13 10:00:00",
+            "first_daytime_internet_members": null,
+            "last_daytime_internet": null,
+            "drop_in_first_daytime_internet": null,
+            "drop_in_first_daytime_internet_nonresidents": null,
+            "drop_in_first_daytime_internet_members": null,
+            "drop_in_last_daytime_internet": null,
+            "for_drop_in_activity": false
+          }
+        ]
+      },
+      "first_date": "2026-10-14 00:00:00",
+      "last_date": "2026-10-14 00:00:00",
+      "space_status": "23 openings remaining",
+      "space_message": "",
+      "space_type": 2,
+      "location_description": "",
+      "allow_drop_in_reg": false,
+      "age_description": "40 yrs +",
+      "allow_flexible_class": false
+    }
+  }
+}

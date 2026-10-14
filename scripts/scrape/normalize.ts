@@ -37,6 +37,31 @@ export function calendarGroup(rawName: string): string {
   return 'Other'
 }
 
+/**
+ * The City of Burnaby's calendars have flat names with no group prefix, so their groups are
+ * curated here (mirroring the tenant's own drop-in / fitness / sports split) instead of being
+ * derived. Clean names not in the map fall back to `calendarGroup` (→ `Other` today).
+ */
+export const BURNABY_CALENDAR_GROUPS: Record<string, string> = {
+  Badminton: 'Sports',
+  'Ball Hockey': 'Sports',
+  Basketball: 'Sports',
+  'Figure Skating': 'Sports',
+  'Floor Hockey': 'Sports',
+  'Group Fitness': 'Fitness',
+  Hockey: 'Sports',
+  'Indoor Cycling': 'Fitness',
+  Lacrosse: 'Sports',
+  'Multi-sport': 'Drop-in',
+  Pickleball: 'Sports',
+  'Racquet Court': 'Sports',
+  Ringette: 'Sports',
+  Soccer: 'Sports',
+  'Table Tennis': 'Sports',
+  Volleyball: 'Sports',
+  Yoga: 'Fitness',
+}
+
 /** `YYYY-MM-DD HH:mm:ss` → `YYYY-MM-DDTHH:mm`. */
 export function toLocalIso(raw: string): string {
   const match = /^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2})/.exec(raw)
@@ -148,10 +173,11 @@ export function buildSnapshot(scrapes: CalendarScrape[], generatedAt: string): S
   let end = ''
 
   for (const { calendar, filters, centerEvents } of scrapes) {
+    const name = cleanName(calendar.name)
     calendars.push({
       id: calendar.calendar_id,
-      name: cleanName(calendar.name),
-      group: calendarGroup(calendar.name),
+      name,
+      group: BURNABY_CALENDAR_GROUPS[name] ?? calendarGroup(name),
     })
     const { start_date, end_date } = filters.calendar_period
     if (!start || start_date < start) start = start_date
@@ -171,6 +197,10 @@ export function buildSnapshot(scrapes: CalendarScrape[], generatedAt: string): S
         for (const f of event.facilities)
           addFacility(facilities, f.facility_id, f.facility_name, f.center_id)
         if (!activities.has(event.event_item_id)) {
+          // The City of Burnaby carries the full fee table inline in /multicenter/events
+          // (Vancouver only sends it on the details endpoint), so summarize it here; this is
+          // a no-op for tenants without the table.
+          const priceSummary = summarizePrice(event.price, priceLines(event.price))
           activities.set(event.event_item_id, {
             id: event.event_item_id,
             title: cleanTitle(event.title),
@@ -180,8 +210,9 @@ export function buildSnapshot(scrapes: CalendarScrape[], generatedAt: string): S
             url: event.activity_detail_url,
             description: sanitizeDescription(event.description),
             instructors: instructorNames(event.instructors),
-            priceText: summarizePrice(event.price, []),
-            free: event.price.free || FREE_TEXT.test(priceText(event.price)),
+            priceText: priceSummary,
+            free:
+              event.price.free || FREE_TEXT.test(priceText(event.price)) || priceSummary === 'Free',
           })
         }
         const s = toLocalIso(event.start_time)

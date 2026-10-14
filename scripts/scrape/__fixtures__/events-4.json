@@ -1,0 +1,756 @@
+{
+  "headers": {
+    "sessionRefreshedOn": null,
+    "sessionExtendedCount": 0,
+    "response_code": "0000",
+    "response_message": "Successful",
+    "page_info": {
+      "order_by": "",
+      "order_option": "ASC",
+      "total_page": 1,
+      "total_records_per_page": 20,
+      "total_records": 0,
+      "page_number": 1
+    }
+  },
+  "body": {
+    "center_events": [
+      {
+        "center_id": 63,
+        "center_name": "Bonsor Recreation Complex (BON)",
+        "events": [
+          {
+            "title": "Reserve In Advance:  Active Aging Yoga & Core",
+            "start_time": "2026-10-14 12:30:00",
+            "end_time": "2026-10-14 13:30:00",
+            "event_type": 0,
+            "description": "<div><div>Enjoy this energizing blend of yoga and core focused exercises, with the strength of other parts of the body will also be enhanced such as the back and legs. Breathing practice will also be introduced for balancing the energy level and nervous system. Suitable for both beginners and participants with yoga experience core exercises and yoga stretches for seniors. A Thera-band may be used. End the class with a beautiful relaxing savasana. Be strong from the inside out in this moderate level yoga/moving meditation class with core exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 110282,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-active-aging-yoga-core/110282",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 229,
+                "facility_name": "BON Yoga/Pilates Studio",
+                "center_id": 63,
+                "center_name": "Bonsor Recreation Complex (BON)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+                  "details": [
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (40-64 yrs) fee for up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance:  Active Aging Yoga & Core",
+            "start_time": "2026-10-21 12:30:00",
+            "end_time": "2026-10-21 13:30:00",
+            "event_type": 0,
+            "description": "<div><div>Enjoy this energizing blend of yoga and core focused exercises, with the strength of other parts of the body will also be enhanced such as the back and legs. Breathing practice will also be introduced for balancing the energy level and nervous system. Suitable for both beginners and participants with yoga experience core exercises and yoga stretches for seniors. A Thera-band may be used. End the class with a beautiful relaxing savasana. Be strong from the inside out in this moderate level yoga/moving meditation class with core exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 110283,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-active-aging-yoga-core/110283",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 229,
+                "facility_name": "BON Yoga/Pilates Studio",
+                "center_id": 63,
+                "center_name": "Bonsor Recreation Complex (BON)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+                  "details": [
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (40-64 yrs) fee for up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance:  Active Aging Yoga & Core",
+            "start_time": "2026-10-28 12:30:00",
+            "end_time": "2026-10-28 13:30:00",
+            "event_type": 0,
+            "description": "<div><div>Enjoy this energizing blend of yoga and core focused exercises, with the strength of other parts of the body will also be enhanced such as the back and legs. Breathing practice will also be introduced for balancing the energy level and nervous system. Suitable for both beginners and participants with yoga experience core exercises and yoga stretches for seniors. A Thera-band may be used. End the class with a beautiful relaxing savasana. Be strong from the inside out in this moderate level yoga/moving meditation class with core exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 110284,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-active-aging-yoga-core/110284",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 229,
+                "facility_name": "BON Yoga/Pilates Studio",
+                "center_id": 63,
+                "center_name": "Bonsor Recreation Complex (BON)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+                  "details": [
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (40-64 yrs) fee for up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance:  Active Aging Yoga & Core",
+            "start_time": "2026-11-04 12:30:00",
+            "end_time": "2026-11-04 13:30:00",
+            "event_type": 0,
+            "description": "<div><div>Enjoy this energizing blend of yoga and core focused exercises, with the strength of other parts of the body will also be enhanced such as the back and legs. Breathing practice will also be introduced for balancing the energy level and nervous system. Suitable for both beginners and participants with yoga experience core exercises and yoga stretches for seniors. A Thera-band may be used. End the class with a beautiful relaxing savasana. Be strong from the inside out in this moderate level yoga/moving meditation class with core exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 110285,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-active-aging-yoga-core/110285",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 229,
+                "facility_name": "BON Yoga/Pilates Studio",
+                "center_id": 63,
+                "center_name": "Bonsor Recreation Complex (BON)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+                  "details": [
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (40-64 yrs) fee for up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance:  Active Aging Yoga & Core",
+            "start_time": "2026-11-18 12:30:00",
+            "end_time": "2026-11-18 13:30:00",
+            "event_type": 0,
+            "description": "<div><div>Enjoy this energizing blend of yoga and core focused exercises, with the strength of other parts of the body will also be enhanced such as the back and legs. Breathing practice will also be introduced for balancing the energy level and nervous system. Suitable for both beginners and participants with yoga experience core exercises and yoga stretches for seniors. A Thera-band may be used. End the class with a beautiful relaxing savasana. Be strong from the inside out in this moderate level yoga/moving meditation class with core exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 110286,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-active-aging-yoga-core/110286",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 229,
+                "facility_name": "BON Yoga/Pilates Studio",
+                "center_id": 63,
+                "center_name": "Bonsor Recreation Complex (BON)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+                  "details": [
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (40-64 yrs) fee for up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance:  Active Aging Yoga & Core",
+            "start_time": "2026-11-25 12:30:00",
+            "end_time": "2026-11-25 13:30:00",
+            "event_type": 0,
+            "description": "<div><div>Enjoy this energizing blend of yoga and core focused exercises, with the strength of other parts of the body will also be enhanced such as the back and legs. Breathing practice will also be introduced for balancing the energy level and nervous system. Suitable for both beginners and participants with yoga experience core exercises and yoga stretches for seniors. A Thera-band may be used. End the class with a beautiful relaxing savasana. Be strong from the inside out in this moderate level yoga/moving meditation class with core exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 110287,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-active-aging-yoga-core/110287",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 229,
+                "facility_name": "BON Yoga/Pilates Studio",
+                "center_id": 63,
+                "center_name": "Bonsor Recreation Complex (BON)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance:  Active Aging Yoga & Core",
+                  "details": [
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (40-64 yrs) fee for up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          }
+        ],
+        "total": 9,
+        "extra_notes": ""
+      },
+      {
+        "center_id": 54,
+        "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+        "events": [
+          {
+            "title": "Reserve In Advance: Cardio Workout",
+            "start_time": "2026-10-15 11:45:00",
+            "end_time": "2026-10-15 12:45:00",
+            "event_type": 0,
+            "description": "<div><div>Reserve in advance is available for this activity. Low impact cardio workout followed by body weight strength and core conditioning exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 137680,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-cardio-workout/137680",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 307,
+                "facility_name": "EDP Multi-purpose Room",
+                "center_id": 54,
+                "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance: Cardio Workout",
+                  "details": [
+                    {
+                      "price": "$3.70",
+                      "description": "Child (14 yrs) fee for 5 up to 14 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Youth (15-25 yrs) fee for 15 up to 25 years old"
+                    },
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (26-64 yrs) fee for 26 up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance: Cardio Workout",
+            "start_time": "2026-10-22 11:45:00",
+            "end_time": "2026-10-22 12:45:00",
+            "event_type": 0,
+            "description": "<div><div>Reserve in advance is available for this activity. Low impact cardio workout followed by body weight strength and core conditioning exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 137681,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-cardio-workout/137681",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 307,
+                "facility_name": "EDP Multi-purpose Room",
+                "center_id": 54,
+                "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance: Cardio Workout",
+                  "details": [
+                    {
+                      "price": "$3.70",
+                      "description": "Child (14 yrs) fee for 5 up to 14 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Youth (15-25 yrs) fee for 15 up to 25 years old"
+                    },
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (26-64 yrs) fee for 26 up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance: Cardio Workout",
+            "start_time": "2026-10-29 11:45:00",
+            "end_time": "2026-10-29 12:45:00",
+            "event_type": 0,
+            "description": "<div><div>Reserve in advance is available for this activity. Low impact cardio workout followed by body weight strength and core conditioning exercises.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 137684,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-cardio-workout/137684",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 307,
+                "facility_name": "EDP Multi-purpose Room",
+                "center_id": 54,
+                "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance: Cardio Workout",
+                  "details": [
+                    {
+                      "price": "$3.70",
+                      "description": "Child (14 yrs) fee for 5 up to 14 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Youth (15-25 yrs) fee for 15 up to 25 years old"
+                    },
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (26-64 yrs) fee for 26 up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance: Core & More",
+            "start_time": "2026-10-12 12:00:00",
+            "end_time": "2026-10-12 13:00:00",
+            "event_type": 0,
+            "description": "<div><div>Reserve in advance is available for this activity. (All levels/moderate) Improve your functional core strength with muscle-strengthening exercises that focus on your abs, back, and more. No cardio component in this class.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 137476,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-core-more/137476",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 307,
+                "facility_name": "EDP Multi-purpose Room",
+                "center_id": 54,
+                "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance: Core & More",
+                  "details": [
+                    {
+                      "price": "$5.55",
+                      "description": "Youth (15-25 yrs) fee for 15 up to 25 years old"
+                    },
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (26-64 yrs) fee for 26 up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance: Core & More",
+            "start_time": "2026-10-19 12:00:00",
+            "end_time": "2026-10-19 13:00:00",
+            "event_type": 0,
+            "description": "<div><div>Reserve in advance is available for this activity. (All levels/moderate) Improve your functional core strength with muscle-strengthening exercises that focus on your abs, back, and more. No cardio component in this class.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 137480,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-core-more/137480",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 307,
+                "facility_name": "EDP Multi-purpose Room",
+                "center_id": 54,
+                "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance: Core & More",
+                  "details": [
+                    {
+                      "price": "$5.55",
+                      "description": "Youth (15-25 yrs) fee for 15 up to 25 years old"
+                    },
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (26-64 yrs) fee for 26 up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          },
+          {
+            "title": "Reserve In Advance: Core & More",
+            "start_time": "2026-10-26 12:00:00",
+            "end_time": "2026-10-26 13:00:00",
+            "event_type": 0,
+            "description": "<div><div>Reserve in advance is available for this activity. (All levels/moderate) Improve your functional core strength with muscle-strengthening exercises that focus on your abs, back, and more. No cardio component in this class.</div><div><br></div><div>Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.</div><div><br></div><div>If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.</div></div>",
+            "event_item_id": 137483,
+            "online_new_activity": false,
+            "activity_detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-core-more/137483",
+            "activity_location_desc": "",
+            "facilities": [
+              {
+                "facility_id": 307,
+                "facility_name": "EDP Multi-purpose Room",
+                "center_id": 54,
+                "center_name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
+                "is_center_valid": true,
+                "event_type_ids": []
+              }
+            ],
+            "reservation_event_type_id": 0,
+            "price": {
+              "show_price_info_online": true,
+              "estimate_price": "",
+              "prices": [
+                {
+                  "list_name": "",
+                  "activity_name": "Reserve In Advance: Core & More",
+                  "details": [
+                    {
+                      "price": "$5.55",
+                      "description": "Youth (15-25 yrs) fee for 15 up to 25 years old"
+                    },
+                    {
+                      "price": "$7.40",
+                      "description": "Adult (26-64 yrs) fee for 26 up to 64 years old"
+                    },
+                    {
+                      "price": "$5.55",
+                      "description": "Senior (65+ yrs) fee for 65 or more years old"
+                    }
+                  ]
+                }
+              ],
+              "registration_type_prices": [],
+              "private_lesson_enroll_now": "",
+              "not_allow_online_team_enroll": false,
+              "search_from_price": null,
+              "search_from_price_desc": "",
+              "show_all_inclusive_pricing": false,
+              "all_inclusive_total_price": null,
+              "is_package": false,
+              "free": false,
+              "simple_fee": false
+            },
+            "instructors": [],
+            "background_color": null,
+            "text_color": null,
+            "action_link": null,
+            "allow_flexible_class": false
+          }
+        ],
+        "total": 82,
+        "extra_notes": ""
+      }
+    ]
+  }
+}

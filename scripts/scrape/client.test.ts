@@ -16,7 +16,7 @@ describe('createClient', () => {
     const client = createClient({ fetch: fetchMock as unknown as typeof fetch })
     await expect(client.calendars()).resolves.toEqual({ calendars: [] })
     expect(fetchMock.mock.calls[0]?.[0]).toBe(
-      'https://anc.ca.apm.activecommunities.com/vancouver/rest/onlinecalendar/calendars?locale=en-US',
+      'https://anc.ca.apm.activecommunities.com/burnaby/rest/onlinecalendar/calendars?locale=en-US',
     )
   })
 

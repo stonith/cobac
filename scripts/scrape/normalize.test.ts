@@ -7,10 +7,12 @@ import type {
   CalendarsBody,
   EventsBody,
   FiltersBody,
+  RawCalendar,
   RawPrice,
 } from './api'
 import {
   applyEnrichment,
+  BURNABY_CALENDAR_GROUPS,
   buildSnapshot,
   calendarGroup,
   cleanName,
@@ -28,11 +30,11 @@ const fixture = <T>(name: string): T =>
   JSON.parse(readFileSync(path.join(import.meta.dirname, '__fixtures__', name), 'utf8')) as T
 
 const calendars = fixture<ApiEnvelope<CalendarsBody>>('calendars.json').body.calendars
-const filters = fixture<ApiEnvelope<FiltersBody>>('filters-55.json').body
-const events = fixture<ApiEnvelope<EventsBody>>('events-55.json').body.center_events
-const detail = fixture<ApiEnvelope<ActivityDetailBody>>('activity-details-526347.json').body
+const filters = fixture<ApiEnvelope<FiltersBody>>('filters-4.json').body
+const events = fixture<ApiEnvelope<EventsBody>>('events-4.json').body.center_events
+const detail = fixture<ApiEnvelope<ActivityDetailBody>>('activity-details-110282.json').body
   .activity_detail
-const swimming = calendars.find((c) => c.calendar_id === 55)!
+const groupFitness = calendars.find((c) => c.calendar_id === 4)!
 
 describe('cleanName', () => {
   it('strips ActiveNet sort prefixes', () => {
@@ -40,12 +42,22 @@ describe('cleanName', () => {
     expect(cleanName('*Britannia Pool')).toBe('Britannia Pool')
     expect(cleanName('Sports: Soccer')).toBe('Sports: Soccer')
   })
+
+  it('keeps Burnaby centre names with abbreviation suffixes verbatim', () => {
+    expect(cleanName('Bonsor Recreation Complex (BON)')).toBe('Bonsor Recreation Complex (BON)')
+  })
 })
 
 describe('cleanTitle', () => {
   it('strips surrounding pipes', () => {
     expect(cleanTitle('|Free Swim|')).toBe('Free Swim')
     expect(cleanTitle('Aquafit - Shallow Moderate')).toBe('Aquafit - Shallow Moderate')
+  })
+
+  it('keeps the Burnaby "Reserve In Advance:" registration-mode prefix', () => {
+    expect(cleanTitle('Reserve In Advance:  Active Aging Yoga & Core')).toBe(
+      'Reserve In Advance:  Active Aging Yoga & Core',
+    )
   })
 })
 
@@ -56,6 +68,23 @@ describe('calendarGroup', () => {
     expect(calendarGroup('Art & Culture: Pottery & Woodworking')).toBe('Art & Culture')
     expect(calendarGroup('Various/Other Drop-in Activities')).toBe('Drop-in')
     expect(calendarGroup('Queer Inclusion')).toBe('Other')
+  })
+})
+
+describe('BURNABY_CALENDAR_GROUPS', () => {
+  it('curates a group for every calendar on the tenant', () => {
+    for (const calendar of calendars) {
+      expect(BURNABY_CALENDAR_GROUPS[cleanName(calendar.name)], calendar.name).toBeTruthy()
+    }
+  })
+
+  it('maps fitness, sports and multi-sport calendars', () => {
+    expect(BURNABY_CALENDAR_GROUPS['Group Fitness']).toBe('Fitness')
+    expect(BURNABY_CALENDAR_GROUPS['Indoor Cycling']).toBe('Fitness')
+    expect(BURNABY_CALENDAR_GROUPS['Yoga']).toBe('Fitness')
+    expect(BURNABY_CALENDAR_GROUPS['Multi-sport']).toBe('Drop-in')
+    expect(BURNABY_CALENDAR_GROUPS['Pickleball']).toBe('Sports')
+    expect(BURNABY_CALENDAR_GROUPS['Racquet Court']).toBe('Sports')
   })
 })
 
@@ -118,45 +147,75 @@ describe('sanitizeDescription', () => {
 })
 
 describe('isPublicCalendar', () => {
-  it('excludes the placeholder calendar', () => {
-    expect(calendars.filter(isPublicCalendar).map((c) => c.calendar_id)).not.toContain(23)
-    expect(isPublicCalendar(swimming)).toBe(true)
+  it('keeps every calendar on the City of Burnaby tenant', () => {
+    expect(calendars.filter(isPublicCalendar)).toHaveLength(17)
+  })
+
+  it('excludes retired, hidden and placeholder calendars', () => {
+    const base: RawCalendar = {
+      calendar_id: 1,
+      name: 'Badminton',
+      min_time: 6,
+      max_time: 23,
+      first_day: 1,
+      include_weekends: true,
+      hide_on_internet: false,
+      retired: false,
+      notes: '',
+    }
+    expect(isPublicCalendar(base)).toBe(true)
+    expect(isPublicCalendar({ ...base, retired: true })).toBe(false)
+    expect(isPublicCalendar({ ...base, hide_on_internet: true })).toBe(false)
+    expect(isPublicCalendar({ ...base, name: 'Choose a Calendar' })).toBe(false)
   })
 })
 
 describe('buildSnapshot', () => {
   const snapshot = buildSnapshot(
-    [{ calendar: swimming, filters, centerEvents: events }],
-    '2026-09-09T00:00:00.000Z',
+    [{ calendar: groupFitness, filters, centerEvents: events }],
+    '2026-10-13T00:00:00.000Z',
   )
 
-  it('records the period and calendar', () => {
-    expect(snapshot.period).toEqual({ start: '2026-09-06', end: '2026-11-01' })
-    expect(snapshot.calendars).toEqual([{ id: 55, name: 'Public Swimming', group: 'Drop-in' }])
+  it('records the period and the curated calendar group', () => {
+    expect(snapshot.period).toEqual({ start: '2026-10-12', end: '2027-01-25' })
+    expect(snapshot.calendars).toEqual([{ id: 4, name: 'Group Fitness', group: 'Fitness' }])
   })
 
-  it('collects every centre and facility from filters with clean names', () => {
-    expect(snapshot.centers).toHaveLength(filters.center.length)
-    expect(snapshot.centers.every((c) => !c.name.startsWith('*'))).toBe(true)
-    expect(snapshot.facilities.find((f) => f.id === 207)).toEqual({
-      id: 207,
-      name: 'Britannia Pool',
-      centerId: 37,
+  it('collects every centre and facility from filters with verbatim names', () => {
+    expect(snapshot.centers).toEqual([
+      { id: 63, name: 'Bonsor Recreation Complex (BON)' },
+      { id: 54, name: 'Eileen Dailly Leisure Pool & Fitness Centre (EDP)' },
+    ])
+    expect(snapshot.facilities.find((f) => f.id === 229)).toEqual({
+      id: 229,
+      name: 'BON Yoga/Pilates Studio',
+      centerId: 63,
+    })
+    expect(snapshot.facilities.find((f) => f.id === 307)).toEqual({
+      id: 307,
+      name: 'EDP Multi-purpose Room',
+      centerId: 54,
     })
   })
 
-  it('dedupes activities by event_item_id and keeps one occurrence per session', () => {
+  it('keeps one activity per occurrence id with the inline fee table summarized', () => {
+    // On the City of Burnaby tenant each occurrence is its own registrable activity, so the
+    // per-occurrence event_item_id doubles as the activity id and titles repeat across weeks.
     const rawEvents = events.flatMap((c) => c.events)
-    const ids = new Set(rawEvents.map((e) => e.event_item_id))
-    expect(snapshot.activities).toHaveLength(ids.size)
+    expect(snapshot.activities).toHaveLength(new Set(rawEvents.map((e) => e.event_item_id)).size)
     expect(snapshot.occurrences).toHaveLength(rawEvents.length)
-    const freeSwim = snapshot.activities.find((a) => a.id === 526347)!
-    expect(freeSwim.title).toBe('Free Swim')
-    expect(freeSwim.centerId).toBe(37)
-    expect(freeSwim.facilityIds).toEqual([207])
-    expect(freeSwim.calendarId).toBe(55)
-    expect(freeSwim.description).not.toContain('<table')
-    expect(freeSwim.description).toContain('Recreational swim')
+    const yoga = snapshot.activities.find((a) => a.id === 110282)!
+    expect(yoga.title).toBe('Reserve In Advance:  Active Aging Yoga & Core')
+    expect(yoga.calendarId).toBe(4)
+    expect(yoga.centerId).toBe(63)
+    expect(yoga.facilityIds).toEqual([229])
+    expect(yoga.url).toBe(
+      'https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-active-aging-yoga-core/110282',
+    )
+    expect(yoga.priceText).toBe('from $5.55')
+    expect(yoga.free).toBe(false)
+    expect(yoga.description).toContain('yoga')
+    expect(yoga.description).not.toContain('<table')
   })
 
   it('sorts occurrences by start time', () => {
@@ -167,41 +226,46 @@ describe('buildSnapshot', () => {
 
   it('is deterministic for the same input', () => {
     const again = buildSnapshot(
-      [{ calendar: swimming, filters, centerEvents: events }],
-      '2026-09-09T00:00:00.000Z',
+      [{ calendar: groupFitness, filters, centerEvents: events }],
+      '2026-10-13T00:00:00.000Z',
     )
     expect(again).toEqual(snapshot)
   })
 })
 
 describe('applyEnrichment', () => {
-  it('adds age, openings, dates and centre coordinates', () => {
+  it('adds age, openings, dates, prices and centre coordinates', () => {
     const snapshot = buildSnapshot(
-      [{ calendar: swimming, filters, centerEvents: events }],
-      '2026-09-09T00:00:00.000Z',
+      [{ calendar: groupFitness, filters, centerEvents: events }],
+      '2026-10-13T00:00:00.000Z',
     )
-    const enriched = applyEnrichment(snapshot, new Map([[526347, detail]]))
+    const enriched = applyEnrichment(snapshot, new Map([[110282, detail]]))
     expect(enriched).toBe(1)
-    const freeSwim = snapshot.activities.find((a) => a.id === 526347)!
-    expect(freeSwim.ageMin).toBe(13)
-    expect(freeSwim.ageMax).toBe(18)
-    expect(freeSwim.ageText).toBe('Age at least 13 yrs but less than 18y 11m')
-    expect(freeSwim.openings).toBe('100 openings remaining')
-    expect(freeSwim.availability).toBe('open')
-    expect(freeSwim.spaces).toBe(100)
-    expect(freeSwim.firstDate).toBe('2026-09-01')
-    expect(freeSwim.lastDate).toBe('2026-11-10')
-    const britannia = snapshot.centers.find((c) => c.id === 37)!
-    expect(britannia.lat).toBeCloseTo(49.2756)
-    expect(britannia.lng).toBeCloseTo(-123.0707)
-    expect(britannia.address).toBe('1661 Napier Street, Vancouver')
-    expect(britannia.phone).toBe('(604) 718-5831')
+    const yoga = snapshot.activities.find((a) => a.id === 110282)!
+    expect(yoga.ageMin).toBe(40)
+    expect(yoga.ageMax).toBe(0)
+    expect(yoga.ageText).toBe('40 yrs +')
+    expect(yoga.openings).toBe('23 openings remaining')
+    expect(yoga.availability).toBe('open')
+    expect(yoga.spaces).toBe(23)
+    expect(yoga.firstDate).toBe('2026-10-14')
+    expect(yoga.lastDate).toBe('2026-10-14')
+    expect(yoga.priceText).toBe('from $5.55')
+    expect(yoga.prices).toEqual([
+      { price: '$7.40', description: 'Adult (40-64 yrs) fee for up to 64 years old' },
+      { price: '$5.55', description: 'Senior (65+ yrs) fee for 65 or more years old' },
+    ])
+    const bonsor = snapshot.centers.find((c) => c.id === 63)!
+    expect(bonsor.lat).toBeCloseTo(49.2242)
+    expect(bonsor.lng).toBeCloseTo(-122.9969)
+    expect(bonsor.address).toBe('6550 Bonsor Ave, Burnaby')
+    expect(bonsor.phone).toBe('(604) 297-4597')
   })
 
   it('leaves activities without details untouched', () => {
     const snapshot = buildSnapshot(
-      [{ calendar: swimming, filters, centerEvents: events }],
-      '2026-09-09T00:00:00.000Z',
+      [{ calendar: groupFitness, filters, centerEvents: events }],
+      '2026-10-13T00:00:00.000Z',
     )
     expect(applyEnrichment(snapshot, new Map())).toBe(0)
     expect(snapshot.activities.every((a) => a.ageText === undefined)).toBe(true)
@@ -280,16 +344,12 @@ describe('price helpers', () => {
     expect(summarizePrice(price({}), [])).toBe('')
   })
 
-  it('applies enrichment prices to activities', () => {
-    const snapshot = buildSnapshot(
-      [{ calendar: swimming, filters, centerEvents: events }],
-      '2026-09-09T00:00:00.000Z',
-    )
-    const priced = { ...detail, price: price({ show_price_info_online: true, prices: table }) }
-    applyEnrichment(snapshot, new Map([[526347, priced]]))
-    const freeSwim = snapshot.activities.find((a) => a.id === 526347)!
-    expect(freeSwim.priceText).toBe('from $112.00')
-    expect(freeSwim.prices).toHaveLength(3)
-    expect(freeSwim.free).toBe(false)
+  it('summarizes the inline fee table that the City of Burnaby events endpoint carries', () => {
+    const inline = events[0]!.events.find((e) => e.event_item_id === 110282)!.price
+    expect(priceLines(inline)).toEqual([
+      { price: '$7.40', description: 'Adult (40-64 yrs) fee for up to 64 years old' },
+      { price: '$5.55', description: 'Senior (65+ yrs) fee for 65 or more years old' },
+    ])
+    expect(summarizePrice(inline, priceLines(inline))).toBe('from $5.55')
   })
 })
