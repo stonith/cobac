@@ -12,6 +12,22 @@ import {
 } from './catalog'
 
 describe('buildCatalog', () => {
+  it('classifies from full descriptions rather than truncated search blurbs', () => {
+    const activities = buildCatalog({
+      ...snapshot,
+      activities: [
+        {
+          ...snapshot.activities[0]!,
+          title: 'Reserve In Advance: Yoga',
+          description: `${'Course description. '.repeat(30)}No drop-in option.`,
+        },
+        snapshot.activities[1]!,
+      ],
+    }).activities
+    expect(activities[0]!.blurb).not.toContain('No drop-in')
+    expect(activities[0]!.dropIn).toBeUndefined()
+    expect(activities[1]!.dropIn).toBe(true)
+  })
   it('keeps the searchable fields and drops the heavy ones', () => {
     const catalog = buildCatalog(snapshot)
     expect(catalog.period).toEqual(snapshot.period)

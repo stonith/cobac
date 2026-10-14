@@ -18,6 +18,7 @@ import { addDays, dateOf, startOfWeek, type DateString } from './dates'
 import type { SnapshotIndex } from './index'
 import { activityDeepLink, activityPageUrl } from './links'
 import { activityPrice } from './prices'
+import { isDropInActivity } from './dropIn'
 import { blurb, htmlToText } from './text'
 
 /** One activity without its description HTML, fee table or URL: enough to search and filter. */
@@ -29,6 +30,8 @@ export interface CatalogActivity {
   instructors?: string[]
   priceText: string
   free: boolean
+  /** Derived from full source descriptions at build time; absent means not classified as drop-in. */
+  dropIn?: boolean
   /** Lowest known price in dollars (0 = free); absent when the snapshot has no price. */
   price?: number
   ageMin?: number
@@ -97,7 +100,11 @@ export function occurrencesByActivity(occurrences: Occurrence[]): Map<number, Oc
   return map
 }
 
-export function toCatalogActivity(activity: Activity, sessions: Occurrence[]): CatalogActivity {
+export function toCatalogActivity(
+  activity: Activity,
+  sessions: Occurrence[],
+  calendarGroup?: string,
+): CatalogActivity {
   const price = activityPrice(activity)
   const text = blurb(htmlToText(activity.description))
   const row: CatalogActivity = {
@@ -109,6 +116,7 @@ export function toCatalogActivity(activity: Activity, sessions: Occurrence[]): C
     free: activity.free,
     n: sessions.length,
   }
+  if (isDropInActivity(activity, calendarGroup)) row.dropIn = true
   if (activity.instructors.length) row.instructors = activity.instructors
   if (price !== undefined) row.price = price
   if (activity.ageMin !== undefined) row.ageMin = activity.ageMin
@@ -127,10 +135,13 @@ export function toCatalogActivity(activity: Activity, sessions: Occurrence[]): C
 
 export function buildCatalog(snapshot: Snapshot): Catalog {
   const byActivity = occurrencesByActivity(snapshot.occurrences)
+  const groups = new Map(snapshot.calendars.map((c) => [c.id, c.group]))
   return {
     generatedAt: snapshot.generatedAt,
     period: snapshot.period,
-    activities: snapshot.activities.map((a) => toCatalogActivity(a, byActivity.get(a.id) ?? [])),
+    activities: snapshot.activities.map((a) =>
+      toCatalogActivity(a, byActivity.get(a.id) ?? [], groups.get(a.calendarId)),
+    ),
   }
 }
 

@@ -5,6 +5,17 @@ import { filtersFromSearch, filtersToSearch } from './url'
 const defaultWeek = '2026-09-07'
 
 describe('url filters', () => {
+  it('persists the independent drop-in toggle and defaults to off', () => {
+    expect(filtersFromSearch('?dropin=1&cal=4', defaultWeek)).toMatchObject({
+      dropInOnly: true,
+      calendarIds: [4],
+    })
+    expect(filtersToSearch({ ...emptyFilters(defaultWeek), dropInOnly: true }, defaultWeek)).toBe(
+      '?dropin=1',
+    )
+    expect(filtersFromSearch('?dropin=0', defaultWeek).dropInOnly).toBe(false)
+    expect(filtersFromSearch('', defaultWeek).dropInOnly).toBe(false)
+  })
   it('round-trips supplemental calendar ids while rejecting negative centres and days', () => {
     const filters = filtersFromSearch('?cal=-26,4&centers=-158,63&days=-1,3', defaultWeek)
     expect(filters.calendarIds).toEqual([-26, 4])
@@ -25,6 +36,7 @@ describe('url filters', () => {
       priceMin: 5,
       priceMax: 20.5,
       openOnly: true,
+      dropInOnly: false,
       activity: 389427,
     }
     const search = filtersToSearch(filters, defaultWeek)

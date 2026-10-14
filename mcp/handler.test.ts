@@ -204,6 +204,21 @@ describe('search and fetch (ChatGPT contract)', () => {
 })
 
 describe('domain tools', () => {
+  it('finds reservation-based drop-ins across groups and includes the toggle in calendar links', async () => {
+    const { json } = await call('find_activities', {
+      dateFrom: '2026-09-07',
+      dateTo: '2026-09-13',
+      dropInOnly: true,
+      group: 'Sports',
+    })
+    const out = json.result!.structuredContent as { results: { id: number }[]; link: string }
+    expect(out.results.map((r) => r.id)).toEqual([2])
+    expect(new URL(out.link).searchParams.get('dropin')).toBe('1')
+    const { json: schedule } = await call('get_schedule', { date: '2026-09-12', dropInOnly: true })
+    const day = schedule.result!.structuredContent as { total: number; link: string }
+    expect(day.total).toBe(1)
+    expect(new URL(day.link).searchParams.get('dropin')).toBe('1')
+  })
   it('find_activities filters sessions and links to the calendar', async () => {
     const { json } = await call('find_activities', {
       dateFrom: '2026-09-07',

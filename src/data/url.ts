@@ -33,6 +33,7 @@ export function filtersFromSearch(search: string, defaultWeek: DateString): Filt
   filters.priceMin = price(params.get('pmin'))
   filters.priceMax = price(params.get('pmax'))
   filters.openOnly = params.get('open') === '1'
+  filters.dropInOnly = params.get('dropin') === '1'
   const activity = Number(params.get('activity'))
   filters.activity = Number.isInteger(activity) && activity > 0 ? activity : null
   return filters
@@ -52,6 +53,7 @@ export function filtersToSearch(filters: Filters, defaultWeek: DateString): stri
   if (filters.priceMin !== null) params.set('pmin', String(filters.priceMin))
   if (filters.priceMax !== null) params.set('pmax', String(filters.priceMax))
   if (filters.openOnly) params.set('open', '1')
+  if (filters.dropInOnly) params.set('dropin', '1')
   if (filters.activity !== null) params.set('activity', String(filters.activity))
   const search = params.toString()
   return search ? `?${search}` : ''

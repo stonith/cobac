@@ -1,6 +1,7 @@
 import type { Activity, Calendar, Center, Facility, Occurrence, Snapshot } from '@/types/snapshot'
 import { dateOf, type DateString } from './dates'
 import { activityPrice, priceCeiling } from './prices'
+import { isDropInActivity } from './dropIn'
 
 /** Lookup tables over a snapshot, built once after load. */
 export interface SnapshotIndex {
@@ -17,6 +18,8 @@ export interface SnapshotIndex {
   priceById: Map<number, number>
   /** Top of the price slider, derived from the priciest activity. */
   priceCeiling: number
+  /** Classified once from full descriptions; spans source calendar groups. */
+  dropInActivityIds: Set<number>
 }
 
 export function buildIndex(snapshot: Snapshot): SnapshotIndex {
@@ -35,11 +38,18 @@ export function buildIndex(snapshot: Snapshot): SnapshotIndex {
     const price = activityPrice(activity)
     if (price !== undefined) priceById.set(activity.id, price)
   }
+  const calendarById = new Map(snapshot.calendars.map((c) => [c.id, c]))
+  const dropInActivityIds = new Set(
+    snapshot.activities
+      .filter((a) => isDropInActivity(a, calendarById.get(a.calendarId)?.group))
+      .map((a) => a.id),
+  )
   return {
     snapshot,
+    dropInActivityIds,
     activityById: new Map(snapshot.activities.map((a) => [a.id, a])),
     centerById: new Map(snapshot.centers.map((c) => [c.id, c])),
-    calendarById: new Map(snapshot.calendars.map((c) => [c.id, c])),
+    calendarById,
     facilityById: new Map(snapshot.facilities.map((f) => [f.id, f])),
     byDay,
     groups,

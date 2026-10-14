@@ -33,6 +33,8 @@ export interface SearchCriteria {
   /** Highest price in dollars; activities with an unknown price are excluded when set. */
   priceMax?: number
   freeOnly?: boolean
+  /** Classified from full descriptions by the catalog generator, not truncated blurbs. */
+  dropInOnly?: boolean
   /** Drop activities known to be full, closed or cancelled. */
   availableOnly?: boolean
   /** Participant age; activities whose known range excludes it are dropped. */
@@ -81,6 +83,7 @@ export function matchesActivity(
     if (group?.toLowerCase() !== c.group.trim().toLowerCase()) return false
   }
   if (c.freeOnly && !activity.free && activity.price !== 0) return false
+  if (c.dropInOnly && !activity.dropIn) return false
   if (c.availableOnly && !isAvailable(activity)) return false
   if (c.priceMax !== undefined) {
     if (activity.price === undefined || activity.price > c.priceMax) return false

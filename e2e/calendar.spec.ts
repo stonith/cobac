@@ -86,6 +86,58 @@ test('supplemental drop-in dance is searchable and its calendar filter survives 
   )
 })
 
+test('the blue Drop-in toggle spans calendars, survives reload and clears independently', async ({
+  page,
+}) => {
+  const record = JSON.parse(
+    readFileSync('scripts/scrape/__fixtures__/program-138791.json', 'utf8'),
+  ) as ProgramRecord
+  const snapshot = buildSnapshot([], '2026-10-14T06:00:00Z')
+  snapshot.period = { start: '2026-10-12', end: '2026-10-18' }
+  mergePrograms(snapshot, [record], [{ id: '26', desc: 'Dance' }])
+  const dance = snapshot.activities[0]!
+  snapshot.calendars.push({ id: 4, name: 'Group Fitness', group: 'Fitness' })
+  snapshot.activities.push(
+    {
+      ...dance,
+      id: 138792,
+      title: 'Reserve In Advance: Yoga',
+      calendarId: 4,
+      description: 'Pay the drop-in rate at registration.',
+    },
+    { ...dance, id: 138793, title: 'Ballet Advanced', description: 'No drop-in option.' },
+  )
+  snapshot.occurrences.push(
+    { a: 138792, s: '2026-10-14T14:00', e: '2026-10-14T15:00' },
+    { a: 138793, s: '2026-10-14T16:00', e: '2026-10-14T17:00' },
+  )
+  await page.route('**/data/snapshot.json', (route) => route.fulfill({ json: snapshot }))
+  await page.goto('/?week=2026-10-12')
+  const toggle = page.getByRole('button', { name: 'Drop-in', exact: true })
+  const chips = page.getByRole('table').getByRole('button')
+  await expect(chips).toHaveCount(3)
+  await toggle.click()
+  await expect(toggle).toHaveAttribute('aria-pressed', 'true')
+  await expect(page).toHaveURL(/dropin=1/)
+  await expect(page).not.toHaveURL(/cal=/)
+  await expect(chips).toHaveCount(2)
+  await expect(chips.filter({ hasText: 'Ballet Advanced' })).toHaveCount(0)
+  await expect(chips.filter({ hasText: 'Reserve In Advance: Yoga' })).toBeVisible()
+  await page.reload()
+  await expect(toggle).toHaveAttribute('aria-pressed', 'true')
+  await expect(chips).toHaveCount(2)
+  await page.getByRole('button', { name: 'Fitness', exact: true }).click()
+  await expect(chips).toHaveCount(1)
+  await expect(chips).toContainText('Reserve In Advance: Yoga')
+  await page.getByRole('button', { name: /Clear filters/ }).click()
+  await expect(toggle).toHaveAttribute('aria-pressed', 'false')
+  await expect(page).not.toHaveURL(/dropin=|cal=/)
+  await expect(chips).toHaveCount(3)
+  await toggle.click()
+  await toggle.click()
+  await expect(chips).toHaveCount(3)
+})
+
 test('renders the time grid by default with every location stacked', async ({ page }) => {
   await gotoWeek(page)
   await expect(page.getByRole('heading', { level: 1, name: 'cobac' })).toBeVisible()

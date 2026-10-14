@@ -19,6 +19,10 @@ export const getSchedule = defineTool({
       .optional()
       .describe('Calendar group: Drop-in, Fitness, Sports, Art & Culture or Programs'),
     calendarIds: calendarIdList.optional(),
+    dropInOnly: z
+      .boolean()
+      .optional()
+      .describe('Drop-in participation across calendars; advance booking may be required'),
     limit: z.number().int().min(1).max(500).optional().describe('Maximum sessions (default 200)'),
   }),
   outputSchema: z.object({
@@ -68,6 +72,7 @@ export const getSchedule = defineTool({
       dateTo: date,
       centerIds: args.centerId ? [args.centerId] : undefined,
       calendarIds,
+      dropInOnly: args.dropInOnly,
     })
     const limit = args.limit ?? 200
     const shown = occurrences.slice(0, limit)
@@ -92,7 +97,7 @@ export const getSchedule = defineTool({
       byCentre.set(activity.centerId, centre)
     }
     const centres = [...byCentre.values()].sort((a, b) => a.name.localeCompare(b.name))
-    const link = `${ctx.site}/?week=${startOfWeek(date)}${args.centerId ? `&centers=${args.centerId}` : ''}${calendarIds?.length ? `&cal=${calendarIds.join(',')}` : ''}`
+    const link = `${ctx.site}/?week=${startOfWeek(date)}${args.centerId ? `&centers=${args.centerId}` : ''}${calendarIds?.length ? `&cal=${calendarIds.join(',')}` : ''}${args.dropInOnly ? '&dropin=1' : ''}`
     const structuredContent = {
       date,
       total: occurrences.length,

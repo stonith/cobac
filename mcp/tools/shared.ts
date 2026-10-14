@@ -73,6 +73,7 @@ export function calendarLink(
     days?: number[]
     priceMax?: number
     openOnly?: boolean
+    dropInOnly?: boolean
   },
 ): string {
   return deepLink(
@@ -86,6 +87,7 @@ export function calendarLink(
       days: filters.days ?? [],
       priceMax: filters.priceMax ?? null,
       openOnly: filters.openOnly ?? false,
+      dropInOnly: filters.dropInOnly ?? false,
     },
     site,
   )

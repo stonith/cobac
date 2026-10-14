@@ -89,6 +89,25 @@ describe('buildIndex', () => {
 })
 
 describe('applyFilters', () => {
+  it('filters drop-ins across groups, excludes negative descriptions and combines with calendars', () => {
+    const mixed = buildIndex({
+      ...snapshot,
+      activities: [
+        { ...snapshot.activities[0]!, title: 'Reserve In Advance: Yoga', calendarId: 10 },
+        { ...snapshot.activities[1]!, title: 'Drop-In Dance' },
+        { ...snapshot.activities[2]!, title: 'Drop-in Ballet', description: 'No drop-in option.' },
+      ],
+      occurrences: [
+        ...snapshot.occurrences,
+        { a: 3, s: '2026-09-13T10:00', e: '2026-09-13T11:00' },
+      ],
+    })
+    const filters = { ...emptyFilters(week), dropInOnly: true }
+    expect(hasActiveFilters(filters)).toBe(true)
+    expect(applyFilters(mixed, filters).map((o) => o.a)).toEqual([1, 1, 2])
+    expect(applyFilters(mixed, { ...filters, calendarIds: [55] })).toEqual([])
+    expect(applyFilters(mixed, { ...filters, q: 'dance' }).map((o) => o.a)).toEqual([2])
+  })
   it('returns only the selected week when no filters are active', () => {
     const filters = emptyFilters(week)
     expect(hasActiveFilters(filters)).toBe(false)

@@ -52,6 +52,25 @@ ActiveNet REST API ──(pnpm scrape, nightly via GitHub Actions)──▶ publ
    unavailable** toggle (`open=1`) drops them. Clicking the date range opens a day picker that
    jumps to that day's week.
 
+### Drop-in filtering
+
+The blue **Drop-in** button filters participation across **all** calendars, rather than
+selecting only Burnaby's Multi-sport calendar. It includes `Reserve In Advance:` activities,
+explicit drop-in titles and descriptions explicitly permitting drop-ins. Source calendars
+in the Drop-in group remain positive evidence for generic titles. Explicit “No drop-in”
+statements override positive signals; a passing mention of a drop-in rate alone does not
+qualify an otherwise unclassified program.
+
+This toggle combines with calendar, centre, text, price and availability filters. Its state
+is shared as `dropin=1`, survives reload, and resets with **Clear filters**. It does **not**
+promise walk-in access: advance booking may still be required. Calendar names, groups and
+original activity titles are unchanged; the calendar dropdown still selects source calendars.
+
+Classification uses full descriptions once when the app indexes the snapshot. The generated
+catalog carries an optional `dropIn: true` flag so MCP uses the same classification without
+parsing full descriptions or relying on truncated blurbs. Both `find_activities` and
+`get_schedule` accept optional `dropInOnly: true` and return links with the toggle applied.
+
 ### Machine-readable data
 
 Besides the app's own `snapshot.json`, the build writes compact JSON "shards" under `dist/data/`

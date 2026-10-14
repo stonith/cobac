@@ -146,6 +146,8 @@ function Calendar({ index }: { index: SnapshotIndex }) {
       <Legend
         index={index}
         calendarIds={filters.calendarIds}
+        dropInOnly={filters.dropInOnly}
+        onToggleDropIn={() => setFilters({ ...filters, dropInOnly: !filters.dropInOnly })}
         onToggleGroup={(group) =>
           setFilters({
             ...filters,

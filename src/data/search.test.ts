@@ -69,6 +69,21 @@ describe('filterOccurrences', () => {
     expect(later.map((o) => o.a)).toEqual([3])
   })
 
+  it('uses the same drop-in classification as the app without selecting only the Drop-in group', () => {
+    const filtered = filterOccurrences(extended.occurrences, ctx, { ...week, dropInOnly: true })
+    expect(filtered.map((o) => o.a)).toEqual([1, 1, 2])
+    expect(filtered).toEqual(
+      applyFilters(index, { ...emptyFilters('2026-09-07'), dropInOnly: true }),
+    )
+    expect(
+      filterOccurrences(extended.occurrences, ctx, {
+        ...week,
+        dropInOnly: true,
+        group: 'Sports',
+      }).map((o) => o.a),
+    ).toEqual([2])
+  })
+
   it('filters by group, days, price, free and age', () => {
     const drop = (c: Partial<SearchCriteria>) =>
       filterOccurrences(extended.occurrences, ctx, { ...week, ...c }).map((o) => o.a)

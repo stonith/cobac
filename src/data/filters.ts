@@ -28,6 +28,8 @@ export interface Filters {
   priceMax: number | null
   /** Hide activities known to be full, closed or cancelled. */
   openOnly: boolean
+  /** Drop-in participation across calendars; advance booking may still be required. */
+  dropInOnly: boolean
   /** Activity whose detail panel is open, or null. Not a filter, but part of the shareable URL. */
   activity: number | null
 }
@@ -45,6 +47,7 @@ export function emptyFilters(weekStart: DateString): Filters {
     priceMin: null,
     priceMax: null,
     openOnly: false,
+    dropInOnly: false,
     activity: null,
   }
 }
@@ -59,7 +62,8 @@ export function hasActiveFilters(filters: Filters): boolean {
     filters.q.trim() !== '' ||
     filters.priceMin !== null ||
     filters.priceMax !== null ||
-    filters.openOnly
+    filters.openOnly ||
+    filters.dropInOnly
   )
 }
 
@@ -87,6 +91,7 @@ export function applyFilters(index: SnapshotIndex, filters: Filters): Occurrence
       if (centers.size && !centers.has(activity.centerId)) continue
       if (q && !matchesQuery(activity.title, activity.instructors, q)) continue
       if (filters.openOnly && !isAvailable(activity)) continue
+      if (filters.dropInOnly && !index.dropInActivityIds.has(activity.id)) continue
       if (priced) {
         const price = index.priceById.get(activity.id)
         if (price === undefined) continue

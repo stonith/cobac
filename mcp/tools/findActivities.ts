@@ -68,6 +68,12 @@ export const findActivities = defineTool({
       .optional()
       .describe('Highest price in CAD; activities with no listed price are excluded'),
     freeOnly: z.boolean().optional(),
+    dropInOnly: z
+      .boolean()
+      .optional()
+      .describe(
+        'Drop-in participation across calendar groups, including Reserve In Advance; booking may still be required',
+      ),
     availableOnly: z
       .boolean()
       .optional()
@@ -121,6 +127,7 @@ export const findActivities = defineTool({
         timeTo: args.timeTo,
         priceMax: args.priceMax,
         freeOnly: args.freeOnly,
+        dropInOnly: args.dropInOnly,
         availableOnly: args.availableOnly,
         age: args.age,
       },
@@ -141,6 +148,7 @@ export const findActivities = defineTool({
       days: args.days,
       priceMax: args.priceMax,
       openOnly: args.availableOnly,
+      dropInOnly: args.dropInOnly,
     })
     const structuredContent = {
       range: { from: range.from, to: range.to },
