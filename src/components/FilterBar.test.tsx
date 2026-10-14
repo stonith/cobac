@@ -120,8 +120,8 @@ describe('FilterBar', () => {
       <FilterBar index={index} filters={emptyFilters(week)} onChange={onChange} resultCount={3} />,
     )
     await userEvent.click(screen.getByRole('combobox', { name: 'Calendars' }))
-    await userEvent.click(await screen.findByRole('option', { name: /Public Swimming/ }))
-    expect(onChange).toHaveBeenLastCalledWith(expect.objectContaining({ calendarIds: [55] }))
+    await userEvent.click(await screen.findByRole('option', { name: /Multi-sport/ }))
+    expect(onChange).toHaveBeenLastCalledWith(expect.objectContaining({ calendarIds: [6] }))
   })
 
   it('toggles a whole group from its "All" row', async () => {
@@ -130,10 +130,10 @@ describe('FilterBar', () => {
       <FilterBar index={index} filters={emptyFilters(week)} onChange={onChange} resultCount={3} />,
     )
     await userEvent.click(screen.getByRole('combobox', { name: 'Calendars' }))
-    await userEvent.click(await screen.findByRole('option', { name: 'All Drop-in' }))
-    expect(onChange).toHaveBeenLastCalledWith(expect.objectContaining({ calendarIds: [55, 3] }))
+    await userEvent.click(await screen.findByRole('option', { name: 'All Sports' }))
+    expect(onChange).toHaveBeenLastCalledWith(expect.objectContaining({ calendarIds: [1, 2] }))
     // Single-calendar groups get no "All" row.
-    expect(screen.queryByRole('option', { name: 'All Sports' })).not.toBeInTheDocument()
+    expect(screen.queryByRole('option', { name: 'All Drop-in' })).not.toBeInTheDocument()
   })
 
   it('clears all filters', async () => {

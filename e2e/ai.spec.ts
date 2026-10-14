@@ -14,7 +14,7 @@ test('an activity page renders with Event structured data', async ({ page }) => 
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(activity.title)
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
-    `https://covac.fyi/activities/${activity.id}/`,
+    `https://cobac.fyi/activities/${activity.id}/`,
   )
   await expect(page.getByRole('link', { name: /ActiveNet/ })).toHaveAttribute(
     'href',
@@ -35,7 +35,7 @@ test('centre pages and indexes link to each other', async ({ page }) => {
   await page.goto(`/centres/${activity.centerId}/`)
   await expect(page.getByRole('link', { name: activity.title }).first()).toHaveAttribute(
     'href',
-    `https://covac.fyi/activities/${activity.id}/`,
+    `https://cobac.fyi/activities/${activity.id}/`,
   )
   await page.goto('/activities/')
   await expect(page.getByRole('heading', { level: 1, name: 'Recreation activities' })).toBeVisible()
@@ -45,12 +45,12 @@ test('sitemap and robots point crawlers at the pages', async ({ request }) => {
   const activity = await sampleActivity()
   const sitemap = await request.get('/sitemap.xml')
   expect(sitemap.ok()).toBe(true)
-  expect(await sitemap.text()).toContain(`<loc>https://covac.fyi/activities/${activity.id}/</loc>`)
+  expect(await sitemap.text()).toContain(`<loc>https://cobac.fyi/activities/${activity.id}/</loc>`)
   const robots = await request.get('/robots.txt')
   expect(robots.ok()).toBe(true)
   const text = await robots.text()
   expect(text).toContain('User-agent: OAI-SearchBot')
-  expect(text).toContain('Sitemap: https://covac.fyi/sitemap.xml')
+  expect(text).toContain('Sitemap: https://cobac.fyi/sitemap.xml')
 })
 
 test('the app shell carries site-level structured data and no-JS links', async ({ page }) => {
@@ -80,11 +80,11 @@ test('llms.txt and the per-centre markdown are served as text', async ({ request
   expect(llms.ok()).toBe(true)
   expect(llms.headers()['content-type']).toContain('text/plain')
   const text = await llms.text()
-  expect(text.startsWith('# covac\n')).toBe(true)
-  expect(text).toContain(`https://covac.fyi/llms/centres/${activity.centerId}.md`)
+  expect(text.startsWith('# cobac\n')).toBe(true)
+  expect(text).toContain(`https://cobac.fyi/llms/centres/${activity.centerId}.md`)
   const full = await request.get('/llms-full.txt')
   expect(full.ok()).toBe(true)
-  expect(await full.text()).toContain(`https://covac.fyi/activities/${activity.id}/`)
+  expect(await full.text()).toContain(`https://cobac.fyi/activities/${activity.id}/`)
   const centre = await request.get(`/llms/centres/${activity.centerId}.md`)
   expect(centre.ok()).toBe(true)
   expect(await centre.text()).toContain(`### ${activity.title}`)
@@ -190,6 +190,6 @@ test('MCP discovery documents are served', async ({ request }) => {
   expect(card.ok()).toBe(true)
   expect(card.headers()['access-control-allow-origin']).toBe('*')
   const json = (await card.json()) as { tools: { name: string }[]; transport: { endpoint: string } }
-  expect(json.transport.endpoint).toBe('https://covac.fyi/mcp')
+  expect(json.transport.endpoint).toBe('https://cobac.fyi/mcp')
   expect(json.tools.map((t) => t.name)).toContain('find_activities')
 })

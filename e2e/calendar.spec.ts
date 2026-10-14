@@ -53,16 +53,14 @@ async function stickyRowHeader(page: Page, scroller: string | null) {
 
 test('renders the time grid by default with every location stacked', async ({ page }) => {
   await gotoWeek(page)
-  await expect(page.getByRole('heading', { level: 1, name: 'covac' })).toBeVisible()
+  await expect(page.getByRole('heading', { level: 1, name: 'cobac' })).toBeVisible()
   await expect(page.getByText(/sessions this week/)).toBeVisible()
   const table = page.getByRole('table')
   await expect(table.getByRole('columnheader')).toHaveCount(8)
   await expect(table.getByRole('rowheader').first()).toHaveText(/^\d{1,2} [ap]m$/)
   await expect(page.getByTestId('visible-locations')).toContainText(/\d+ locations shown/)
   // Chips in the time view carry their centre name.
-  await expect(table.getByRole('button').first()).toContainText(
-    /Centre|Pool|Park|Rink|Arena|Complex/,
-  )
+  await expect(table.getByRole('button').first()).toContainText(/Centre|Complex/)
 })
 
 test('switching to the location view gives one row per centre', async ({ page }) => {
@@ -70,7 +68,7 @@ test('switching to the location view gives one row per centre', async ({ page })
   await page.getByRole('radio', { name: 'By location' }).click()
   await expect(page).toHaveURL(/view=location/)
   const table = page.getByRole('table')
-  expect(await table.getByRole('rowheader').count()).toBeGreaterThan(10)
+  expect(await table.getByRole('rowheader').count()).toBeGreaterThan(4)
   await page.getByRole('radio', { name: 'By time' }).click()
   await expect(page).not.toHaveURL(/view=/)
 })
@@ -90,13 +88,15 @@ test('picking a day from the calendar selects its week', async ({ page }) => {
   )
 })
 
-test('filtering by the Public Swimming calendar shows only pools', async ({ page }) => {
-  await gotoWeek(page, '&cal=55&view=location')
+test('filtering by the Racquet Court calendar narrows to its venues', async ({ page }) => {
+  await gotoWeek(page, '&cal=19&view=location')
   const rows = page.getByRole('table').getByRole('rowheader')
   await expect(rows.first()).toBeVisible()
   const names = await rows.allTextContents()
   expect(names.length).toBeGreaterThan(0)
-  expect(names.every((name) => /Pool|Aquatic/i.test(name))).toBe(true)
+  expect(names.every((name) => /Centre|Complex/.test(name))).toBe(true)
+  // The racquet courts live in a single venue in the committed snapshot.
+  expect(new Set(names).size).toBe(1)
   await expect(page.getByRole('combobox', { name: 'Calendars' })).toContainText('1')
 })
 
@@ -120,19 +120,21 @@ test('the price slider limits sessions to a price range and syncs to the URL', a
   const all = Number((await count.textContent())!.replace(/[^\d]/g, ''))
   await expect(page.getByTestId('price-range')).toContainText(/Free – \$\d+/)
   // Ten PageDowns walk the maximum thumb to the bottom of the track: free sessions only.
+  // The City of Burnaby snapshot carries no free sessions, so the result may be zero.
   await page.getByRole('slider', { name: 'Maximum price' }).focus()
   for (let i = 0; i < 10; i++) await page.keyboard.press('PageDown')
   await expect(page).toHaveURL(/pmax=0/)
   await expect(page.getByTestId('price-range')).toContainText('Free – Free')
   const free = Number((await count.textContent())!.replace(/[^\d]/g, ''))
-  expect(free).toBeGreaterThan(0)
-  expect(free).toBeLessThan(all)
-  const chips = page.getByRole('table').getByRole('button')
-  await expect(chips.first()).toBeVisible()
-  // No chip carries a non-zero dollar amount ("from $0.00" has a free tier and counts as free).
-  expect((await chips.allTextContents()).some((text) => /\$(?!0(\.00)?\b)\d/.test(text))).toBe(
-    false,
-  )
+  expect(free).toBeLessThanOrEqual(all)
+  if (free > 0) {
+    const chips = page.getByRole('table').getByRole('button')
+    await expect(chips.first()).toBeVisible()
+    // No chip carries a non-zero dollar amount ("from $0.00" has a free tier and counts as free).
+    expect((await chips.allTextContents()).some((text) => /\$(?!0(\.00)?\b)\d/.test(text))).toBe(
+      false,
+    )
+  }
   await page.getByRole('button', { name: /Clear filters/ }).click()
   await expect(page).not.toHaveURL(/pmax=/)
   await expect(page.getByRole('slider', { name: 'Maximum price' })).toHaveAttribute(
@@ -203,7 +205,7 @@ test('clicking a session opens the detail panel with an ActiveNet link', async (
   await expect(dialog).toContainText(/Sessions \(\d+\)/)
   await expect(dialog.getByRole('link', { name: /ActiveNet/ })).toHaveAttribute(
     'href',
-    /activecommunities\.com\/vancouver\/Activity_Search\//,
+    /activecommunities\.com\/burnaby\/Activity_Search\//,
   )
   await page.keyboard.press('Escape')
   await expect(dialog).toBeHidden()
@@ -279,7 +281,7 @@ test('the footer links to the GitHub repo', async ({ page }) => {
   await gotoWeek(page)
   await expect(page.getByRole('link', { name: 'Source on GitHub' })).toHaveAttribute(
     'href',
-    'https://github.com/patsissons/covac',
+    'https://github.com/stonith/cobac',
   )
 })
 

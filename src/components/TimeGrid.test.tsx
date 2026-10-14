@@ -31,12 +31,12 @@ describe('TimeGrid', () => {
   it('stacks sessions from every location and labels each with its centre', async () => {
     const onSelect = vi.fn()
     render(<TimeGrid {...base} onSelect={onSelect} />)
-    const swim = screen.getAllByRole('button', { name: /Free Swim/ })
-    expect(swim).toHaveLength(2)
-    expect(swim[0]).toHaveTextContent('Britannia Pool')
-    const basketball = screen.getByRole('button', { name: /Basketball Drop-in/ })
-    expect(basketball).toHaveTextContent('Hastings Community Centre')
-    await userEvent.click(basketball)
+    const sport = screen.getAllByRole('button', { name: /Multi-sport/ })
+    expect(sport).toHaveLength(2)
+    expect(sport[0]).toHaveTextContent('Bonsor Recreation Complex (BON)')
+    const badminton = screen.getByRole('button', { name: /Adult Badminton/ })
+    expect(badminton).toHaveTextContent('Rosemary Brown Recreation Centre (RBR)')
+    await userEvent.click(badminton)
     expect(onSelect).toHaveBeenCalledWith(2)
   })
 

@@ -11,7 +11,7 @@ let dir: string
 let written: string[]
 
 beforeAll(async () => {
-  dir = await mkdtemp(path.join(os.tmpdir(), 'covac-shards-'))
+  dir = await mkdtemp(path.join(os.tmpdir(), 'cobac-shards-'))
   written = await writeShards({ snapshot, outDir: dir, version: '9.9.9', today: '2026-09-08' })
 })
 afterAll(() => rm(dir, { recursive: true, force: true }))
@@ -43,15 +43,17 @@ describe('writeShards', () => {
     const week = await read<WeekShard>(SHARD_FILES.week('2026-09-07'))
     expect(week.occurrences).toEqual(snapshot.occurrences)
     const detail = await read<ActivityDetail>(SHARD_FILES.activity(1))
-    expect(detail.descriptionText).toBe('Recreational swim for everyone.')
+    expect(detail.descriptionText).toBe('Open gym for everyone.')
     expect(detail.sessions).toHaveLength(2)
-    expect(detail.link).toBe('https://covac.fyi/?week=2026-09-07&centers=37&q=Free+Swim&activity=1')
+    expect(detail.link).toBe(
+      'https://cobac.fyi/?week=2026-09-07&centers=63&q=Multi-sport&activity=1',
+    )
   })
 })
 
 describe('generateSite', () => {
   it('reports the number of files written', async () => {
-    const out = await mkdtemp(path.join(os.tmpdir(), 'covac-site-'))
+    const out = await mkdtemp(path.join(os.tmpdir(), 'cobac-site-'))
     try {
       const report = await generateSite({
         snapshot,
@@ -65,15 +67,15 @@ describe('generateSite', () => {
       const card = JSON.parse(
         await readFile(path.join(out, '.well-known', 'mcp', 'server-card.json'), 'utf8'),
       )
-      expect(card.transport.endpoint).toBe('https://covac.fyi/mcp')
+      expect(card.transport.endpoint).toBe('https://cobac.fyi/mcp')
       const sitemap = await readFile(path.join(out, 'sitemap.xml'), 'utf8')
-      expect(sitemap).toContain('<loc>https://covac.fyi/activities/2/</loc>')
-      expect(sitemap).toContain('<loc>https://covac.fyi/centres/44/</loc>')
+      expect(sitemap).toContain('<loc>https://cobac.fyi/activities/2/</loc>')
+      expect(sitemap).toContain('<loc>https://cobac.fyi/centres/63/</loc>')
       await readFile(path.join(out, 'activities', '1', 'index.html'), 'utf8')
       await readFile(path.join(out, 'centres', 'index.html'), 'utf8')
-      expect(await readFile(path.join(out, 'llms.txt'), 'utf8')).toContain('# covac')
-      expect(await readFile(path.join(out, 'llms', 'centres', '37.md'), 'utf8')).toContain(
-        '# Britannia Pool',
+      expect(await readFile(path.join(out, 'llms.txt'), 'utf8')).toContain('# cobac')
+      expect(await readFile(path.join(out, 'llms', 'centres', '63.md'), 'utf8')).toContain(
+        '# Bonsor Recreation Complex (BON)',
       )
     } finally {
       await rm(out, { recursive: true, force: true })

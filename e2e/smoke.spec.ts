@@ -2,8 +2,8 @@ import { expect, test } from '@playwright/test'
 
 test('home page renders the site heading', async ({ page }) => {
   await page.goto('/')
-  await expect(page.getByRole('heading', { level: 1, name: 'covac' })).toBeVisible()
-  await expect(page).toHaveTitle(/City of Vancouver Active Communities/)
+  await expect(page.getByRole('heading', { level: 1, name: 'cobac' })).toBeVisible()
+  await expect(page).toHaveTitle(/City of Burnaby recreation/)
 })
 
 test('home page carries Open Graph metadata', async ({ page }) => {
@@ -11,11 +11,11 @@ test('home page carries Open Graph metadata', async ({ page }) => {
   const meta = (selector: string) => page.locator(`head meta[${selector}]`)
   await expect(meta('property="og:title"')).toHaveAttribute(
     'content',
-    'covac · City of Vancouver Active Communities',
+    'cobac · City of Burnaby recreation',
   )
   await expect(meta('property="og:type"')).toHaveAttribute('content', 'website')
-  await expect(meta('property="og:url"')).toHaveAttribute('content', 'https://covac.fyi/')
-  await expect(meta('property="og:image"')).toHaveAttribute('content', 'https://covac.fyi/og.png')
+  await expect(meta('property="og:url"')).toHaveAttribute('content', 'https://cobac.fyi/')
+  await expect(meta('property="og:image"')).toHaveAttribute('content', 'https://cobac.fyi/og.png')
   await expect(meta('property="og:image:width"')).toHaveAttribute('content', '1200')
   await expect(meta('property="og:image:height"')).toHaveAttribute('content', '630')
   await expect(meta('name="twitter:card"')).toHaveAttribute('content', 'summary_large_image')

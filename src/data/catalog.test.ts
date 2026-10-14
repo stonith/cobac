@@ -17,11 +17,11 @@ describe('buildCatalog', () => {
     expect(catalog.period).toEqual(snapshot.period)
     const swim = catalog.activities.find((a) => a.id === 1)!
     expect(swim).toMatchObject({
-      title: 'Free Swim',
+      title: 'Multi-sport',
       free: true,
       price: 0,
       instructors: ['Ada Lovelace'],
-      blurb: 'Recreational swim for everyone.',
+      blurb: 'Open gym for everyone.',
       openings: '100 openings remaining',
       availability: 'open',
       spaces: 100,
@@ -32,7 +32,7 @@ describe('buildCatalog', () => {
     expect(swim).not.toHaveProperty('description')
     expect(swim).not.toHaveProperty('url')
     const ball = catalog.activities.find((a) => a.id === 2)!
-    expect(ball.price).toBe(5)
+    expect(ball.price).toBe(5.55)
     expect(ball).toMatchObject({ availability: 'full', spaces: 0 })
     expect(ball).not.toHaveProperty('instructors')
     expect(ball).not.toHaveProperty('blurb')
@@ -43,8 +43,8 @@ describe('buildCentres', () => {
   it('counts activities per centre and carries facilities', () => {
     const shard = buildCentres(snapshot)
     expect(shard.centres.map((c) => [c.id, c.activities])).toEqual([
-      [37, 1],
-      [44, 1],
+      [63, 1],
+      [180, 1],
     ])
     expect(shard.facilities).toEqual(snapshot.facilities)
   })
@@ -95,13 +95,15 @@ describe('buildActivityDetail', () => {
       occurrencesByActivity(snapshot.occurrences).get(1)!,
       '2026-09-08',
     )
-    expect(detail.center.name).toBe('Britannia Pool')
+    expect(detail.center.name).toBe('Bonsor Recreation Complex (BON)')
     expect(detail.calendar.group).toBe('Drop-in')
-    expect(detail.facilities).toEqual(['Britannia Pool'])
-    expect(detail.descriptionText).toBe('Recreational swim for everyone.')
+    expect(detail.facilities).toEqual(['BON Gym 1/2/3'])
+    expect(detail.descriptionText).toBe('Open gym for everyone.')
     expect(detail.sessions).toHaveLength(2)
-    expect(detail.pageUrl).toBe('https://covac.fyi/activities/1/')
-    expect(detail.link).toBe('https://covac.fyi/?week=2026-09-07&centers=37&q=Free+Swim&activity=1')
+    expect(detail.pageUrl).toBe('https://cobac.fyi/activities/1/')
+    expect(detail.link).toBe(
+      'https://cobac.fyi/?week=2026-09-07&centers=63&q=Multi-sport&activity=1',
+    )
   })
 })
 
@@ -110,7 +112,7 @@ describe('buildSiteMeta', () => {
     expect(buildSiteMeta(snapshot, '1.2.3')).toEqual({
       generatedAt: snapshot.generatedAt,
       period: snapshot.period,
-      counts: { calendars: 3, centers: 2, activities: 2, occurrences: 3, enriched: 1 },
+      counts: { calendars: 4, centers: 2, activities: 2, occurrences: 3, enriched: 1 },
       weeks: ['2026-09-07'],
       version: '1.2.3',
     })

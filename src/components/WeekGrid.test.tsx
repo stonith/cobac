@@ -23,9 +23,13 @@ describe('WeekGrid', () => {
       />,
     )
     expect(screen.getAllByRole('columnheader')).toHaveLength(8)
-    expect(screen.getByRole('rowheader', { name: 'Britannia Pool' })).toBeInTheDocument()
-    expect(screen.getByRole('rowheader', { name: 'Hastings Community Centre' })).toBeInTheDocument()
-    expect(screen.getAllByRole('button', { name: /Free Swim/ })).toHaveLength(2)
+    expect(
+      screen.getByRole('rowheader', { name: 'Bonsor Recreation Complex (BON)' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('rowheader', { name: 'Rosemary Brown Recreation Centre (RBR)' }),
+    ).toBeInTheDocument()
+    expect(screen.getAllByRole('button', { name: /Multi-sport/ })).toHaveLength(2)
   })
 
   it('shows the price on each chip', () => {
@@ -41,10 +45,8 @@ describe('WeekGrid', () => {
         onSelectDay={() => {}}
       />,
     )
-    expect(screen.getAllByRole('button', { name: /Free Swim/ })[0]).toHaveTextContent('Free')
-    expect(screen.getByRole('button', { name: /Basketball Drop-in/ })).toHaveTextContent(
-      'from $5.00',
-    )
+    expect(screen.getAllByRole('button', { name: /Multi-sport/ })[0]).toHaveTextContent('Free')
+    expect(screen.getByRole('button', { name: /Adult Badminton/ })).toHaveTextContent('from $5.55')
   })
 
   it('shows openings on each chip and fades unavailable ones', () => {
@@ -60,14 +62,14 @@ describe('WeekGrid', () => {
         onSelectDay={() => {}}
       />,
     )
-    const swim = screen.getAllByRole('button', { name: /Free Swim/ })[0]!
-    expect(swim).toHaveTextContent('100 left')
-    expect(swim).toHaveAttribute('data-availability', 'open')
-    expect(swim).not.toHaveClass('opacity-50')
-    const basketball = screen.getByRole('button', { name: /Basketball Drop-in/ })
-    expect(basketball).toHaveTextContent('Full')
-    expect(basketball).toHaveAttribute('data-availability', 'full')
-    expect(basketball).toHaveClass('opacity-50')
+    const sport = screen.getAllByRole('button', { name: /Multi-sport/ })[0]!
+    expect(sport).toHaveTextContent('100 left')
+    expect(sport).toHaveAttribute('data-availability', 'open')
+    expect(sport).not.toHaveClass('opacity-50')
+    const badminton = screen.getByRole('button', { name: /Adult Badminton/ })
+    expect(badminton).toHaveTextContent('Full')
+    expect(badminton).toHaveAttribute('data-availability', 'full')
+    expect(badminton).toHaveClass('opacity-50')
   })
 
   it('reports the selected activity on chip click', async () => {
@@ -84,7 +86,7 @@ describe('WeekGrid', () => {
         onSelectDay={() => {}}
       />,
     )
-    await userEvent.click(screen.getByRole('button', { name: /Basketball Drop-in/ }))
+    await userEvent.click(screen.getByRole('button', { name: /Adult Badminton/ }))
     expect(onSelect).toHaveBeenCalledWith(2)
   })
 
@@ -125,7 +127,7 @@ describe('WeekGrid', () => {
     expect(screen.getByRole('columnheader', { name: 'Tue Sep 8' })).toBeInTheDocument()
     // Only centres with sessions that day are listed.
     expect(
-      screen.queryByRole('rowheader', { name: 'Hastings Community Centre' }),
+      screen.queryByRole('rowheader', { name: 'Rosemary Brown Recreation Centre (RBR)' }),
     ).not.toBeInTheDocument()
     await userEvent.click(screen.getByRole('tab', { name: 'Sat 12' }))
     expect(onSelectDay).toHaveBeenCalledWith('2026-09-12')

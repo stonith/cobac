@@ -1,36 +1,41 @@
 import { buildIndex } from '@/data/index'
 import type { Snapshot } from '@/types/snapshot'
 
-/** Small in-memory snapshot for component tests: two centres, two calendars, week of 2026-09-07. */
+/**
+ * Small in-memory snapshot for component tests: two centres, three calendars, week of 2026-09-07.
+ * The rows mirror the City of Burnaby tenant: venue-suffixed centre names, "Reserve In Advance:"
+ * titles kept verbatim, and fee tables scraped from the detail endpoint.
+ */
 export const snapshot: Snapshot = {
   generatedAt: '2026-09-09T02:00:00.000Z',
   period: { start: '2026-09-06', end: '2026-11-01' },
   calendars: [
-    { id: 55, name: 'Public Swimming', group: 'Drop-in' },
-    { id: 3, name: 'Public Skating & Ice Hockey', group: 'Drop-in' },
-    { id: 10, name: 'Sports: Basketball', group: 'Sports' },
+    { id: 1, name: 'Badminton', group: 'Sports' },
+    { id: 2, name: 'Basketball', group: 'Sports' },
+    { id: 4, name: 'Group Fitness', group: 'Fitness' },
+    { id: 6, name: 'Multi-sport', group: 'Drop-in' },
   ],
   centers: [
     {
-      id: 37,
-      name: 'Britannia Pool',
-      address: '1661 Napier Street, Vancouver',
-      phone: '(604) 718-5831',
-      lat: 49.2756,
-      lng: -123.0707,
+      id: 63,
+      name: 'Bonsor Recreation Complex (BON)',
+      address: '6550 Bonsor Avenue, Burnaby',
+      phone: '(604) 421-5962',
+      lat: 49.2242,
+      lng: -122.9969,
     },
-    { id: 44, name: 'Hastings Community Centre', lat: 49.2807, lng: -123.0394 },
+    { id: 180, name: 'Rosemary Brown Recreation Centre (RBR)', lat: 49.208477, lng: -122.950023 },
   ],
-  facilities: [{ id: 207, name: 'Britannia Pool', centerId: 37 }],
+  facilities: [{ id: 1183, name: 'BON Gym 1/2/3', centerId: 63 }],
   activities: [
     {
       id: 1,
-      title: 'Free Swim',
-      calendarId: 55,
-      centerId: 37,
-      facilityIds: [207],
-      url: 'https://example.com/free-swim/1',
-      description: '<p>Recreational swim for <b>everyone</b>.</p>',
+      title: 'Multi-sport',
+      calendarId: 6,
+      centerId: 63,
+      facilityIds: [1183],
+      url: 'https://ca.apm.activecommunities.com/burnaby/Activity_Search/multi-sport/1',
+      description: '<p>Open gym for <b>everyone</b>.</p>',
       instructors: ['Ada Lovelace'],
       priceText: 'Free',
       free: true,
@@ -43,18 +48,19 @@ export const snapshot: Snapshot = {
     },
     {
       id: 2,
-      title: 'Basketball Drop-in',
-      calendarId: 10,
-      centerId: 44,
+      title: 'Reserve In Advance: Adult Badminton',
+      calendarId: 1,
+      centerId: 180,
       facilityIds: [],
-      url: 'https://example.com/basketball/2',
+      url: 'https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-adult-badminton/2',
       description: '',
       instructors: [],
-      priceText: 'from $5.00',
+      priceText: 'from $5.55',
       free: false,
       prices: [
-        { price: '$5.00', description: 'Drop-in' },
-        { price: '$40.00', description: '10 visit pass' },
+        { price: '$5.55', description: 'Youth (19-25 yrs) fee for up to 25 years old' },
+        { price: '$7.40', description: 'Adult (26-64 yrs) fee for 26 up to 64 years old' },
+        { price: '$5.55', description: 'Senior (65+ yrs) fee for 65 or more years old' },
       ],
       openings: 'Full',
       availability: 'full',

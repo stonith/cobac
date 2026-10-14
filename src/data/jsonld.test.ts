@@ -16,18 +16,18 @@ describe('placeNode', () => {
   it('maps address, geo and phone', () => {
     expect(placeNode(snapshot.centers[0]!)).toEqual({
       '@type': 'SportsActivityLocation',
-      '@id': 'https://covac.fyi/centres/37/#place',
-      name: 'Britannia Pool',
-      url: 'https://covac.fyi/centres/37/',
+      '@id': 'https://cobac.fyi/centres/63/#place',
+      name: 'Bonsor Recreation Complex (BON)',
+      url: 'https://cobac.fyi/centres/63/',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '1661 Napier Street',
-        addressLocality: 'Vancouver',
+        streetAddress: '6550 Bonsor Avenue',
+        addressLocality: 'Burnaby',
         addressRegion: 'BC',
         addressCountry: 'CA',
       },
-      geo: { '@type': 'GeoCoordinates', latitude: 49.2756, longitude: -123.0707 },
-      telephone: '(604) 718-5831',
+      geo: { '@type': 'GeoCoordinates', latitude: 49.2242, longitude: -122.9969 },
+      telephone: '(604) 421-5962',
     })
     expect(placeNode(snapshot.centers[1]!)).not.toHaveProperty('address')
   })
@@ -55,18 +55,18 @@ describe('eventNodes', () => {
     expect(events).toHaveLength(2)
     expect(events[0]).toMatchObject({
       '@type': 'Event',
-      name: 'Free Swim',
-      description: 'Recreational swim for everyone.',
+      name: 'Multi-sport',
+      description: 'Open gym for everyone.',
       startDate: '2026-09-07T07:00:00-07:00',
       endDate: '2026-09-07T08:00:00-07:00',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       eventStatus: 'https://schema.org/EventScheduled',
       isAccessibleForFree: true,
-      url: 'https://covac.fyi/activities/1/',
+      url: 'https://cobac.fyi/activities/1/',
       offers: { price: 0, priceCurrency: 'CAD', availability: 'https://schema.org/InStock' },
       performer: [{ '@type': 'Person', name: 'Ada Lovelace' }],
     })
-    expect(events[0]!.location).toMatchObject({ name: 'Britannia Pool' })
+    expect(events[0]!.location).toMatchObject({ name: 'Bonsor Recreation Complex (BON)' })
     expect(events[0]).not.toHaveProperty('typicalAgeRange')
   })
 
@@ -74,7 +74,7 @@ describe('eventNodes', () => {
     const full = { ...snapshot.activities[1]!, openings: 'Full', availability: 'full' as const }
     const detail = buildActivityDetail(index, full, sessions.get(2)!, '2026-09-07')
     const [event] = eventNodes(detail, detail.sessions)
-    expect(event!.offers).toMatchObject({ price: 5, availability: 'https://schema.org/SoldOut' })
+    expect(event!.offers).toMatchObject({ price: 5.55, availability: 'https://schema.org/SoldOut' })
     const unpriced = buildActivityDetail(
       index,
       { ...full, priceText: '', prices: undefined },
@@ -100,7 +100,7 @@ describe('eventNodes', () => {
 
 describe('site nodes', () => {
   it('describe the site and dataset', () => {
-    expect(webSiteNode()).toMatchObject({ '@type': 'WebSite', url: 'https://covac.fyi/' })
+    expect(webSiteNode()).toMatchObject({ '@type': 'WebSite', url: 'https://cobac.fyi/' })
     const dataset = datasetNode(buildSiteMeta(snapshot, '1'))
     expect(dataset).toMatchObject({
       '@type': 'Dataset',

@@ -18,17 +18,20 @@ const sessions = occurrencesByActivity(snapshot.occurrences)
 describe('llmsTxt', () => {
   const text = llmsTxt(ctx)
   it('follows the llms.txt shape', () => {
-    expect(text.startsWith('# covac\n\n> covac (City of Vancouver Active Communities)')).toBe(true)
+    expect(text.startsWith('# cobac\n\n> cobac (City of Burnaby recreation)')).toBe(true)
     expect(text).toContain(
-      '2 drop-in activities and registered programs with 3 scheduled sessions at 2 community centres',
+      '2 registered programs and drop-in multi-sport sessions with 3 scheduled sessions at 2 community centres',
     )
     expect(text).toContain('## How to query')
-    expect(text).toContain('https://covac.fyi/mcp')
+    expect(text).toContain('https://cobac.fyi/mcp')
     expect(text).toContain('## Centres\n')
     expect(text).toContain(
-      '- [Britannia Pool](https://covac.fyi/llms/centres/37.md): 1 activities, 1661 Napier Street, Vancouver, (604) 718-5831',
+      '- [Bonsor Recreation Complex (BON)](https://cobac.fyi/llms/centres/63.md): 1 activities, 6550 Bonsor Avenue, Burnaby, (604) 421-5962',
     )
-    expect(text).toContain('- Public Swimming (Drop-in, id 55)')
+    expect(text).toContain(
+      '- [Rosemary Brown Recreation Centre (RBR)](https://cobac.fyi/llms/centres/180.md): 1 activities',
+    )
+    expect(text).toContain('- Multi-sport (Drop-in, id 6)')
     expect(text).toContain('## Optional')
   })
 })
@@ -39,12 +42,12 @@ describe('llmsFullTxt', () => {
     for (const a of catalog.activities)
       byCentre.set(a.centerId, [...(byCentre.get(a.centerId) ?? []), a])
     const text = llmsFullTxt(ctx, byCentre)
-    expect(text).toContain('### Britannia Pool')
+    expect(text).toContain('### Bonsor Recreation Complex (BON)')
     expect(text).toContain(
-      '- [Free Swim](https://covac.fyi/activities/1/) · Public Swimming · Free · All ages · 2 sessions',
+      '- [Multi-sport](https://cobac.fyi/activities/1/) · Multi-sport · Free · All ages · 2 sessions',
     )
-    expect(text).toContain('### Hastings Community Centre')
-    expect(text).toContain('[Basketball Drop-in](https://covac.fyi/activities/2/)')
+    expect(text).toContain('### Rosemary Brown Recreation Centre (RBR)')
+    expect(text).toContain('[Reserve In Advance: Adult Badminton](https://cobac.fyi/activities/2/)')
   })
 })
 
@@ -59,11 +62,13 @@ describe('centreMarkdown', () => {
     const md = centreMarkdown(centres[0]!, [detail], '2026-09-08')
     expect(
       md.startsWith(
-        '# Britannia Pool\n\n1661 Napier Street, Vancouver · (604) 718-5831 · https://www.openstreetmap.org/',
+        '# Bonsor Recreation Complex (BON)\n\n6550 Bonsor Avenue, Burnaby · (604) 421-5962 · https://www.openstreetmap.org/',
       ),
     ).toBe(true)
-    expect(md).toContain('## Drop-in\n\n### Free Swim\n\n- Centre: Britannia Pool')
-    expect(md).toContain('#### Upcoming sessions (Vancouver time)')
-    expect(md).toContain('https://covac.fyi/activities/{id}/')
+    expect(md).toContain(
+      '## Drop-in\n\n### Multi-sport\n\n- Centre: Bonsor Recreation Complex (BON), 6550 Bonsor Avenue, Burnaby',
+    )
+    expect(md).toContain('#### Upcoming sessions (Pacific time)')
+    expect(md).toContain('https://cobac.fyi/activities/{id}/')
   })
 })

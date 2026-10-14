@@ -31,8 +31,8 @@ describe('sessionLines', () => {
 describe('activityLine', () => {
   it('summarises an activity with its link', () => {
     const swim = catalog.activities[0]!
-    expect(activityLine(swim, index.centerById.get(37), index.calendarById.get(55))).toBe(
-      '- [Free Swim](https://covac.fyi/activities/1/) · Britannia Pool · Public Swimming · Free · All ages · 2 sessions, next Mon Sep 7 7:00 am · with Ada Lovelace',
+    expect(activityLine(swim, index.centerById.get(63), index.calendarById.get(6))).toBe(
+      '- [Multi-sport](https://cobac.fyi/activities/1/) · Bonsor Recreation Complex (BON) · Multi-sport · Free · All ages · 2 sessions, next Mon Sep 7 7:00 am · with Ada Lovelace',
     )
   })
 })
@@ -46,14 +46,18 @@ describe('activityMarkdown', () => {
       '2026-09-08',
     )
     const md = activityMarkdown(detail, '2026-09-08')
-    expect(md).toContain('# Basketball Drop-in')
-    expect(md).toContain('- Centre: Hastings Community Centre')
-    expect(md).toContain('- Calendar: Sports: Basketball (Sports)')
-    expect(md).toContain('- Price: from $5.00')
-    expect(md).toContain('## Fees\n- $5.00: Drop-in\n- $40.00: 10 visit pass')
-    expect(md).toContain('## Upcoming sessions (Vancouver time)\n- Sat Sep 12: 6:00 pm – 8:00 pm')
-    expect(md).toContain('https://example.com/basketball/2')
-    expect(md).toContain('https://covac.fyi/activities/2/')
+    expect(md).toContain('# Reserve In Advance: Adult Badminton')
+    expect(md).toContain('- Centre: Rosemary Brown Recreation Centre (RBR)')
+    expect(md).toContain('- Calendar: Badminton (Sports)')
+    expect(md).toContain('- Price: from $5.55')
+    expect(md).toContain(
+      '## Fees\n- $5.55: Youth (19-25 yrs) fee for up to 25 years old\n- $7.40: Adult (26-64 yrs) fee for 26 up to 64 years old\n- $5.55: Senior (65+ yrs) fee for 65 or more years old',
+    )
+    expect(md).toContain('## Upcoming sessions (Pacific time)\n- Sat Sep 12: 6:00 pm – 8:00 pm')
+    expect(md).toContain(
+      'https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-adult-badminton/2',
+    )
+    expect(md).toContain('https://cobac.fyi/activities/2/')
   })
 
   it('says when nothing is upcoming', () => {
@@ -64,6 +68,6 @@ describe('activityMarkdown', () => {
       '2026-12-01',
     )
     expect(activityMarkdown(detail, '2026-12-01')).toContain('No sessions on or after today')
-    expect(activityMarkdown(detail)).toContain('## Sessions (Vancouver time)\n- Mon Sep 7')
+    expect(activityMarkdown(detail)).toContain('## Sessions (Pacific time)\n- Mon Sep 7')
   })
 })

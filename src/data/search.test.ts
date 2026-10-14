@@ -20,10 +20,10 @@ const extended: Snapshot = {
     {
       id: 3,
       title: 'Adult Lengths',
-      calendarId: 55,
-      centerId: 37,
-      facilityIds: [207],
-      url: 'https://example.com/lengths/3',
+      calendarId: 4,
+      centerId: 63,
+      facilityIds: [1183],
+      url: 'https://ca.apm.activecommunities.com/burnaby/Activity_Search/adult-lengths/3',
       description: '<p>Lane swimming for confident swimmers.</p>',
       instructors: [],
       priceText: '$7.93',
@@ -45,12 +45,12 @@ const week: SearchCriteria = { dateFrom: '2026-09-07', dateTo: '2026-09-13' }
 
 describe('filterOccurrences', () => {
   it('matches applyFilters for one week with the shared criteria', () => {
-    const filters = { ...emptyFilters('2026-09-07'), from: '12:00', centerIds: [37] }
+    const filters = { ...emptyFilters('2026-09-07'), from: '12:00', centerIds: [63] }
     const expected = applyFilters(index, filters)
     const actual = filterOccurrences(snapshot.occurrences, ctx, {
       ...week,
       timeFrom: '12:00',
-      centerIds: [37],
+      centerIds: [63],
     })
     expect(actual).toEqual(expected)
   })
@@ -80,7 +80,7 @@ describe('filterOccurrences', () => {
     expect(drop({ availableOnly: true })).toEqual([1, 1, 3])
     expect(drop({ age: 10 })).toEqual([1, 1, 2])
     expect(drop({ age: 30 })).toEqual([1, 1, 3, 2])
-    expect(drop({ q: 'hastings' })).toEqual([2])
+    expect(drop({ q: 'rosemary' })).toEqual([2])
     expect(drop({ q: 'confident' })).toEqual([3])
   })
 })
@@ -97,32 +97,30 @@ describe('fitsAge', () => {
 
 describe('matchesText', () => {
   it('searches title, instructor, centre, calendar and blurb', () => {
-    const swim = catalog.activities[0]!
-    expect(matchesText(swim, ctx, 'FREE')).toBe(true)
-    expect(matchesText(swim, ctx, 'lovelace')).toBe(true)
-    expect(matchesText(swim, ctx, 'britannia')).toBe(true)
-    expect(matchesText(swim, ctx, 'public swimming')).toBe(true)
-    expect(matchesText(swim, ctx, 'recreational')).toBe(true)
-    expect(matchesText(swim, ctx, 'hockey')).toBe(false)
-    expect(matchesText(swim, ctx, '  ')).toBe(true)
+    const first = catalog.activities[0]!
+    expect(matchesText(first, ctx, 'multi')).toBe(true)
+    expect(matchesText(first, ctx, 'lovelace')).toBe(true)
+    expect(matchesText(first, ctx, 'bonsor')).toBe(true)
+    expect(matchesText(first, ctx, 'multi-sport')).toBe(true)
+    expect(matchesText(first, ctx, 'gym')).toBe(true)
+    expect(matchesText(first, ctx, 'badminton')).toBe(false)
+    expect(matchesText(first, ctx, '  ')).toBe(true)
   })
 })
 
 describe('searchActivities', () => {
-  it('ranks title matches above centre and blurb matches', () => {
-    expect(searchActivities(catalog.activities, ctx, 'swim').map((a) => a.id)).toEqual([1, 3])
+  it('ranks centre matches by earliest session', () => {
+    expect(searchActivities(catalog.activities, ctx, 'bonsor').map((a) => a.id)).toEqual([1, 3])
     expect(searchActivities(catalog.activities, ctx, 'lengths').map((a) => a.id)).toEqual([3])
     expect(searchActivities(catalog.activities, ctx, 'nothing here')).toEqual([])
   })
 
   it('falls back to all words matching somewhere', () => {
-    expect(searchActivities(catalog.activities, ctx, 'britannia lane').map((a) => a.id)).toEqual([
-      3,
-    ])
+    expect(searchActivities(catalog.activities, ctx, 'bonsor lane').map((a) => a.id)).toEqual([3])
   })
 
   it('respects the limit', () => {
-    expect(searchActivities(catalog.activities, ctx, 'swim', 1)).toHaveLength(1)
+    expect(searchActivities(catalog.activities, ctx, 'bonsor', 1)).toHaveLength(1)
   })
 })
 
