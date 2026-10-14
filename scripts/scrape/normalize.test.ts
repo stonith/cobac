@@ -270,6 +270,20 @@ describe('applyEnrichment', () => {
     expect(applyEnrichment(snapshot, new Map())).toBe(0)
     expect(snapshot.activities.every((a) => a.ageText === undefined)).toBe(true)
   })
+
+  it('applies the center fallback for centres the detail endpoint omits', () => {
+    const snapshot = buildSnapshot(
+      [{ calendar: groupFitness, filters, centerEvents: events }],
+      '2026-10-13T00:00:00.000Z',
+    )
+    snapshot.centers.push({ id: 180, name: 'Rosemary Brown Recreation Centre (RBR)' })
+    applyEnrichment(snapshot, new Map())
+    const rbr = snapshot.centers.find((c) => c.id === 180)!
+    expect(rbr.lat).toBeCloseTo(49.208477)
+    expect(rbr.lng).toBeCloseTo(-122.950023)
+    expect(rbr.address).toBe('7789 18th Street, Burnaby')
+    expect(rbr.phone).toBe('604-421-3200')
+  })
 })
 
 describe('parseOpenings', () => {

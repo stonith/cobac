@@ -242,6 +242,23 @@ function addFacility(map: Map<number, Facility>, id: number, name: string, cente
   if (!map.has(id)) map.set(id, { id, name: cleanName(name), centerId })
 }
 
+/**
+ * Centre facts for centres the tenant's detail endpoint never describes (the City of Burnaby
+ * tenant omits `centers` entirely for Rosemary Brown). Values from burnaby.ca; drop an entry
+ * once the tenant starts sending the data.
+ */
+export const CENTER_FALLBACKS: Record<
+  number,
+  { address?: string; phone?: string; lat?: number; lng?: number }
+> = {
+  180: {
+    address: '7789 18th Street, Burnaby',
+    phone: '604-421-3200',
+    lat: 49.208477,
+    lng: -122.950023,
+  },
+}
+
 export interface ParsedOpenings {
   availability?: Availability
   spaces?: number
@@ -328,6 +345,17 @@ export function applyEnrichment(
       }
       if (!center.phone && rawCenter.phone) center.phone = rawCenter.phone
     }
+  }
+  // Fill the gaps the details endpoint leaves (see CENTER_FALLBACKS).
+  for (const center of snapshot.centers) {
+    const fallback = CENTER_FALLBACKS[center.id]
+    if (!fallback) continue
+    if (center.lat == null && fallback.lat != null && fallback.lng != null) {
+      center.lat = fallback.lat
+      center.lng = fallback.lng
+    }
+    if (!center.address && fallback.address) center.address = fallback.address
+    if (!center.phone && fallback.phone) center.phone = fallback.phone
   }
   return enriched
 }
