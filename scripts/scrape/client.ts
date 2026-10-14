@@ -7,6 +7,15 @@ import type {
   FiltersBody,
 } from './api'
 
+import type {
+  MeetingDates,
+  ProgramDetail,
+  SearchFilters,
+  SearchItem,
+  SearchPage,
+} from './activity-search-api'
+import type { RawPrice } from './api'
+
 export const API_BASE = 'https://anc.ca.apm.activecommunities.com/burnaby/rest/onlinecalendar'
 
 const HEADERS = {
@@ -42,8 +51,12 @@ export function createClient(options: ClientOptions = {}) {
   const backoffMs = options.backoffMs ?? 1000
   const log = options.log ?? (() => {})
 
-  async function request<T>(path: string, init?: RequestInit): Promise<T> {
-    const url = `${API_BASE}${path}${path.includes('?') ? '&' : '?'}locale=en-US`
+  async function requestEnvelope<T>(
+    path: string,
+    init?: RequestInit,
+    base = API_BASE,
+  ): Promise<ApiEnvelope<T>> {
+    const url = `${base}${path}${path.includes('?') ? '&' : '?'}locale=en-US`
     let lastError: unknown
     for (let attempt = 0; attempt <= retries; attempt++) {
       if (attempt > 0) {
@@ -60,7 +73,7 @@ export function createClient(options: ClientOptions = {}) {
             `API ${json.headers.response_code} ${json.headers.response_message} for ${path}`,
           )
         }
-        return json.body
+        return json
       } catch (error) {
         lastError = error
         // 4xx other than 429 will not succeed on retry.
@@ -71,7 +84,56 @@ export function createClient(options: ClientOptions = {}) {
     throw lastError
   }
 
+  async function request<T>(path: string, init?: RequestInit, base = API_BASE): Promise<T> {
+    return (await requestEnvelope<T>(path, init, base)).body
+  }
+
+  const searchBase = API_BASE.replace('/onlinecalendar', '')
+
   return {
+    searchFilters: () => request<SearchFilters>('/activities/filters', undefined, searchBase),
+    searchPage: async (page: number, end: string): Promise<SearchPage> => {
+      const json = await requestEnvelope<{ activity_items: SearchItem[] }>(
+        '/activities/list',
+        {
+          method: 'POST',
+          headers: {
+            page_info: JSON.stringify({
+              page_number: page,
+              total_records_per_page: 20,
+              order_by: 'Date range',
+            }),
+          },
+          body: JSON.stringify({
+            activity_search_pattern: {
+              activity_select_param: 2,
+              date_before: end,
+              activity_keyword: '',
+            },
+            activity_transfer_pattern: {},
+          }),
+        },
+        searchBase,
+      )
+      if (!json.headers.page_info || json.headers.page_info.page_number !== page)
+        throw new ApiError('Activity search response has missing or inconsistent pagination')
+      return { items: json.body.activity_items, totalPages: json.headers.page_info.total_page }
+    },
+    programDetail: (id: number) =>
+      request<{ detail: ProgramDetail }>(`/activity/detail/${id}`, undefined, searchBase),
+    programMeetings: (id: number) =>
+      request<{ meeting_and_registration_dates: MeetingDates }>(
+        `/activity/detail/meetingandregistrationdates/${id}`,
+        undefined,
+        searchBase,
+      ),
+    programPrice: (id: number) =>
+      request<{ estimateprice: RawPrice }>(
+        `/activity/detail/estimateprice/${id}`,
+        undefined,
+        searchBase,
+      ),
+
     calendars: () => request<CalendarsBody>('/calendars'),
 
     filters: (calendarId: number) =>

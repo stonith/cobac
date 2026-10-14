@@ -1,12 +1,72 @@
 [
   {
+    "id": 1903,
+    "name": "BAG Barn Studio",
+    "centerId": 114
+  },
+  {
+    "id": 41,
+    "name": "BAG Main Gallery",
+    "centerId": 114
+  },
+  {
+    "id": 1175,
+    "name": "BAG Upper Gallery",
+    "centerId": 114
+  },
+  {
     "id": 24,
     "name": "BCS Ice",
     "centerId": 56
   },
   {
+    "id": 45,
+    "name": "BCS Lakeview Room",
+    "centerId": 56
+  },
+  {
+    "id": 150,
+    "name": "BGC Golf Course",
+    "centerId": 126
+  },
+  {
+    "id": 153,
+    "name": "BON Active Studio",
+    "centerId": 63
+  },
+  {
+    "id": 149,
+    "name": "BON Arts Room",
+    "centerId": 63
+  },
+  {
+    "id": 172,
+    "name": "BON Banquet Floor",
+    "centerId": 63
+  },
+  {
+    "id": 110,
+    "name": "BON Banquet Hall",
+    "centerId": 63
+  },
+  {
+    "id": 160,
+    "name": "BON Childminding Room",
+    "centerId": 63
+  },
+  {
     "id": 161,
     "name": "BON Combo Court",
+    "centerId": 63
+  },
+  {
+    "id": 176,
+    "name": "BON Cycling Studio",
+    "centerId": 63
+  },
+  {
+    "id": 117,
+    "name": "BON Fitness/Dance Studio",
     "centerId": 63
   },
   {
@@ -20,6 +80,11 @@
     "centerId": 63
   },
   {
+    "id": 169,
+    "name": "BON Gym 2",
+    "centerId": 63
+  },
+  {
     "id": 171,
     "name": "BON Gym 2/3",
     "centerId": 63
@@ -30,8 +95,53 @@
     "centerId": 63
   },
   {
+    "id": 187,
+    "name": "BON Judo Room",
+    "centerId": 63
+  },
+  {
+    "id": 146,
+    "name": "BON Lobby Main Floor",
+    "centerId": 63
+  },
+  {
+    "id": 175,
+    "name": "BON Main Pool",
+    "centerId": 63
+  },
+  {
+    "id": 183,
+    "name": "BON Main Pool Lane 6",
+    "centerId": 63
+  },
+  {
+    "id": 219,
+    "name": "BON Main Pool Shallow End",
+    "centerId": 63
+  },
+  {
+    "id": 191,
+    "name": "BON Multi-purpose Room 1/2",
+    "centerId": 63
+  },
+  {
     "id": 210,
     "name": "BON Multi-purpose Room 4/5",
+    "centerId": 63
+  },
+  {
+    "id": 1173,
+    "name": "BON Music Studio 1",
+    "centerId": 63
+  },
+  {
+    "id": 165,
+    "name": "BON Music Studio 2",
+    "centerId": 63
+  },
+  {
+    "id": 214,
+    "name": "BON Pool Deck",
     "centerId": 63
   },
   {
@@ -45,9 +155,49 @@
     "centerId": 63
   },
   {
+    "id": 207,
+    "name": "BON Weight Room",
+    "centerId": 63
+  },
+  {
+    "id": 226,
+    "name": "BON Weight Room Programs",
+    "centerId": 63
+  },
+  {
     "id": 229,
     "name": "BON Yoga/Pilates Studio",
     "centerId": 63
+  },
+  {
+    "id": 14,
+    "name": "BSR Lobby",
+    "centerId": 60
+  },
+  {
+    "id": 25,
+    "name": "BSR Meeting Room",
+    "centerId": 60
+  },
+  {
+    "id": 22,
+    "name": "BSR Multi-purpose Room 1/2",
+    "centerId": 60
+  },
+  {
+    "id": 31,
+    "name": "BSR Multi-purpose Room 3",
+    "centerId": 60
+  },
+  {
+    "id": 155,
+    "name": "BVM Activity Room",
+    "centerId": 159
+  },
+  {
+    "id": 245,
+    "name": "BVM Discovery Room",
+    "centerId": 159
   },
   {
     "id": 1921,
@@ -60,6 +210,101 @@
     "centerId": 185
   },
   {
+    "id": 1920,
+    "name": "CAM Activity Room B",
+    "centerId": 185
+  },
+  {
+    "id": 1915,
+    "name": "CAM Meeting Room Large",
+    "centerId": 185
+  },
+  {
+    "id": 1917,
+    "name": "CAM Multi-purpose Room",
+    "centerId": 185
+  },
+  {
+    "id": 1923,
+    "name": "CAM Seniors Lounge",
+    "centerId": 185
+  },
+  {
+    "id": 295,
+    "name": "CON Activity Room",
+    "centerId": 37
+  },
+  {
+    "id": 298,
+    "name": "CON Activity Room 1",
+    "centerId": 37
+  },
+  {
+    "id": 303,
+    "name": "CON Activity Room 2",
+    "centerId": 37
+  },
+  {
+    "id": 1204,
+    "name": "CON Lounge",
+    "centerId": 37
+  },
+  {
+    "id": 302,
+    "name": "CON Program Room 1",
+    "centerId": 37
+  },
+  {
+    "id": 308,
+    "name": "CON Program Room 3",
+    "centerId": 37
+  },
+  {
+    "id": 331,
+    "name": "CON Terrarium Lounge",
+    "centerId": 37
+  },
+  {
+    "id": 321,
+    "name": "CRC Committee Room",
+    "centerId": 164
+  },
+  {
+    "id": 325,
+    "name": "CRC Hall",
+    "centerId": 164
+  },
+  {
+    "id": 1212,
+    "name": "CSC Active Studio",
+    "centerId": 41
+  },
+  {
+    "id": 1559,
+    "name": "CSC Boxing Studio",
+    "centerId": 41
+  },
+  {
+    "id": 338,
+    "name": "CSC Cardio &amp; Functional Training Studio",
+    "centerId": 41
+  },
+  {
+    "id": 1558,
+    "name": "CSC Conference Room 1",
+    "centerId": 41
+  },
+  {
+    "id": 1556,
+    "name": "CSC Fine Arts Studio",
+    "centerId": 41
+  },
+  {
+    "id": 329,
+    "name": "CSC Fitness Studio",
+    "centerId": 41
+  },
+  {
     "id": 332,
     "name": "CSC Gym",
     "centerId": 41
@@ -70,9 +315,104 @@
     "centerId": 41
   },
   {
+    "id": 340,
+    "name": "CSC Gym 1A",
+    "centerId": 41
+  },
+  {
+    "id": 337,
+    "name": "CSC Gym 1B",
+    "centerId": 41
+  },
+  {
     "id": 358,
     "name": "CSC Gym 2",
     "centerId": 41
+  },
+  {
+    "id": 363,
+    "name": "CSC Gym 2A",
+    "centerId": 41
+  },
+  {
+    "id": 262,
+    "name": "CSC Gym 2B",
+    "centerId": 41
+  },
+  {
+    "id": 1211,
+    "name": "CSC Multi-purpose Room 1",
+    "centerId": 41
+  },
+  {
+    "id": 315,
+    "name": "CSC Multi-purpose Room 2",
+    "centerId": 41
+  },
+  {
+    "id": 2147,
+    "name": "CSC Multi-purpose Room 3",
+    "centerId": 41
+  },
+  {
+    "id": 2149,
+    "name": "CSC Multi-purpose Room 5",
+    "centerId": 41
+  },
+  {
+    "id": 2150,
+    "name": "CSC Multi-purpose Room 6",
+    "centerId": 41
+  },
+  {
+    "id": 1554,
+    "name": "CSC Weight Room",
+    "centerId": 41
+  },
+  {
+    "id": 345,
+    "name": "CYC Lounge",
+    "centerId": 165
+  },
+  {
+    "id": 372,
+    "name": "ECC 25m Pool",
+    "centerId": 50
+  },
+  {
+    "id": 360,
+    "name": "ECC 25m Pool Lane 1",
+    "centerId": 50
+  },
+  {
+    "id": 364,
+    "name": "ECC 25m Pool Lane 4",
+    "centerId": 50
+  },
+  {
+    "id": 388,
+    "name": "ECC 25m Pool Lane 5",
+    "centerId": 50
+  },
+  {
+    "id": 392,
+    "name": "ECC 25m Pool Lane 6",
+    "centerId": 50
+  },
+  {
+    "id": 268,
+    "name": "ECC Active Studio (176)",
+    "centerId": 50
+  },
+  {
+    "id": 1203,
+    "name": "ECC Arts Room (202)",
+    "centerId": 50
+  },
+  {
+    "id": 370,
+    "name": "ECC Fred Randall Pool",
+    "centerId": 50
   },
   {
     "id": 361,
@@ -82,6 +422,11 @@
   {
     "id": 354,
     "name": "ECC Gym 1/2",
+    "centerId": 50
+  },
+  {
+    "id": 379,
+    "name": "ECC Gym 1A",
     "centerId": 50
   },
   {
@@ -105,14 +450,124 @@
     "centerId": 50
   },
   {
+    "id": 283,
+    "name": "ECC Leisure Pool",
+    "centerId": 50
+  },
+  {
+    "id": 369,
+    "name": "ECC Multi-purpose Room 1 (173)",
+    "centerId": 50
+  },
+  {
+    "id": 375,
+    "name": "ECC Multi-purpose Room 2 (204)",
+    "centerId": 50
+  },
+  {
+    "id": 380,
+    "name": "ECC Multi-purpose Room 3 (212)",
+    "centerId": 50
+  },
+  {
+    "id": 373,
+    "name": "ECC Multi-purpose Room 4 (228)",
+    "centerId": 50
+  },
+  {
+    "id": 397,
+    "name": "ECC Music/Meeting Room 1 (209)",
+    "centerId": 50
+  },
+  {
+    "id": 402,
+    "name": "ECC Music/Meeting Room 2 (210)",
+    "centerId": 50
+  },
+  {
+    "id": 1190,
+    "name": "ECC Preschool",
+    "centerId": 50
+  },
+  {
+    "id": 352,
+    "name": "ECC Seniors Lounge (163)",
+    "centerId": 50
+  },
+  {
+    "id": 383,
+    "name": "ECC Weight Room (218)",
+    "centerId": 50
+  },
+  {
+    "id": 408,
+    "name": "ECC Wet Room",
+    "centerId": 50
+  },
+  {
+    "id": 411,
+    "name": "ECC Youth Lounge",
+    "centerId": 50
+  },
+  {
+    "id": 299,
+    "name": "EDP Childminding Room",
+    "centerId": 54
+  },
+  {
+    "id": 416,
+    "name": "EDP Lobby",
+    "centerId": 54
+  },
+  {
+    "id": 421,
+    "name": "EDP Main Pool",
+    "centerId": 54
+  },
+  {
+    "id": 385,
+    "name": "EDP Main Pool Lane 1",
+    "centerId": 54
+  },
+  {
     "id": 307,
     "name": "EDP Multi-purpose Room",
     "centerId": 54
   },
   {
+    "id": 396,
+    "name": "EDP Weight Room",
+    "centerId": 54
+  },
+  {
+    "id": 401,
+    "name": "KEN Community Room",
+    "centerId": 147
+  },
+  {
     "id": 406,
     "name": "KEN Ice",
     "centerId": 147
+  },
+  {
+    "id": 628,
+    "name": "PK Edmonds Covered Picnic Area 1",
+    "centerId": 61
+  },
+  {
+    "id": 623,
+    "name": "PK Edmonds Covered Picnic Area 2",
+    "centerId": 61
+  },
+  {
+    "id": 777,
+    "name": "PK Warner Loat Grass Area",
+    "centerId": 103
+  },
+  {
+    "id": 787,
+    "name": "PK Warner Loat Park",
+    "centerId": 103
   },
   {
     "id": 1590,
@@ -125,13 +580,503 @@
     "centerId": 180
   },
   {
+    "id": 1585,
+    "name": "RBR Multi-purpose Room 1 (201)",
+    "centerId": 180
+  },
+  {
     "id": 1593,
     "name": "RBR Multi-purpose Room 2 (203)",
     "centerId": 180
   },
   {
+    "id": 793,
+    "name": "RGC Golf Course",
+    "centerId": 34
+  },
+  {
+    "id": 848,
+    "name": "RSC Jack Crosby Sport Box",
+    "centerId": 23
+  },
+  {
+    "id": 849,
+    "name": "RSC Parking Lot South",
+    "centerId": 23
+  },
+  {
+    "id": 2183,
+    "name": "RSC South Field House Change Room 1",
+    "centerId": 23
+  },
+  {
+    "id": 2184,
+    "name": "RSC South Field House Change Room 2",
+    "centerId": 23
+  },
+  {
+    "id": 889,
+    "name": "SCA Kiln Olympic Raku",
+    "centerId": 158
+  },
+  {
+    "id": 888,
+    "name": "SCA Kiln Sawdust",
+    "centerId": 158
+  },
+  {
+    "id": 930,
+    "name": "SCA Kiln Shed",
+    "centerId": 158
+  },
+  {
+    "id": 862,
+    "name": "SCA Mathers House Pottery Studio",
+    "centerId": 158
+  },
+  {
+    "id": 921,
+    "name": "SCA Mathers House Studio C",
+    "centerId": 158
+  },
+  {
+    "id": 935,
+    "name": "SCA Mathers House Studio C &amp; D",
+    "centerId": 158
+  },
+  {
+    "id": 915,
+    "name": "SCA Mathers House Studio F",
+    "centerId": 158
+  },
+  {
+    "id": 983,
+    "name": "SCA Mathers House Studio G",
+    "centerId": 158
+  },
+  {
+    "id": 740,
+    "name": "SCA Mathers House Studio H",
+    "centerId": 158
+  },
+  {
+    "id": 1267,
+    "name": "SCA Mathers House Studio J",
+    "centerId": 158
+  },
+  {
+    "id": 896,
+    "name": "SCA Steam Plant",
+    "centerId": 158
+  },
+  {
+    "id": 898,
+    "name": "SCA Studio 101",
+    "centerId": 158
+  },
+  {
+    "id": 956,
+    "name": "SCA Studio 102",
+    "centerId": 158
+  },
+  {
+    "id": 726,
+    "name": "SCA Studio 103",
+    "centerId": 158
+  },
+  {
+    "id": 1288,
+    "name": "SCA Studio 104",
+    "centerId": 158
+  },
+  {
+    "id": 897,
+    "name": "SCA Studio 200",
+    "centerId": 158
+  },
+  {
+    "id": 912,
+    "name": "SCA Studio 201",
+    "centerId": 158
+  },
+  {
+    "id": 922,
+    "name": "SCA Studio 203",
+    "centerId": 158
+  },
+  {
+    "id": 906,
+    "name": "SCA Studio 204",
+    "centerId": 158
+  },
+  {
+    "id": 907,
+    "name": "SCA Studio 205",
+    "centerId": 158
+  },
+  {
+    "id": 970,
+    "name": "SCA Studio 206",
+    "centerId": 158
+  },
+  {
+    "id": 1243,
+    "name": "SCA Studio 208",
+    "centerId": 158
+  },
+  {
+    "id": 884,
+    "name": "SCA Studio 209",
+    "centerId": 158
+  },
+  {
+    "id": 920,
+    "name": "SCA Studio 210",
+    "centerId": 158
+  },
+  {
+    "id": 928,
+    "name": "SCH Armstrong Gym",
+    "centerId": 46
+  },
+  {
+    "id": 905,
+    "name": "SCH Armstrong Staff Room",
+    "centerId": 46
+  },
+  {
+    "id": 1010,
+    "name": "SCH Aubrey Gym",
+    "centerId": 47
+  },
+  {
+    "id": 959,
+    "name": "SCH Aubrey Staff Room",
+    "centerId": 47
+  },
+  {
+    "id": 965,
+    "name": "SCH Brantford Gym",
+    "centerId": 70
+  },
+  {
+    "id": 998,
+    "name": "SCH Brantford Room A",
+    "centerId": 70
+  },
+  {
+    "id": 1029,
+    "name": "SCH Buckingham Gym",
+    "centerId": 110
+  },
+  {
+    "id": 1080,
+    "name": "SCH Buckingham Staff Room",
+    "centerId": 110
+  },
+  {
+    "id": 990,
+    "name": "SCH Cameron Gym",
+    "centerId": 143
+  },
+  {
+    "id": 1054,
+    "name": "SCH Cameron Staff Room",
+    "centerId": 143
+  },
+  {
+    "id": 1064,
+    "name": "SCH Capitol Hill Staff Room",
+    "centerId": 145
+  },
+  {
+    "id": 1052,
+    "name": "SCH Cascade Heights Gym",
+    "centerId": 151
+  },
+  {
+    "id": 1060,
+    "name": "SCH Cascade Heights Room B",
+    "centerId": 151
+  },
+  {
+    "id": 1030,
+    "name": "SCH Cascade Heights Staff Room",
+    "centerId": 151
+  },
+  {
+    "id": 1085,
+    "name": "SCH Chaffey-Burke Gym",
+    "centerId": 152
+  },
+  {
+    "id": 1091,
+    "name": "SCH Chaffey-Burke Library",
+    "centerId": 152
+  },
+  {
+    "id": 1134,
+    "name": "SCH Chaffey-Burke Staff Room",
+    "centerId": 152
+  },
+  {
+    "id": 1036,
+    "name": "SCH Clinton Gym",
+    "centerId": 153
+  },
+  {
+    "id": 1069,
+    "name": "SCH Clinton Room A",
+    "centerId": 153
+  },
+  {
+    "id": 1100,
+    "name": "SCH Clinton Staff Room",
+    "centerId": 153
+  },
+  {
+    "id": 1103,
+    "name": "SCH Confederation Park Room A",
+    "centerId": 154
+  },
+  {
+    "id": 1087,
+    "name": "SCH Douglas Road Room B",
+    "centerId": 155
+  },
+  {
+    "id": 1111,
+    "name": "SCH Douglas Road Staff Room",
+    "centerId": 155
+  },
+  {
+    "id": 1112,
+    "name": "SCH Forest Grove Committee Room A/B",
+    "centerId": 121
+  },
+  {
+    "id": 1068,
+    "name": "SCH Forest Grove Gym",
+    "centerId": 121
+  },
+  {
+    "id": 1139,
+    "name": "SCH Gilpin Staff Room",
+    "centerId": 127
+  },
+  {
+    "id": 1135,
+    "name": "SCH Inman Gym",
+    "centerId": 134
+  },
+  {
+    "id": 1099,
+    "name": "SCH Inman Staff Room",
+    "centerId": 134
+  },
+  {
+    "id": 1160,
+    "name": "SCH Lakeview Library",
+    "centerId": 3
+  },
+  {
+    "id": 1275,
+    "name": "SCH Lochdale Gym",
+    "centerId": 4
+  },
+  {
+    "id": 1328,
+    "name": "SCH Lochdale Room A",
+    "centerId": 4
+  },
+  {
+    "id": 1306,
+    "name": "SCH Lochdale Staff Room",
+    "centerId": 4
+  },
+  {
+    "id": 1147,
+    "name": "SCH Marlborough East Gym",
+    "centerId": 27
+  },
+  {
+    "id": 1321,
+    "name": "SCH Marlborough East Staff Room",
+    "centerId": 27
+  },
+  {
+    "id": 1334,
+    "name": "SCH Maywood Gym",
+    "centerId": 6
+  },
+  {
+    "id": 1156,
+    "name": "SCH Maywood Staff Room",
+    "centerId": 6
+  },
+  {
+    "id": 1341,
+    "name": "SCH Montecito Gym",
+    "centerId": 30
+  },
+  {
+    "id": 1163,
+    "name": "SCH Montecito Staff Room",
+    "centerId": 30
+  },
+  {
+    "id": 1364,
+    "name": "SCH Nelson Gym",
+    "centerId": 31
+  },
+  {
+    "id": 1320,
+    "name": "SCH Nelson Staff Room",
+    "centerId": 31
+  },
+  {
+    "id": 1396,
+    "name": "SCH Seaforth Staff Room",
+    "centerId": 148
+  },
+  {
+    "id": 1382,
+    "name": "SCH Second Street Portable",
+    "centerId": 150
+  },
+  {
+    "id": 1407,
+    "name": "SCH Sperling Gym",
+    "centerId": 162
+  },
+  {
+    "id": 1419,
+    "name": "SCH Sperling Library",
+    "centerId": 162
+  },
+  {
+    "id": 1369,
+    "name": "SCH Sperling Staff Room",
+    "centerId": 162
+  },
+  {
+    "id": 1034,
+    "name": "SCH Stoney Creek Community Room",
+    "centerId": 170
+  },
+  {
+    "id": 1414,
+    "name": "SCH Stoney Creek Gym",
+    "centerId": 170
+  },
+  {
+    "id": 1415,
+    "name": "SCH Stoney Creek Staff Room",
+    "centerId": 170
+  },
+  {
+    "id": 1065,
+    "name": "SCH Suncrest Gym",
+    "centerId": 175
+  },
+  {
+    "id": 1462,
+    "name": "SCH Suncrest Staff Room",
+    "centerId": 175
+  },
+  {
+    "id": 1394,
+    "name": "SCH Taylor Park Gym",
+    "centerId": 135
+  },
+  {
+    "id": 1408,
+    "name": "SCH Twelfth Avenue Gym",
+    "centerId": 137
+  },
+  {
+    "id": 1405,
+    "name": "SCH Twelfth Avenue Room A",
+    "centerId": 137
+  },
+  {
+    "id": 1086,
+    "name": "SCH University Highlands Gym",
+    "centerId": 138
+  },
+  {
+    "id": 1467,
+    "name": "SCH University Highlands Preschool Room",
+    "centerId": 138
+  },
+  {
+    "id": 1461,
+    "name": "SCH Westridge Gym",
+    "centerId": 140
+  },
+  {
+    "id": 1465,
+    "name": "SCH Westridge Staff Room",
+    "centerId": 140
+  },
+  {
+    "id": 1104,
+    "name": "SCH Windsor Gym",
+    "centerId": 142
+  },
+  {
+    "id": 1470,
+    "name": "SCH Windsor Library",
+    "centerId": 142
+  },
+  {
+    "id": 1485,
+    "name": "SCH Windsor Staff Room",
+    "centerId": 142
+  },
+  {
+    "id": 1473,
+    "name": "SCY Lounge",
+    "centerId": 160
+  },
+  {
+    "id": 1490,
+    "name": "SUM Lounge",
+    "centerId": 174
+  },
+  {
+    "id": 2285,
+    "name": "Training Room 124",
+    "centerId": 196
+  },
+  {
+    "id": 1499,
+    "name": "WCC Committee Room",
+    "centerId": 156
+  },
+  {
+    "id": 1498,
+    "name": "WCC Hall",
+    "centerId": 156
+  },
+  {
+    "id": 1496,
+    "name": "WIL Main Hall",
+    "centerId": 149
+  },
+  {
+    "id": 1140,
+    "name": "WIL Multi-purpose Room 1",
+    "centerId": 149
+  },
+  {
     "id": 1894,
     "name": "WIL Multi-purpose Room 2",
+    "centerId": 149
+  },
+  {
+    "id": 1504,
+    "name": "WIL Weight Room",
     "centerId": 149
   }
 ]

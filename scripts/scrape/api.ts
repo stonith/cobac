@@ -4,6 +4,7 @@ export interface ApiEnvelope<TBody> {
   headers: {
     response_code: string
     response_message: string
+    page_info?: { total_page: number; page_number: number }
   }
   body: TBody
 }

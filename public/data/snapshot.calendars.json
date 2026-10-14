@@ -55,6 +55,166 @@
     "group": "Sports"
   },
   {
+    "id": -54,
+    "name": "Programs: Active Playtime",
+    "group": "Programs"
+  },
+  {
+    "id": -20,
+    "name": "Programs: Adapted Activities",
+    "group": "Programs"
+  },
+  {
+    "id": -36,
+    "name": "Programs: Camps",
+    "group": "Programs"
+  },
+  {
+    "id": -23,
+    "name": "Programs: Ceramics",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -41,
+    "name": "Programs: Cooking & Food",
+    "group": "Programs"
+  },
+  {
+    "id": -43,
+    "name": "Programs: Crafts",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -44,
+    "name": "Programs: Creative Writing",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -26,
+    "name": "Programs: Dance",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -29,
+    "name": "Programs: Day Trips",
+    "group": "Programs"
+  },
+  {
+    "id": -24,
+    "name": "Programs: Early Learning",
+    "group": "Programs"
+  },
+  {
+    "id": -52,
+    "name": "Programs: Environment",
+    "group": "Programs"
+  },
+  {
+    "id": -40,
+    "name": "Programs: Games",
+    "group": "Programs"
+  },
+  {
+    "id": -55,
+    "name": "Programs: Golf",
+    "group": "Sports"
+  },
+  {
+    "id": -32,
+    "name": "Programs: Group Fitness",
+    "group": "Fitness"
+  },
+  {
+    "id": -45,
+    "name": "Programs: Gymnastics",
+    "group": "Sports"
+  },
+  {
+    "id": -38,
+    "name": "Programs: Indoor / Gym Sports",
+    "group": "Sports"
+  },
+  {
+    "id": -30,
+    "name": "Programs: Markets",
+    "group": "Programs"
+  },
+  {
+    "id": -34,
+    "name": "Programs: Martial Arts",
+    "group": "Sports"
+  },
+  {
+    "id": -51,
+    "name": "Programs: Media",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -39,
+    "name": "Programs: Museum",
+    "group": "Programs"
+  },
+  {
+    "id": -35,
+    "name": "Programs: Music",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -46,
+    "name": "Programs: Outdoor Recreation",
+    "group": "Sports"
+  },
+  {
+    "id": -33,
+    "name": "Programs: Personal Development",
+    "group": "Programs"
+  },
+  {
+    "id": -47,
+    "name": "Programs: Racquet Sports",
+    "group": "Sports"
+  },
+  {
+    "id": -28,
+    "name": "Programs: Skating",
+    "group": "Sports"
+  },
+  {
+    "id": -25,
+    "name": "Programs: Special Events & Holiday Activities",
+    "group": "Programs"
+  },
+  {
+    "id": -27,
+    "name": "Programs: Swimming",
+    "group": "Sports"
+  },
+  {
+    "id": -31,
+    "name": "Programs: Theatre & Film",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -22,
+    "name": "Programs: Visual Arts",
+    "group": "Art & Culture"
+  },
+  {
+    "id": -48,
+    "name": "Programs: Weight Training",
+    "group": "Fitness"
+  },
+  {
+    "id": -49,
+    "name": "Programs: Wellness",
+    "group": "Fitness"
+  },
+  {
+    "id": -50,
+    "name": "Programs: Yoga",
+    "group": "Fitness"
+  },
+  {
     "id": 19,
     "name": "Racquet Court",
     "group": "Sports"

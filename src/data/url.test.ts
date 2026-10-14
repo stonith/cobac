@@ -5,6 +5,13 @@ import { filtersFromSearch, filtersToSearch } from './url'
 const defaultWeek = '2026-09-07'
 
 describe('url filters', () => {
+  it('round-trips supplemental calendar ids while rejecting negative centres and days', () => {
+    const filters = filtersFromSearch('?cal=-26,4&centers=-158,63&days=-1,3', defaultWeek)
+    expect(filters.calendarIds).toEqual([-26, 4])
+    expect(filters.centerIds).toEqual([63])
+    expect(filters.days).toEqual([3])
+    expect(filtersFromSearch(filtersToSearch(filters, defaultWeek), defaultWeek)).toEqual(filters)
+  })
   it('round-trips a full set of filters', () => {
     const filters = {
       weekStart: '2026-09-14',

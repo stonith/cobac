@@ -20,6 +20,68 @@ describe('createClient', () => {
     )
   })
 
+  it('uses the separate search API and its pagination headers', async () => {
+    const fetchMock = mockFetch(
+      async () =>
+        new Response(
+          JSON.stringify({
+            headers: {
+              response_code: '0000',
+              response_message: 'Successful',
+              page_info: { total_page: 3, page_number: 2 },
+            },
+            body: { activity_items: [{ id: 138791 }] },
+          }),
+        ),
+    )
+    const client = createClient({ fetch: fetchMock as unknown as typeof fetch })
+    await expect(client.searchPage(2, '2027-01-25')).resolves.toEqual({
+      items: [{ id: 138791 }],
+      totalPages: 3,
+    })
+    const [url, init] = fetchMock.mock.calls[0]!
+    expect(url).toBe(
+      'https://anc.ca.apm.activecommunities.com/burnaby/rest/activities/list?locale=en-US',
+    )
+    expect(JSON.parse((init!.headers as Record<string, string>).page_info!)).toMatchObject({
+      page_number: 2,
+    })
+    expect(JSON.parse(init!.body as string)).toMatchObject({
+      activity_search_pattern: { date_before: '2027-01-25', activity_select_param: 2 },
+    })
+  })
+
+  it('rejects an upstream response that silently repeats the first page', async () => {
+    const fetchMock = mockFetch(
+      async () =>
+        new Response(
+          JSON.stringify({
+            headers: {
+              response_code: '0000',
+              response_message: 'Successful',
+              page_info: { total_page: 3, page_number: 1 },
+            },
+            body: { activity_items: [] },
+          }),
+        ),
+    )
+    const client = createClient({ fetch: fetchMock as unknown as typeof fetch })
+    await expect(client.searchPage(2, '2027-01-25')).rejects.toThrow(/pagination/)
+  })
+
+  it('fetches program detail, meetings and prices from their own endpoints', async () => {
+    const fetchMock = mockFetch(async () => ok({}))
+    const client = createClient({ fetch: fetchMock as unknown as typeof fetch })
+    await client.programDetail(138791)
+    await client.programMeetings(138791)
+    await client.programPrice(138791)
+    expect(fetchMock.mock.calls.map((c) => c[0])).toEqual([
+      'https://anc.ca.apm.activecommunities.com/burnaby/rest/activity/detail/138791?locale=en-US',
+      'https://anc.ca.apm.activecommunities.com/burnaby/rest/activity/detail/meetingandregistrationdates/138791?locale=en-US',
+      'https://anc.ca.apm.activecommunities.com/burnaby/rest/activity/detail/estimateprice/138791?locale=en-US',
+    ])
+  })
+
   it('posts the full events request body', async () => {
     const fetchMock = mockFetch(async () => ok({ center_events: [] }))
     const client = createClient({ fetch: fetchMock as unknown as typeof fetch })

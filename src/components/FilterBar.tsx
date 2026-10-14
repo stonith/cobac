@@ -334,9 +334,12 @@ function PriceRange({ ceiling, min, max, onChange }: PriceRangeProps) {
         thumbProps={[
           {
             'aria-label': 'Minimum price',
-            'aria-valuetext': formatPrice(lower(lo!) ?? 0, ceiling),
+            'aria-valuetext': formatPrice((active ? lower(lo!) : min) ?? 0, ceiling),
           },
-          { 'aria-label': 'Maximum price', 'aria-valuetext': formatPrice(upper(hi!), ceiling) },
+          {
+            'aria-label': 'Maximum price',
+            'aria-valuetext': formatPrice(active ? upper(hi!) : max, ceiling),
+          },
         ]}
       />
       {/* Fixed width so a changing label never nudges the slider or the search box. */}

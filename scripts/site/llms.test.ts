@@ -20,16 +20,16 @@ describe('llmsTxt', () => {
   it('follows the llms.txt shape', () => {
     expect(text.startsWith('# cobac\n\n> cobac (City of Burnaby recreation)')).toBe(true)
     expect(text).toContain(
-      '2 registered programs and drop-in multi-sport sessions with 3 scheduled sessions at 2 community centres',
+      '2 registered programs and drop-in activities with 3 scheduled sessions at 2 community centres',
     )
     expect(text).toContain('## How to query')
-    expect(text).toContain('https://cobac.fyi/mcp')
+    expect(text).toContain('https://cobac-g3k.pages.dev/mcp')
     expect(text).toContain('## Centres\n')
     expect(text).toContain(
-      '- [Bonsor Recreation Complex (BON)](https://cobac.fyi/llms/centres/63.md): 1 activities, 6550 Bonsor Avenue, Burnaby, (604) 421-5962',
+      '- [Bonsor Recreation Complex (BON)](https://cobac-g3k.pages.dev/llms/centres/63.md): 1 activities, 6550 Bonsor Avenue, Burnaby, (604) 421-5962',
     )
     expect(text).toContain(
-      '- [Rosemary Brown Recreation Centre (RBR)](https://cobac.fyi/llms/centres/180.md): 1 activities',
+      '- [Rosemary Brown Recreation Centre (RBR)](https://cobac-g3k.pages.dev/llms/centres/180.md): 1 activities',
     )
     expect(text).toContain('- Multi-sport (Drop-in, id 6)')
     expect(text).toContain('## Optional')
@@ -44,10 +44,12 @@ describe('llmsFullTxt', () => {
     const text = llmsFullTxt(ctx, byCentre)
     expect(text).toContain('### Bonsor Recreation Complex (BON)')
     expect(text).toContain(
-      '- [Multi-sport](https://cobac.fyi/activities/1/) · Multi-sport · Free · All ages · 2 sessions',
+      '- [Multi-sport](https://cobac-g3k.pages.dev/activities/1/) · Multi-sport · Free · All ages · 2 sessions',
     )
     expect(text).toContain('### Rosemary Brown Recreation Centre (RBR)')
-    expect(text).toContain('[Reserve In Advance: Adult Badminton](https://cobac.fyi/activities/2/)')
+    expect(text).toContain(
+      '[Reserve In Advance: Adult Badminton](https://cobac-g3k.pages.dev/activities/2/)',
+    )
   })
 })
 
@@ -69,6 +71,6 @@ describe('centreMarkdown', () => {
       '## Drop-in\n\n### Multi-sport\n\n- Centre: Bonsor Recreation Complex (BON), 6550 Bonsor Avenue, Burnaby',
     )
     expect(md).toContain('#### Upcoming sessions (Pacific time)')
-    expect(md).toContain('https://cobac.fyi/activities/{id}/')
+    expect(md).toContain('https://cobac-g3k.pages.dev/activities/{id}/')
   })
 })

@@ -1,0 +1,39 @@
+{
+  "item": {
+    "id": 138791,
+    "name": "Drop-In Modern Dance: Open level",
+    "category": "Dance",
+    "detail_url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/drop-in-modern-dance-open-level/138791?locale=en-US",
+    "date_range_start": "2026-10-14",
+    "date_range_end": ""
+  },
+  "detail": {
+    "activity_id": 138791,
+    "activity_name": "Drop-In Modern Dance: Open level",
+    "category": "Dance",
+    "catalog_description": "Drop-In .Modern dance classes are contemporary based. Using the fundamentals of dance technique students will develop strength, alignment, coordination and expressivity.",
+    "centers": [{"id":158,"name":"Shadbolt Centre for the Arts (SCA)","address1":"6450 Deer Lake Ave","address2":"","city":"Burnaby","state":"BC","zip_code":"V5G 2J3","phone":"(604) 297-4440","latitude":49.2407,"longitude":-122.9695}],
+    "facilities": [{"id":912,"name":"SCA Studio 201","center_id":0}],
+    "instructors": [],
+    "age_min_year": 18,
+    "age_max_year": 0,
+    "age_description": "18 yrs +,",
+    "space_status": "9 openings remaining",
+    "space_type": 2,
+    "first_date": "2026-10-14",
+    "last_date": "2026-10-14"
+  },
+  "meetings": {
+    "no_meeting_dates": false,
+    "user_entered": false,
+    "additional_dates": [],
+    "activity_patterns": [{"beginning_date":"2026-10-14","ending_date":"2026-10-14","weeks_of_month":"","exception_dates":[],"pattern_dates":[{"weekdays":"Wed","starting_time":"12:00:00","ending_time":"13:30:00"}]}]
+  },
+  "price": {
+    "show_price_info_online": true,
+    "estimate_price": "",
+    "search_from_price_desc": "",
+    "free": false,
+    "prices": [{"list_name":"","activity_name":"Drop-In Modern Dance: Open level","details":[{"price":"$24.96","description":"Adult fee for up to 64 years old"},{"price":"$21.12","description":"Senior fee for 65 or more years old"}]}]
+  }
+}

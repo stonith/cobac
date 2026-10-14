@@ -9,6 +9,24 @@ import { FilterBar } from './FilterBar'
 const week = '2026-09-07'
 
 describe('FilterBar', () => {
+  it('announces exact URL price bounds even when the slider rounds its position', () => {
+    render(
+      <FilterBar
+        index={{ ...index, priceCeiling: 1600 }}
+        filters={{ ...emptyFilters(week), priceMin: 5, priceMax: 20 }}
+        onChange={() => {}}
+        resultCount={3}
+      />,
+    )
+    expect(screen.getByRole('slider', { name: 'Minimum price' })).toHaveAttribute(
+      'aria-valuetext',
+      '$5',
+    )
+    expect(screen.getByRole('slider', { name: 'Maximum price' })).toHaveAttribute(
+      'aria-valuetext',
+      '$20',
+    )
+  })
   it('shows the result count and no clear button by default', () => {
     render(
       <FilterBar index={index} filters={emptyFilters(week)} onChange={() => {}} resultCount={3} />,

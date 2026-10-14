@@ -2,6 +2,8 @@ import { mkdir } from 'node:fs/promises'
 import { parseArgs } from 'node:util'
 import { createClient } from './client'
 import { fetchActivityDetails } from './enrich'
+import { fetchPrograms, mergePrograms } from './programs'
+import path from 'node:path'
 import { applyEnrichment, buildSnapshot, isPublicCalendar, type CalendarScrape } from './normalize'
 import { bundleSnapshot, writeSnapshotFiles } from '../snapshot/files'
 import type { SnapshotMeta } from '../../src/types/snapshot'
@@ -15,6 +17,7 @@ const { values: args } = parseArgs({
     out: { type: 'string', default: 'public/data' },
     cache: { type: 'string', default: '.cache/details' },
     'no-cache': { type: 'boolean', default: false },
+    'no-programs': { type: 'boolean', default: false },
   },
 })
 
@@ -61,6 +64,20 @@ async function main() {
     })
     enriched = applyEnrichment(snapshot, details)
     log(`enriched ${enriched}/${snapshot.activities.length} activities`)
+  }
+
+  // Calendar-restricted runs remain calendar-only. Programs require detail/schedule endpoints
+  // even without calendar enrichment, since the search list has no exact session timestamps.
+  if (!onlyCalendars && !args['no-programs']) {
+    const { records, categories, centers } = await fetchPrograms({
+      client,
+      snapshot,
+      cacheDir: args['no-cache'] ? undefined : path.join(args.cache, '..', 'programs'),
+      log,
+    })
+    const added = mergePrograms(snapshot, records, categories, log, centers)
+    enriched += added
+    log(`added ${added} scheduled programs outside the online calendars`)
   }
 
   const meta: SnapshotMeta = {

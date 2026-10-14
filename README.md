@@ -28,12 +28,12 @@ ActiveNet REST API ──(pnpm scrape, nightly via GitHub Actions)──▶ publ
    each activity with age range, openings (kept verbatim and parsed into an availability status
    plus remaining spaces) and centre coordinates from the per-activity details endpoint. It writes one pretty-printed file per collection to `public/data/`
    (`snapshot.calendars.json`, `.centers`, `.facilities`, `.activities`, `.occurrences`; about
-   20 MB in total) plus a small `snapshot.meta.json` with the scrape time, period and counts, so
+   18 MB in total) plus a small `snapshot.meta.json` with the scrape time, period and counts, so
    each nightly commit shows the lines that actually changed.
 2. The scrape workflow runs nightly and commits the files when the data changed. Cloudflare
    Pages redeploys on push.
 3. A Vite plugin (`vite.config.ts`) merges the files into `public/data/snapshot.json` (about
-   9 MB, 150 KB gzipped) before every dev server start and build. That bundle is gitignored, and
+   16 MB, 670 KB gzipped) before every dev server start and build. That bundle is gitignored, and
    the build output contains only the bundle, not the split files.
 4. The build also writes machine-readable views of the same data (data shards, prerendered
    pages, `llms.txt`, see below) and a Cloudflare Pages Function serves an MCP endpoint over the
@@ -60,15 +60,15 @@ Pages Function on the free plan can parse what one request needs inside its 10 m
 and they double as a public read-only data API. `pnpm site:generate` regenerates them into an
 existing `dist/` without rebuilding the app.
 
-| URL                          | Contents                                                                                                                                    |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/data/meta.json`            | Scrape time, period, counts, the Mondays of every week with sessions, generator version                                                     |
-| `/data/calendars.json`       | The calendars with their group (`Drop-in`, `Fitness`, `Sports`)                                                                             |
-| `/data/centres.json`         | Centres with address, phone, coordinates and activity count, plus facilities                                                                |
-| `/data/catalog.json`         | Every activity without its description HTML, fee table or URL: enough to search and filter, including `availability` and `spaces` (~1.5 MB) |
-| `/data/weeks/{monday}.json`  | All sessions (`{a, s, e}`) in one Monday-based week                                                                                         |
-| `/data/activities/{id}.json` | One activity in full: plain-text description, fees, centre, calendar, sessions and cobac links                                              |
-| `/data/snapshot.json`        | The whole snapshot the app loads (~9 MB)                                                                                                    |
+| URL                          | Contents                                                                                                                          |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `/data/meta.json`            | Scrape time, period, counts, the Mondays of every week with sessions, generator version                                           |
+| `/data/calendars.json`       | The calendars with their group (`Drop-in`, `Fitness`, `Sports`, `Art & Culture`, `Programs`)                                      |
+| `/data/centres.json`         | Centres with address, phone, coordinates and activity count, plus facilities                                                      |
+| `/data/catalog.json`         | Every activity without its description HTML, fee table or URL: enough to search and filter, including `availability` and `spaces` |
+| `/data/weeks/{monday}.json`  | All sessions (`{a, s, e}`) in one Monday-based week                                                                               |
+| `/data/activities/{id}.json` | One activity in full: plain-text description, fees, centre, calendar, sessions and cobac links                                    |
+| `/data/snapshot.json`        | The whole snapshot the app loads (~16 MB)                                                                                         |
 
 All `/data/*` responses carry `Access-Control-Allow-Origin: *` and five minutes of edge caching
 (`public/_headers`). Times are Burnaby local time (Pacific) with no offset, as everywhere in the snapshot. The
@@ -96,14 +96,14 @@ shell links `llms.txt` as an alternate representation.
 
 ### MCP server
 
-`https://cobac.fyi/mcp` is a remote [Model Context Protocol](https://modelcontextprotocol.io)
+`https://cobac-g3k.pages.dev/mcp` is a remote [Model Context Protocol](https://modelcontextprotocol.io)
 server (Streamable HTTP, no authentication, read-only) so agents can query the data directly.
 It speaks the 2026-07-28 stateless protocol and still answers 2025-era clients through the SDK's
 stateless legacy path. Add it to a client with its URL, for example:
 
 ```sh
-claude mcp add --transport http cobac https://cobac.fyi/mcp
-npx @modelcontextprotocol/inspector   # then connect to https://cobac.fyi/mcp
+claude mcp add --transport http cobac https://cobac-g3k.pages.dev/mcp
+npx @modelcontextprotocol/inspector   # then connect to https://cobac-g3k.pages.dev/mcp
 ```
 
 In ChatGPT it works as a custom connector (Settings → Connectors → Developer mode) and follows
@@ -125,7 +125,7 @@ It also exposes resources (`cobac://snapshot`, `cobac://centres`, `cobac://calen
 `cobac://activities/{id}`) and a `plan_activities` prompt.
 
 The server is a Cloudflare Pages Function (`functions/mcp.ts`, code in `mcp/`) built on
-`@modelcontextprotocol/server`. It never parses the 9 MB snapshot: each tool reads only the
+`@modelcontextprotocol/server`. It never parses the full snapshot: each tool reads only the
 shards it needs through the `ASSETS` binding and caches them per isolate, which keeps a cold
 request within the Workers free plan's 10 ms CPU budget. `public/_routes.json` sends only
 `/mcp` and `/.well-known/mcp` to Functions; every other path is a free static request.
@@ -155,6 +155,33 @@ reads a committed snapshot instead of calling ActiveNet directly.
 
 Times in the data are Burnaby local time (Pacific) with no timezone; the app stores and renders
 them as-is.
+
+### Activity-search coverage
+
+Burnaby's online calendars do **not** contain every WebReg activity: dance, arts, swimming
+lessons and other programs can exist only in activity search. A full scrape also paginates
+`/rest/activities/list` (in-progress/future listings), then fetches each missing activity's
+`/rest/activity/detail/{id}`, `/meetingandregistrationdates/{id}` and `/estimateprice/{id}`.
+Existing calendar activity IDs win on overlap, so they are not duplicated or reassigned.
+
+Supplemental activities retain ActiveNet activity, centre and facility IDs. Their calendars
+are `Programs: <category>`, with **negative ActiveNet category IDs** (e.g. Dance = `-26`),
+separate from positive online-calendar IDs. These appear in the existing calendar/group
+filters, URLs, MCP tools and generated pages without changing the snapshot shape.
+
+Weekly and weekend meeting patterns are expanded within the existing calendar date window,
+with holiday exceptions and explicit additional/replacement dates respected. No-date
+listings are omitted. Text-only schedules, unsupported weeks-of-month patterns, unknown
+categories and ambiguous centres are logged and omitted rather than assigned invented
+sessions. When a detail response omits its centre, an exact activity-search site-name match
+against the search filters supplies the centre ID (coordinates may remain unavailable).
+Consequently this is broader coverage, not a guarantee of every WebReg listing.
+
+Program details/schedules/prices are cached separately in `.cache/programs`; `--no-cache`
+disables both caches and is used by the nightly workflow. A cold full scrape now takes roughly
+10 minutes rather than two; `--calendars` stays calendar-only, and `--no-programs` explicitly
+skips the supplemental source. `--no-enrich` and `--enrich-limit` control calendar enrichment
+only: program details remain necessary to establish exact sessions.
 
 ## Setup
 
@@ -192,9 +219,9 @@ pnpm dev
 
 ```sh
 pnpm scrape                      # full scrape with enrichment, caches details in .cache/details
-pnpm scrape --no-enrich          # bulk calendars only (about 45 s)
+pnpm scrape --no-enrich --no-programs # bulk calendars only (about 45 s)
 pnpm scrape --enrich-limit 20    # enrich only the first 20 activities
-pnpm scrape -c 55,3              # only these calendar ids
+pnpm scrape -c 4,14              # only these online-calendar ids (no supplemental programs)
 pnpm scrape --no-cache           # ignore and do not write the details cache (what CI uses)
 pnpm scrape --out some/dir       # write elsewhere than public/data
 ```
@@ -218,7 +245,7 @@ Vite, React, TypeScript, Tailwind CSS v4, shadcn/ui, Vitest, Playwright, ESLint,
 
 ## Deployment
 
-The site lives at <https://cobac.fyi> and deploys to Cloudflare Pages from the `main` branch.
+The site lives at <https://cobac-g3k.pages.dev> and deploys to Cloudflare Pages from the `main` branch.
 Build command `pnpm build`, output directory `dist`; runtime settings (compatibility date and
 flags) come from `wrangler.toml`, which Pages reads because it sets `pages_build_output_dir`.
 The build generates `dist/data/snapshot.json` and the machine-readable files from the committed

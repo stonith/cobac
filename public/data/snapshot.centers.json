@@ -1,11 +1,39 @@
 [
   {
+    "id": 46,
+    "name": "Armstrong Elementary School",
+    "lat": 49.2342,
+    "lng": -122.9087,
+    "address": "8757 Armstrong Ave, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 47,
+    "name": "Aubrey Elementary School",
+    "lat": 49.2741,
+    "lng": -122.9779,
+    "address": "1075 Stratford Ave, Burnaby",
+    "phone": "(604) 297-4531"
+  },
+  {
+    "id": 49,
+    "name": "Barnet Marine Park"
+  },
+  {
     "id": 56,
     "name": "Bill Copeland Sports Centre (BCS)",
     "lat": 49.2524,
     "lng": -122.9654,
     "address": "3676 Kensington Ave, Burnaby",
     "phone": "(604) 297-4521"
+  },
+  {
+    "id": 60,
+    "name": "Bonsor 55+ Centre (BSR)",
+    "lat": 49.2241,
+    "lng": -122.9946,
+    "address": "6533 Nelson Ave, Burnaby",
+    "phone": "(604) 297-4580"
   },
   {
     "id": 63,
@@ -16,12 +44,160 @@
     "phone": "(604) 297-4597"
   },
   {
+    "id": 70,
+    "name": "Brantford Elementary School",
+    "lat": 49.2244,
+    "lng": -122.9666,
+    "address": "6512 Brantford Ave, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 106,
+    "name": "Brunette River Conservation Area"
+  },
+  {
+    "id": 110,
+    "name": "Buckingham Elementary School",
+    "lat": 49.233,
+    "lng": -122.956,
+    "address": "6066 Buckingham Ave, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 114,
+    "name": "Burnaby Art Gallery (BAG)",
+    "lat": 49.2415,
+    "lng": -122.9718,
+    "address": "6344 Deer Lake Ave, Burnaby",
+    "phone": "(604) 297-4422"
+  },
+  {
+    "id": 125,
+    "name": "Burnaby Lake Sports Complex West (BLW)"
+  },
+  {
+    "id": 126,
+    "name": "Burnaby Mountain Golf Course (BGC)",
+    "lat": 49.2652,
+    "lng": -122.9426,
+    "address": "7600 Halifax St, Burnaby",
+    "phone": "(604) 280-7355"
+  },
+  {
+    "id": 159,
+    "name": "Burnaby Village Museum (BVM)",
+    "lat": 49.2399,
+    "lng": -122.9669,
+    "address": "6501 Deer Lake Ave, Burnaby",
+    "phone": "(604) 297-4565"
+  },
+  {
+    "id": 143,
+    "name": "Cameron Elementary School",
+    "lat": 49.2519,
+    "lng": -122.8997,
+    "address": "9540 Erickson Dr, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
+    "id": 145,
+    "name": "Capitol Hill Elementary School",
+    "lat": 49.275,
+    "lng": -122.9811,
+    "address": "350 S Holdom Ave, Burnaby",
+    "phone": "(604) 297-4531"
+  },
+  {
+    "id": 151,
+    "name": "Cascade Heights Elementary School",
+    "lat": 49.2459,
+    "lng": -123.0214,
+    "address": "4343 Smith Ave, Burnaby",
+    "phone": "(604) 297-4531"
+  },
+  {
+    "id": 98,
+    "name": "Central Park"
+  },
+  {
+    "id": 152,
+    "name": "Chaffey-Burke Elementary School",
+    "lat": 49.2345,
+    "lng": -123.0052,
+    "address": "4404 Sardis St, Burnaby",
+    "phone": "(604) 297-4572"
+  },
+  {
+    "id": 164,
+    "name": "Charles Rummel Centre (CRC)",
+    "lat": 49.2522,
+    "lng": -122.9414,
+    "address": "3630 Lozells Ave, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
     "id": 41,
     "name": "Christine Sinclair Community Centre (CSC)",
     "lat": 49.2513,
     "lng": -122.9675,
     "address": "3713 Kensington Ave, Burnaby",
     "phone": "(604) 320-2222"
+  },
+  {
+    "id": 153,
+    "name": "Clinton Elementary School",
+    "lat": 49.2125,
+    "lng": -122.9791,
+    "address": "5858 Clinton St, Burnaby",
+    "phone": "(604) 297-4577"
+  },
+  {
+    "id": 37,
+    "name": "Confederation Community Centre (CON)",
+    "lat": 49.2823,
+    "lng": -123.0012,
+    "address": "4585 Albert St, Burnaby",
+    "phone": "(604) 294-1936"
+  },
+  {
+    "id": 100,
+    "name": "Confederation Park"
+  },
+  {
+    "id": 154,
+    "name": "Confederation Park Elementary School",
+    "lat": 49.2835,
+    "lng": -122.9962,
+    "address": "4715 Pandora St, Burnaby",
+    "phone": "(604) 297-4531"
+  },
+  {
+    "id": 165,
+    "name": "Creekside Youth Centre (CYC)",
+    "lat": 49.2595,
+    "lng": -122.903,
+    "address": "2720 Beaverbrook Cres, Burnaby",
+    "phone": "(604) 294-7607"
+  },
+  {
+    "id": 196,
+    "name": "Deer Lake 1",
+    "lat": 49.2447,
+    "lng": -122.9721,
+    "address": "4946 Canada Way, Burnaby",
+    "phone": "(604) 294-7699"
+  },
+  {
+    "id": 102,
+    "name": "Deer Lake Park"
+  },
+  {
+    "id": 155,
+    "name": "Douglas Road Elementary School",
+    "lat": 49.249,
+    "lng": -122.982,
+    "address": "4861 Canada Way, Burnaby",
+    "phone": "(604) 297-4531"
   },
   {
     "id": 50,
@@ -32,12 +208,44 @@
     "phone": "(604) 297-4838"
   },
   {
+    "id": 61,
+    "name": "Edmonds Park",
+    "lat": 49.2214,
+    "lng": -122.9475,
+    "address": "7433 Humphries, Burnaby",
+    "phone": "(604) 294-7222"
+  },
+  {
     "id": 54,
     "name": "Eileen Dailly Leisure Pool & Fitness Centre (EDP)",
     "lat": 49.2832,
     "lng": -123.0025,
     "address": "240 Willingdon Ave, Burnaby",
     "phone": "(604) 298-7946"
+  },
+  {
+    "id": 121,
+    "name": "Forest Grove Elementary School",
+    "lat": 49.2651,
+    "lng": -122.918,
+    "address": "8525 Forest Grove Dr, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
+    "id": 127,
+    "name": "Gilpin Elementary School",
+    "lat": 49.2432,
+    "lng": -122.9844,
+    "address": "5490 Eglinton St, Burnaby",
+    "phone": "(604) 297-4531"
+  },
+  {
+    "id": 134,
+    "name": "Inman Elementary School",
+    "lat": 49.2393,
+    "lng": -123.017,
+    "address": "3963 Brandon St, Burnaby",
+    "phone": "(604) 297-4572"
   },
   {
     "id": 147,
@@ -48,12 +256,152 @@
     "phone": "(604) 297-4535"
   },
   {
+    "id": 3,
+    "name": "Lakeview Elementary School",
+    "lat": 49.2304,
+    "lng": -122.9449,
+    "address": "7777 Mayfield St, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 4,
+    "name": "Lochdale Community School",
+    "lat": 49.2727,
+    "lng": -122.961,
+    "address": "6990 Aubrey St, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 27,
+    "name": "Marlborough Elementary School East",
+    "lat": 49.2289,
+    "lng": -122.9911,
+    "address": "6060 Marlborough Ave, Burnaby",
+    "phone": "(604) 297-4572"
+  },
+  {
+    "id": 6,
+    "name": "Maywood Community School",
+    "lat": 49.2227,
+    "lng": -122.9998,
+    "address": "4567 Imperial St, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 30,
+    "name": "Montecito Elementary School",
+    "lat": 49.2644,
+    "lng": -122.9522,
+    "address": "2176 Duthie Ave, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
+    "id": 31,
+    "name": "Nelson Elementary School",
+    "lat": 49.2154,
+    "lng": -122.9951,
+    "address": "4850 Irmin St, Burnaby",
+    "phone": "(604) 297-4577"
+  },
+  {
+    "id": 34,
+    "name": "Riverway Golf Course (RGC)",
+    "lat": 49.2015,
+    "lng": -122.9956,
+    "address": "9001 Bill Fox Way, Burnaby",
+    "phone": "(604) 280-4653"
+  },
+  {
+    "id": 23,
+    "name": "Riverway Sports Complex (RSC)",
+    "lat": 49.2061,
+    "lng": -123.0036,
+    "address": "8605 Nelson Ave, Burnaby",
+    "phone": "(604) 294-7222"
+  },
+  {
     "id": 180,
     "name": "Rosemary Brown Recreation Centre (RBR)",
     "lat": 49.208477,
     "lng": -122.950023,
     "address": "7789 18th Street, Burnaby",
     "phone": "604-421-3200"
+  },
+  {
+    "id": 146,
+    "name": "Rosser Elementary School"
+  },
+  {
+    "id": 148,
+    "name": "Seaforth Elementary School",
+    "lat": 49.2508,
+    "lng": -122.914,
+    "address": "7881 Government St, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
+    "id": 150,
+    "name": "Second Street Community School",
+    "lat": 49.2279,
+    "lng": -122.9266,
+    "address": "7502 Second St, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 158,
+    "name": "Shadbolt Centre for the Arts (SCA)",
+    "lat": 49.2407,
+    "lng": -122.9695,
+    "address": "6450 Deer Lake Ave, Burnaby",
+    "phone": "(604) 297-4440"
+  },
+  {
+    "id": 160,
+    "name": "South Central Youth Centre (SCY)",
+    "lat": 49.2265,
+    "lng": -122.9942,
+    "address": "6749 Nelson Ave, Burnaby",
+    "phone": "(604) 297-4497"
+  },
+  {
+    "id": 162,
+    "name": "Sperling Elementary School",
+    "lat": 49.2638,
+    "lng": -122.9632,
+    "address": "2200 Sperling Ave, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
+    "id": 170,
+    "name": "Stoney Creek Community School",
+    "lat": 49.2588,
+    "lng": -122.9032,
+    "address": "2740 Beaverbrook Cres, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 174,
+    "name": "Summit Youth Centre (SUM)",
+    "lat": 49.2809,
+    "lng": -123.0031,
+    "address": "200 Willingdon Ave, Burnaby",
+    "phone": "(604) 268-1369"
+  },
+  {
+    "id": 175,
+    "name": "Suncrest Elementary School",
+    "lat": 49.2154,
+    "lng": -123.0174,
+    "address": "3883 Rumble St, Burnaby",
+    "phone": "(604) 297-4572"
+  },
+  {
+    "id": 135,
+    "name": "Taylor Park Elementary School",
+    "lat": 49.2075,
+    "lng": -122.9597,
+    "address": "7590 Mission Ave, Burnaby",
+    "phone": "(604) 297-4831"
   },
   {
     "id": 185,
@@ -64,11 +412,59 @@
     "phone": "(604) 297-4456"
   },
   {
+    "id": 137,
+    "name": "Twelfth Avenue Elementary School",
+    "lat": 49.2167,
+    "lng": -122.9339,
+    "address": "7622 12th Ave, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 138,
+    "name": "University Highlands Elementary School",
+    "lat": 49.2781,
+    "lng": -122.908,
+    "address": "9388 Tower Rd, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
+    "id": 103,
+    "name": "Warner Loat Park",
+    "lat": 49.251,
+    "lng": -122.9353,
+    "address": "4252 Piper Ave, Burnaby",
+    "phone": "(604) 294-7222"
+  },
+  {
+    "id": 156,
+    "name": "Wesburn Community Centre (WCC)",
+    "lat": 49.2415,
+    "lng": -123.0113,
+    "address": "4781 Parkwood Ave, Burnaby",
+    "phone": "(604) 297-4572"
+  },
+  {
+    "id": 140,
+    "name": "Westridge Elementary School",
+    "lat": 49.2789,
+    "lng": -122.961,
+    "address": "510 Duncan Ave, Burnaby",
+    "phone": "(604) 297-4529"
+  },
+  {
     "id": 149,
     "name": "Willingdon Community Centre (WIL)",
     "lat": 49.2712,
     "lng": -123.013,
     "address": "1491 Carleton Ave, Burnaby",
     "phone": "(604) 297-4526"
+  },
+  {
+    "id": 142,
+    "name": "Windsor Elementary School",
+    "lat": 49.2219,
+    "lng": -122.9916,
+    "address": "61661 Imperial St, Burnaby",
+    "phone": "(604) 297-4572"
   }
 ]

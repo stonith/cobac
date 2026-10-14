@@ -2,7 +2,7 @@ import * as z from 'zod'
 import { formatDay, formatTime, startOfWeek, timeOf } from '../../src/data/dates.ts'
 import { priceLabel } from '../../src/data/markdown.ts'
 import { filterOccurrences } from '../../src/data/search.ts'
-import { dateString, id, idList } from '../schemas.ts'
+import { dateString, id, calendarIdList } from '../schemas.ts'
 import { calendarIdsForGroup } from './shared.ts'
 import { defineTool, failure } from './types.ts'
 
@@ -14,15 +14,18 @@ export const getSchedule = defineTool({
   inputSchema: z.object({
     date: dateString.optional().describe('Defaults to today'),
     centerId: id.optional().describe('Centre id from list_centres'),
-    group: z.string().optional().describe('Calendar group: Drop-in, Fitness or Sports'),
-    calendarIds: idList.optional(),
+    group: z
+      .string()
+      .optional()
+      .describe('Calendar group: Drop-in, Fitness, Sports, Art & Culture or Programs'),
+    calendarIds: calendarIdList.optional(),
     limit: z.number().int().min(1).max(500).optional().describe('Maximum sessions (default 200)'),
   }),
   outputSchema: z.object({
     date: dateString,
     total: z.number(),
     truncated: z.boolean(),
-    link: z.string().describe('cobac.fyi calendar for that week'),
+    link: z.string().describe('cobac-g3k.pages.dev calendar for that week'),
     centres: z.array(
       z.object({
         id: z.number(),

@@ -1,5 +1,10 @@
 import { readFileSync } from 'node:fs'
 import { expect, test, type Page } from '@playwright/test'
+import { mergePrograms } from '../scripts/scrape/programs'
+import { buildSnapshot } from '../scripts/scrape/normalize'
+import type { ProgramRecord } from '../scripts/scrape/activity-search-api'
+import type { Snapshot } from '../src/types/snapshot'
+import { addDays } from '../src/data/dates'
 
 /** Pick a Monday inside the committed snapshot so the tests do not depend on today's date. */
 const meta = JSON.parse(readFileSync('public/data/snapshot.meta.json', 'utf8')) as {
@@ -50,6 +55,36 @@ async function stickyRowHeader(page: Page, scroller: string | null) {
     return { pinnedTop, rowTop: row.top, rowBottom: row.bottom, headerTop: header.top, delta, next }
   }, scroller)
 }
+
+test('supplemental drop-in dance is searchable and its calendar filter survives reload', async ({
+  page,
+}) => {
+  const record = JSON.parse(
+    readFileSync('scripts/scrape/__fixtures__/program-138791.json', 'utf8'),
+  ) as ProgramRecord
+  const snapshot = buildSnapshot([], '2026-10-14T06:00:00Z')
+  snapshot.period = { start: '2026-10-12', end: '2026-10-18' }
+  mergePrograms(snapshot, [record], [{ id: '26', desc: 'Dance' }])
+  await page.route('**/data/snapshot.json', (route) => route.fulfill({ json: snapshot }))
+  await page.goto('/?week=2026-10-12&q=drop&cal=-26')
+  await expect(
+    page.getByRole('table').getByRole('button', { name: /Drop-In Modern Dance/ }),
+  ).toBeVisible()
+  await expect(page.getByRole('combobox', { name: 'Calendars' })).toContainText('1')
+  await page.reload()
+  await expect(
+    page.getByRole('table').getByRole('button', { name: /Drop-In Modern Dance/ }),
+  ).toBeVisible()
+  await page
+    .getByRole('table')
+    .getByRole('button', { name: /Drop-In Modern Dance/ })
+    .click()
+  await expect(page.getByRole('dialog')).toContainText('Shadbolt Centre for the Arts')
+  await expect(page.getByRole('link', { name: /ActiveNet/ })).toHaveAttribute(
+    'href',
+    /drop-in-modern-dance-open-level\/138791/,
+  )
+})
 
 test('renders the time grid by default with every location stacked', async ({ page }) => {
   await gotoWeek(page)
@@ -218,9 +253,22 @@ test('the map shows a pin per centre and toggles a centre filter', async ({ page
   await expect(map).toBeVisible()
   const pins = map.locator('path.leaflet-interactive')
   await expect(pins.first()).toBeVisible()
-  // One pin per location with a session this week, which is one row per centre in this view.
+  // Supplemental venues can have no published coordinates: rows still show their sessions,
+  // but the map must not invent a location for them.
+  const snapshot = JSON.parse(readFileSync('public/data/snapshot.json', 'utf8')) as Snapshot
+  const activities = new Map(snapshot.activities.map((a) => [a.id, a]))
+  const weekEnd = addDays(week, 6)
+  const visibleIds = new Set(
+    snapshot.occurrences
+      .filter((o) => o.s.slice(0, 10) >= week && o.s.slice(0, 10) <= weekEnd)
+      .map((o) => activities.get(o.a)!.centerId),
+  )
+  const located = snapshot.centers.filter(
+    (c) => visibleIds.has(c.id) && c.lat != null && c.lng != null,
+  )
   const rows = await page.getByRole('table').getByRole('rowheader').count()
-  expect(await pins.count()).toBe(rows)
+  expect(await pins.count()).toBe(located.length)
+  expect(located.length).toBeLessThanOrEqual(rows)
   // Pins overlap at city zoom, so dispatch the click instead of relying on hit-testing.
   await pins.first().dispatchEvent('click')
   await expect(page).toHaveURL(/centers=\d+/)

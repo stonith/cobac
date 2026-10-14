@@ -5,7 +5,7 @@ export const listCalendars = defineTool({
   name: 'list_calendars',
   title: 'List calendars',
   description:
-    'The ActiveNet calendars the activities come from, each with its group (Drop-in, Fitness, Sports). Use ids as calendarIds, or a group name, in find_activities and get_schedule.',
+    'The ActiveNet calendars the activities come from, each with its group (Drop-in, Fitness, Sports, Art & Culture, Programs). Use ids as calendarIds, or a group name, in find_activities and get_schedule.',
   inputSchema: z.object({}),
   outputSchema: z.object({
     groups: z.array(z.string()),

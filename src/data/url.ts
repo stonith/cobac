@@ -9,12 +9,12 @@ const price = (value: string | null): number | null => {
   return Number.isFinite(n) && n >= 0 ? n : null
 }
 
-const numbers = (value: string | null): number[] =>
+const numbers = (value: string | null, allowNegative = false): number[] =>
   (value ?? '')
     .split(',')
     .filter((part) => part.trim() !== '')
     .map(Number)
-    .filter((n) => Number.isInteger(n) && n >= 0)
+    .filter((n) => Number.isInteger(n) && (allowNegative || n >= 0))
 
 /** Parse filters from a query string; unknown or invalid values fall back to defaults. */
 export function filtersFromSearch(search: string, defaultWeek: DateString): Filters {
@@ -22,7 +22,7 @@ export function filtersFromSearch(search: string, defaultWeek: DateString): Filt
   const week = params.get('week')
   const filters = emptyFilters(isDateString(week) ? startOfWeek(week) : defaultWeek)
   if (params.get('view') === 'location') filters.view = 'location'
-  filters.calendarIds = numbers(params.get('cal'))
+  filters.calendarIds = numbers(params.get('cal'), true)
   filters.centerIds = numbers(params.get('centers'))
   const from = params.get('from') ?? ''
   const to = params.get('to') ?? ''

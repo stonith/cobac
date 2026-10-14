@@ -17,6 +17,16 @@ export const id = z.number().int().positive()
 
 export const idList = z.array(id).max(50)
 
+/** Supplemental program calendars use negative category ids; centre/activity ids stay positive. */
+export const calendarIdList = z
+  .array(
+    z
+      .number()
+      .int()
+      .refine((n) => n !== 0),
+  )
+  .max(100)
+
 export const dayOfWeek = z.number().int().min(0).max(6)
 
 export const session = z.object({

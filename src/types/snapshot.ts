@@ -19,10 +19,11 @@ export interface Snapshot {
 }
 
 export interface Calendar {
+  /** Positive online-calendar id, or negative activity-search category id for supplemental programs. */
   id: number
   /** Display name with ActiveNet's leading `*` sort prefixes removed. */
   name: string
-  /** Grouping derived from the name prefix before ":" (e.g. "Fitness"), or "Drop-in". */
+  /** Curated group for online calendars or supplemental activity-search categories. */
   group: string
 }
 

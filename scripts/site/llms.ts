@@ -24,7 +24,7 @@ export interface LlmsContext {
 }
 
 function summary(meta: SiteMeta): string {
-  return `cobac (City of Burnaby recreation) is an unofficial, read-only mirror of the City of Burnaby's recreation calendar: ${meta.counts.activities} registered programs and drop-in multi-sport sessions with ${meta.counts.occurrences} scheduled sessions at ${meta.counts.centers} community centres, pools and rinks, covering ${meta.period.start} to ${meta.period.end}. The data is scraped nightly from ActiveNet (last scrape ${meta.generatedAt}); times are Burnaby local time (Pacific). Registration happens on ActiveNet, never here.`
+  return `cobac (City of Burnaby recreation) is an unofficial, read-only mirror of the City of Burnaby's recreation calendar: ${meta.counts.activities} registered programs and drop-in activities with ${meta.counts.occurrences} scheduled sessions at ${meta.counts.centers} community centres, pools and rinks, covering ${meta.period.start} to ${meta.period.end}. The data is scraped nightly from ActiveNet (last scrape ${meta.generatedAt}); times are Burnaby local time (Pacific). Registration happens on ActiveNet, never here.`
 }
 
 function howToQuery(site: string): string {
