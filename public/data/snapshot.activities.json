@@ -16,9 +16,9 @@
     "ageMin": 55,
     "ageMax": 0,
     "ageText": "55 yrs +,",
-    "openings": "53 openings remaining",
+    "openings": "51 openings remaining",
     "availability": "open",
-    "spaces": 53,
+    "spaces": 51,
     "firstDate": "2026-12-08",
     "lastDate": "2026-12-08",
     "prices": [
@@ -8003,9 +8003,9 @@
     "ageMin": 12,
     "ageMax": 19,
     "ageText": "Age at least 12 yrs but less than 19 yrs,",
-    "openings": "2 openings remaining",
-    "availability": "open",
-    "spaces": 2,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-17",
     "lastDate": "2026-11-21"
   },
@@ -15119,9 +15119,9 @@
     "ageMin": 55,
     "ageMax": 0,
     "ageText": "55 yrs +,",
-    "openings": "7 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 7,
+    "spaces": 6,
     "firstDate": "2026-11-02",
     "lastDate": "2026-11-02"
   },
@@ -15671,9 +15671,9 @@
     "ageMin": 7,
     "ageMax": 13,
     "ageText": "Age at least 7 yrs but less than 13 yrs,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14"
   },
@@ -16595,9 +16595,9 @@
     "ageMin": 8,
     "ageMax": 16,
     "ageText": "Age at least 8 yrs but less than 16 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 1,
     "firstDate": "2026-11-04",
     "lastDate": "2026-12-16"
   },
@@ -17803,9 +17803,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "13 openings remaining",
+    "openings": "14 openings remaining",
     "availability": "open",
-    "spaces": 13,
+    "spaces": 14,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -18601,9 +18601,9 @@
     "ageMin": 4,
     "ageMax": 6,
     "ageText": "Age at least 4 yrs but less than 6 yrs,",
-    "openings": "7 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 7,
+    "spaces": 6,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -18667,9 +18667,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -23003,9 +23003,9 @@
     "ageMin": 4,
     "ageMax": 6,
     "ageText": "Age at least 4 yrs but less than 6 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-04",
     "lastDate": "2026-12-13"
   },
@@ -25055,9 +25055,9 @@
     "ageMin": 40,
     "ageMax": 0,
     "ageText": "40 yrs +,",
-    "openings": "15 openings remaining",
+    "openings": "14 openings remaining",
     "availability": "open",
-    "spaces": 15,
+    "spaces": 14,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-22",
     "prices": [
@@ -25236,26 +25236,6 @@
     "spaces": 10,
     "firstDate": "2026-12-16",
     "lastDate": "2026-12-16"
-  },
-  {
-    "id": 111526,
-    "title": "Family Yoga: Adult Participation",
-    "calendarId": -50,
-    "centerId": 63,
-    "facilityIds": [],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/family-yoga-adult-participation/111526?locale=en-US",
-    "description": "A relaxing way for members of your family to have fun together while practicing yoga. We introduce breath work, focus, asana (postures) and relaxation as we play with yoga in some very creative ways. Classes may include yoga games partner yoga and always include relaxation. Adult participation required.",
-    "instructors": [],
-    "priceText": "$45.90",
-    "free": false,
-    "ageMin": 6,
-    "ageMax": 0,
-    "ageText": "6 yrs +,",
-    "openings": "29 openings remaining",
-    "availability": "open",
-    "spaces": 29,
-    "firstDate": "2026-10-18",
-    "lastDate": "2026-11-08"
   },
   {
     "id": 111527,
@@ -25467,9 +25447,9 @@
     "ageMin": 13,
     "ageMax": 19,
     "ageText": "Age at least 13 yrs but less than 19 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-09",
     "lastDate": "2026-12-14"
   },
@@ -25673,9 +25653,9 @@
     "ageMin": 18,
     "ageMax": 0,
     "ageText": "18 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-14",
     "lastDate": "2026-11-04",
     "prices": [
@@ -28525,9 +28505,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +,",
-    "openings": "16 openings remaining",
+    "openings": "15 openings remaining",
     "availability": "open",
-    "spaces": 16,
+    "spaces": 15,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-12",
     "prices": [
@@ -28823,9 +28803,9 @@
     "ageMin": 8,
     "ageMax": 12,
     "ageText": "Age at least 8 yrs but less than 12 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20",
     "prices": [
@@ -29165,9 +29145,9 @@
     "ageMin": 11,
     "ageMax": 18,
     "ageText": "Age at least 11 yrs but less than 18 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-05",
     "lastDate": "2026-12-17",
     "prices": [
@@ -29777,9 +29757,9 @@
     "ageMin": 10,
     "ageMax": 13,
     "ageText": "Age at least 10 yrs but less than 13 yrs,",
-    "openings": "6 openings remaining",
+    "openings": "4 openings remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 4,
     "firstDate": "2026-10-23",
     "lastDate": "2026-10-23"
   },
@@ -29821,9 +29801,9 @@
     "ageMin": 4,
     "ageMax": 6,
     "ageText": "Age at least 4 yrs but less than 6 yrs,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-10-03",
     "lastDate": "2026-12-12"
   },
@@ -30758,9 +30738,9 @@
     "ageMin": 5,
     "ageMax": 13,
     "ageText": "Age at least 5 yrs but less than 13 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-23",
     "lastDate": "2026-10-23"
   },
@@ -30938,11 +30918,11 @@
     "priceText": "from $112.50",
     "free": false,
     "ageMin": 13,
-    "ageMax": 18,
-    "ageText": "Age at least 13 yrs but less than 18 yrs,",
-    "openings": "5 openings remaining",
+    "ageMax": 99,
+    "ageText": "Age at least 13 yrs but less than 99 yrs,",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 5,
+    "spaces": 1,
     "firstDate": "2026-11-05",
     "lastDate": "2026-12-17",
     "prices": [
@@ -31532,9 +31512,9 @@
     "ageMin": 10,
     "ageMax": 13,
     "ageText": "Age at least 10 yrs but less than 13 yrs,",
-    "openings": "5 openings remaining",
+    "openings": "4 openings remaining",
     "availability": "open",
-    "spaces": 5,
+    "spaces": 4,
     "firstDate": "2026-11-05",
     "lastDate": "2026-11-26"
   },
@@ -32350,9 +32330,9 @@
     "ageMin": 18,
     "ageMax": 0,
     "ageText": "18 yrs +,",
-    "openings": "1 opening remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 1,
+    "spaces": 2,
     "firstDate": "2026-10-22",
     "lastDate": "2026-11-05",
     "prices": [
@@ -32478,9 +32458,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "6 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 5,
     "firstDate": "2026-11-06",
     "lastDate": "2026-11-27",
     "prices": [
@@ -33657,34 +33637,6 @@
     "lastDate": "2026-12-13"
   },
   {
-    "id": 113956,
-    "title": "Pranayama Yoga: Breathwork Practice",
-    "calendarId": -50,
-    "centerId": 63,
-    "facilityIds": [
-      229
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/pranayama-yoga-breathwork-practice/113956?locale=en-US",
-    "description": "Pranayama (breathwork) offers powerful benefits for the body, mind, and emotions. Physically, it has the ability to alkaline body. Mentally, breathwork has the ability to release trapped and unprocessed emotions. In this session, you will learn which pranayamas are suitable for all seasons and which are best for specific times of day or year. We will begin with light physical preparation, followed by technique explanation and guided practice of key pranayama methods.",
-    "instructors": [],
-    "priceText": "$10.10",
-    "free": false,
-    "ageMin": 18,
-    "ageMax": 0,
-    "ageText": "18 yrs +,",
-    "openings": "28 openings remaining",
-    "availability": "open",
-    "spaces": 28,
-    "firstDate": "2026-10-18",
-    "lastDate": "2026-10-18",
-    "prices": [
-      {
-        "price": "$10.10",
-        "description": "Adult (18-64 yrs) fee for 18 up to 64 years old"
-      }
-    ]
-  },
-  {
     "id": 113957,
     "title": "Pranayama Yoga: Breathwork Practice",
     "calendarId": -50,
@@ -33733,34 +33685,6 @@
     "spaces": 5,
     "firstDate": "2026-11-29",
     "lastDate": "2026-12-13"
-  },
-  {
-    "id": 113966,
-    "title": "Pranayama Yoga: Breathwork Practice",
-    "calendarId": -50,
-    "centerId": 63,
-    "facilityIds": [
-      229
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/pranayama-yoga-breathwork-practice/113966?locale=en-US",
-    "description": "Pranayama (breathwork) offers powerful benefits for the body, mind, and emotions. Physically, it has the ability to alkaline body. Mentally, breathwork has the ability to release trapped and unprocessed emotions. In this session, you will learn which pranayamas are suitable for all seasons and which are best for specific times of day or year. We will begin with light physical preparation, followed by technique explanation and guided practice of key pranayama methods.",
-    "instructors": [],
-    "priceText": "$15.15",
-    "free": false,
-    "ageMin": 18,
-    "ageMax": 0,
-    "ageText": "18 yrs +,",
-    "openings": "30 openings remaining",
-    "availability": "open",
-    "spaces": 30,
-    "firstDate": "2026-11-14",
-    "lastDate": "2026-11-14",
-    "prices": [
-      {
-        "price": "$15.15",
-        "description": "Adult (18-64 yrs) fee for 18 up to 64 years old"
-      }
-    ]
   },
   {
     "id": 114043,
@@ -33996,9 +33920,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-09-14",
     "lastDate": "2026-11-02"
   },
@@ -34016,9 +33940,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "10 openings remaining",
+    "openings": "9 openings remaining",
     "availability": "open",
-    "spaces": 10,
+    "spaces": 9,
     "firstDate": "2026-11-09",
     "lastDate": "2026-12-14"
   },
@@ -34190,9 +34114,9 @@
     "ageMin": 10,
     "ageMax": 13,
     "ageText": "Age at least 10 yrs but less than 13 yrs,",
-    "openings": "8 openings remaining",
+    "openings": "7 openings remaining",
     "availability": "open",
-    "spaces": 8,
+    "spaces": 7,
     "firstDate": "2026-11-04",
     "lastDate": "2026-12-16"
   },
@@ -34300,9 +34224,9 @@
     "ageMin": 14,
     "ageMax": 19,
     "ageText": "Age at least 14 yrs but less than 19 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 1,
     "firstDate": "2026-11-07",
     "lastDate": "2026-11-21"
   },
@@ -34388,9 +34312,9 @@
     "ageMin": 9,
     "ageMax": 13,
     "ageText": "Age at least 9 yrs but less than 13 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 2,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -34520,9 +34444,9 @@
     "ageMin": 6,
     "ageMax": 12,
     "ageText": "Age at least 6 yrs but less than 12 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 1,
     "firstDate": "2026-12-28",
     "lastDate": "2026-12-31"
   },
@@ -34564,9 +34488,9 @@
     "ageMin": 9,
     "ageMax": 12,
     "ageText": "Age at least 9 yrs but less than 12 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-10-28",
     "lastDate": "2026-12-09"
   },
@@ -35612,9 +35536,9 @@
     "ageMin": 18,
     "ageMax": 0,
     "ageText": "18 yrs +,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-01",
     "prices": [
@@ -36142,32 +36066,6 @@
     ]
   },
   {
-    "id": 114458,
-    "title": "Kids & Canoes",
-    "calendarId": -46,
-    "centerId": 102,
-    "facilityIds": [],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/kids-canoes/114458?locale=en-US",
-    "description": "Join us at Deer Lake for a fun and informative canoeing experience. No experience necessary! Our canoe instructors will provide all the equipment, training and guidance required for a fun, hands on experience with ample time to practice on the water.",
-    "instructors": [],
-    "priceText": "$46.80",
-    "free": false,
-    "ageMin": 8,
-    "ageMax": 13,
-    "ageText": "Age at least 8 yrs but less than 13 yrs,",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-24",
-    "prices": [
-      {
-        "price": "$46.80",
-        "description": "Activity Fee for 8 up to 13 years old"
-      }
-    ]
-  },
-  {
     "id": 114461,
     "title": "Karate: All Levels",
     "calendarId": -34,
@@ -36470,9 +36368,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "2 openings remaining",
-    "availability": "open",
-    "spaces": 2,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-23",
     "lastDate": "2026-10-23"
   },
@@ -37299,36 +37197,6 @@
     "spaces": 2,
     "firstDate": "2026-11-18",
     "lastDate": "2026-12-09"
-  },
-  {
-    "id": 114597,
-    "title": "Intro to Stand Up Paddle Board",
-    "calendarId": -46,
-    "centerId": 49,
-    "facilityIds": [],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/intro-to-stand-up-paddle-board/114597?locale=en-US",
-    "description": "Get out at Barnet Beach and spend time learning stand up paddleboarding. Get to know the basic stokes, equipment and safety concerns. Practice seat to standing, repositioning on the board, and getting back after falling or jumping off. Equipment includes PFD, paddle &amp; paddle board. <i>Wetsuits are highly recommended, but not provided. Wearing cotton clothing not recommended or permitted. </i>",
-    "instructors": [],
-    "priceText": "from $52.00",
-    "free": false,
-    "ageMin": 16,
-    "ageMax": 0,
-    "ageText": "16 yrs +,",
-    "openings": "2 openings remaining",
-    "availability": "open",
-    "spaces": 2,
-    "firstDate": "2026-10-18",
-    "lastDate": "2026-10-18",
-    "prices": [
-      {
-        "price": "$62.50",
-        "description": "Multi-age (16+ yrs) fee for up to 64 years old"
-      },
-      {
-        "price": "$52.00",
-        "description": "Senior (65+ yrs) fee for 65 or more years old"
-      }
-    ]
   },
   {
     "id": 114603,
@@ -39848,9 +39716,9 @@
     "ageMin": 6,
     "ageMax": 8,
     "ageText": "Age at least 6 yrs but less than 8 yrs,",
-    "openings": "5 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 5,
+    "spaces": 6,
     "firstDate": "2026-10-30",
     "lastDate": "2026-12-04"
   },
@@ -42014,9 +41882,9 @@
     "ageMin": 55,
     "ageMax": 0,
     "ageText": "55 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-18",
     "lastDate": "2026-11-18",
     "prices": [
@@ -42702,9 +42570,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "11 openings remaining",
+    "openings": "9 openings remaining",
     "availability": "open",
-    "spaces": 11,
+    "spaces": 9,
     "firstDate": "2026-10-27",
     "lastDate": "2026-10-27",
     "prices": [
@@ -42736,9 +42604,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "3 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 1,
     "firstDate": "2026-10-28",
     "lastDate": "2026-10-28",
     "prices": [
@@ -42770,9 +42638,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "14 openings remaining",
+    "openings": "13 openings remaining",
     "availability": "open",
-    "spaces": 14,
+    "spaces": 13,
     "firstDate": "2026-11-17",
     "lastDate": "2026-12-08",
     "prices": [
@@ -43906,9 +43774,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "7 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 7,
+    "spaces": 6,
     "firstDate": "2026-11-03",
     "lastDate": "2026-11-05",
     "prices": [
@@ -43957,28 +43825,6 @@
     "lastDate": "2026-10-23"
   },
   {
-    "id": 115027,
-    "title": "From Dirt to Display – An Archaeological Engagement for Kids",
-    "calendarId": -39,
-    "centerId": 159,
-    "facilityIds": [
-      245
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/from-dirt-to-display-an-archaeological-engagement-for-kids/115027?locale=en-US",
-    "description": "Curious about Archaeology? Join the Civic Archaeologist and SFU students for this kid-friendly archaeology program designed for curious minds. Kids learn about the various steps involved - from digging in the ground to dating, recording, and displaying artifacts in a museum. This hands-on program invites participants to get up close to real and replica artifacts. <b>The participants must be accompanied by an adult.</b><br />Brought to you by: Indigenous Relations and Reconciliation, Civic Innovation Lab, Simon Fraser University and Burnaby Village Museum",
-    "instructors": [],
-    "priceText": "Free",
-    "free": true,
-    "ageMin": 5,
-    "ageMax": 9,
-    "ageText": "Age at least 5 yrs but less than 9 yrs,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17"
-  },
-  {
     "id": 115028,
     "title": "Pro-D Day Camp: Fine Art Sampler",
     "calendarId": -36,
@@ -43999,28 +43845,6 @@
     "spaces": 0,
     "firstDate": "2026-11-20",
     "lastDate": "2026-11-20"
-  },
-  {
-    "id": 115030,
-    "title": "From Dirt to Display – An Archaeological Engagement",
-    "calendarId": -39,
-    "centerId": 159,
-    "facilityIds": [
-      245
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/from-dirt-to-display-an-archaeological-engagement/115030?locale=en-US",
-    "description": "Curious about Archaeology? Join the Civic Archaeologist and SFU students for this family-friendly talk and archaeology program designed for curious minds. Participants learn about the various steps involved - from digging in the ground to dating, recording, and displaying artifacts in a museum. This hands-on program invites participants to get up close to real and replica artifacts.<br />Participants under 12 must be accompanied by an adult.<br>Brought to you by: Indigenous Relations and Reconciliation, Civic Innovation Lab, Simon Fraser University and Burnaby Village Museum",
-    "instructors": [],
-    "priceText": "Free",
-    "free": true,
-    "ageMin": 9,
-    "ageMax": 0,
-    "ageText": "9 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17"
   },
   {
     "id": 115032,
@@ -44156,9 +43980,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +,",
-    "openings": "14 openings remaining",
+    "openings": "13 openings remaining",
     "availability": "open",
-    "spaces": 14,
+    "spaces": 13,
     "firstDate": "2026-10-19",
     "lastDate": "2026-11-09",
     "prices": [
@@ -44718,48 +44542,6 @@
       },
       {
         "price": "$43.90",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
-    "id": 115084,
-    "title": "Blacksmithing Level 1: Immersion",
-    "calendarId": -39,
-    "centerId": 159,
-    "facilityIds": [],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/blacksmithing-level-1-immersion/115084?locale=en-US",
-    "description": "This extended course is for students who would like a more in-depth introduction to blacksmithing. The hands-on component has students lighting a coal forge, as well as making a coat hook, dinner triangle and striker. Get started on your new blacksmithing hobby with information on what equipment is needed, how and where to get it, and the differences between coal and propane forges. Steel-toed boots recommended. <br />This Level 1 workshop is considered an introductory blacksmithing course. Successful completion of the course fulfills the prerequisite for taking BVM's Level 2 courses. <br />Cancellations within 48 hours of the start of the course will not be issued a refund.",
-    "instructors": [],
-    "priceText": "from $15.00",
-    "free": false,
-    "ageMin": 16,
-    "ageMax": 0,
-    "ageText": "16 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17",
-    "prices": [
-      {
-        "price": "$15.00",
-        "description": "Member of package:<br>Burnaby Village Museum Membership - Annual<br>Legacy Burnaby Village Museum Membership - Annual<br><br>"
-      },
-      {
-        "price": "$15.00",
-        "description": "Non-member of package:<br>Burnaby Village Museum Membership - Annual<br>Legacy Burnaby Village Museum Membership - Annual<br><br>"
-      },
-      {
-        "price": "$118.20",
-        "description": "Adult non-member fee for up to 64 years old"
-      },
-      {
-        "price": "$106.38",
-        "description": "Adult member fee for up to 64 years old"
-      },
-      {
-        "price": "$94.56",
         "description": "Senior fee for 65 or more years old"
       }
     ]
@@ -45672,9 +45454,9 @@
     "ageMin": 9,
     "ageMax": 12,
     "ageText": "Age at least 9 yrs but less than 12 yrs,",
-    "openings": "5 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 5,
+    "spaces": 6,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -45917,30 +45699,6 @@
     "lastDate": "2026-11-21"
   },
   {
-    "id": 115514,
-    "title": "Adult Golf | Intro to Golf | Beginner",
-    "calendarId": -55,
-    "centerId": 126,
-    "facilityIds": [
-      150
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/adult-golf-intro-to-golf-beginner/115514?locale=en-US",
-    "description": "This 4-lesson series introduces the skills and basic understanding needed to start enjoying the game of golf. These lessons focus on building the golf swing and learning to putt and chip with your golf instructor. These lessons teach you golf terminology, equipment needs, rules, etiquette and scorekeeping.<br>Sessions 1 - 4 are held at Burnaby Mountain Golf Course (60 mins),<br>All equipment is provided but if you have it, bring your own.<br>6 per class maximum. 4 minimum.<br>Classes are conducted rain or shine.<br>Class cancellation / refund policy: 7 days notice is required for cancellation and refund.",
-    "instructors": [
-      "Johnny N."
-    ],
-    "priceText": "$199.00",
-    "free": false,
-    "ageMin": 17,
-    "ageMax": 0,
-    "ageText": "17 yrs +,",
-    "openings": "3 openings remaining",
-    "availability": "open",
-    "spaces": 3,
-    "firstDate": "2026-09-26",
-    "lastDate": "2026-10-17"
-  },
-  {
     "id": 115515,
     "title": "Adult Golf | Intro to Golf | Beginner",
     "calendarId": -55,
@@ -46030,9 +45788,9 @@
     "ageMin": 5,
     "ageMax": 8,
     "ageText": "Age at least 5 yrs but less than 8 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-07",
     "lastDate": "2026-11-28"
   },
@@ -46644,9 +46402,9 @@
     "ageMin": 18,
     "ageMax": 0,
     "ageText": "18 yrs +,",
-    "openings": "10 openings remaining",
+    "openings": "9 openings remaining",
     "availability": "open",
-    "spaces": 10,
+    "spaces": 9,
     "firstDate": "2026-11-28",
     "lastDate": "2026-12-12",
     "prices": [
@@ -46734,9 +46492,9 @@
     "ageMin": 10,
     "ageMax": 13,
     "ageText": "Age at least 10 yrs but less than 13 yrs,",
-    "openings": "1 opening remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 1,
+    "spaces": 2,
     "firstDate": "2026-10-17",
     "lastDate": "2026-11-07"
   },
@@ -46831,30 +46589,6 @@
     "spaces": 2,
     "firstDate": "2026-09-26",
     "lastDate": "2026-10-31"
-  },
-  {
-    "id": 115897,
-    "title": "Jr Golf | Play (age 8-10) | Beginner",
-    "calendarId": -55,
-    "centerId": 34,
-    "facilityIds": [
-      793
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/jr-golf-play-age-8-10-beginner/115897?locale=en-US",
-    "description": "This beginner 4-week program introduces putting, chipping, and full swing. A focused 4-week program that builds solid fundamentals in Aim, Posture, Grip, and Swing Motion, plus the key putting, chipping, and full-swing skills that help young golfers progress quickly. <br>Level: Beginner <br />Number of Classes: 4 <br />Class Duration: 60 mins each <br />Min/Max number of participants: 6 <br />Rental clubs available<br>Classes are conducted in rain or shine. <br>Class cancellation / refund policy: 7 days' notice is required for cancellation and refund.",
-    "instructors": [
-      "Derek W."
-    ],
-    "priceText": "$159.00",
-    "free": false,
-    "ageMin": 8,
-    "ageMax": 12,
-    "ageText": "Age at least 8 yrs but less than 12 yrs,",
-    "openings": "4 openings remaining",
-    "availability": "open",
-    "spaces": 4,
-    "firstDate": "2026-09-26",
-    "lastDate": "2026-10-17"
   },
   {
     "id": 115898,
@@ -47791,42 +47525,6 @@
     ]
   },
   {
-    "id": 116011,
-    "title": "Bronze Cross",
-    "calendarId": -27,
-    "centerId": 54,
-    "facilityIds": [
-      385
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/bronze-cross/116011?locale=en-US",
-    "description": "Prerequisite: Bronze Medallion. Designed for lifesavers who want the challenge of more advanced training, including an introduction to safety supervision in aquatic facilities. Swimmers develop proficiency at performing patient assessments, managing aquatic spinal injuries and preventing loss of life in a variety of aquatic emergencies, while developing stroke endurance and fitness training skills. Includes the CPR-C certification and is one of the prerequisite awards for all advanced Lifeguarding and Leadership training programs. It is also worth two Grade 11 high school credits. Canadian Life Saving Manual is required. There is a non-refundable exam fee. 100% attendance is recommended.",
-    "instructors": [],
-    "priceText": "from $25.00",
-    "free": false,
-    "ageMin": 13,
-    "ageMax": 0,
-    "ageText": "13 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-03",
-    "lastDate": "2026-10-17",
-    "prices": [
-      {
-        "price": "$25.00",
-        "description": "Standard charge"
-      },
-      {
-        "price": "$229.50",
-        "description": "Adult fee for up to 64 years old"
-      },
-      {
-        "price": "$183.60",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
     "id": 116012,
     "title": "Bronze Cross",
     "calendarId": -27,
@@ -48354,9 +48052,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "7 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 7,
+    "spaces": 6,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20",
     "prices": [
@@ -48645,12 +48343,12 @@
         "description": "Standard charge"
       },
       {
-        "price": "$73.50",
-        "description": "Adult fee for up to 64 years old"
-      },
-      {
         "price": "$58.80",
         "description": "Senior fee for 65 or more years old"
+      },
+      {
+        "price": "$73.50",
+        "description": "Adult fee for up to 64 years old"
       }
     ]
   },
@@ -49005,12 +48703,12 @@
         "description": "Standard charge"
       },
       {
-        "price": "$73.50",
-        "description": "Adult fee for up to 64 years old"
-      },
-      {
         "price": "$58.80",
         "description": "Senior fee for 65 or more years old"
+      },
+      {
+        "price": "$73.50",
+        "description": "Adult fee for up to 64 years old"
       }
     ]
   },
@@ -49902,9 +49600,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-05",
     "lastDate": "2026-12-17",
     "prices": [
@@ -49938,9 +49636,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "7 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 7,
+    "spaces": 6,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18",
     "prices": [
@@ -53664,9 +53362,9 @@
     "ageMin": 3,
     "ageMax": 7,
     "ageText": "Age at least 3 yrs but less than 7 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -53752,9 +53450,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -53902,9 +53600,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -54101,38 +53799,6 @@
     ]
   },
   {
-    "id": 117802,
-    "title": "Dungeons & Dragons Adult Program - One Day",
-    "calendarId": -40,
-    "centerId": 41,
-    "facilityIds": [
-      2150
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/dungeons-dragons-adult-program---one-day/117802?locale=en-US",
-    "description": "<p>For all those fans of D&amp;D you can have even more fun as a family!! </p><p>Embark on a thrilling journey into the realm of imagination with our Dungeons &amp; Dragons Program! This course offers an immersive and interactive experience in the world's greatest tabletop role-playing game.</p><p>In our program, participants will delve into the captivating universe of Dungeons &amp; Dragons, where they will create their own heroes, forge friendships, and conquer challenges together. Led by experienced Dungeon Masters (DMs), our sessions blend storytelling, strategy, and teamwork to ignite the imagination and foster creative thinking.</p>",
-    "instructors": [],
-    "priceText": "from $46.20",
-    "free": false,
-    "ageMin": 16,
-    "ageMax": 0,
-    "ageText": "16 yrs +,",
-    "openings": "4 openings remaining",
-    "availability": "open",
-    "spaces": 4,
-    "firstDate": "2026-10-18",
-    "lastDate": "2026-10-18",
-    "prices": [
-      {
-        "price": "$57.75",
-        "description": "Adult fee for 14 up to 64 years old"
-      },
-      {
-        "price": "$46.20",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
     "id": 117803,
     "title": "Dungeons & Dragons Adult Program - One Day",
     "calendarId": -40,
@@ -54215,9 +53881,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "15 openings remaining",
+    "openings": "11 openings remaining",
     "availability": "open",
-    "spaces": 15,
+    "spaces": 11,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -54539,9 +54205,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "24 openings remaining",
+    "openings": "10 openings remaining",
     "availability": "open",
-    "spaces": 24,
+    "spaces": 10,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -54893,9 +54559,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "15 openings remaining",
+    "openings": "14 openings remaining",
     "availability": "open",
-    "spaces": 15,
+    "spaces": 14,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -55217,9 +54883,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "48 openings remaining",
-    "availability": "open",
-    "spaces": 48,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -55571,9 +55237,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "24 openings remaining",
-    "availability": "open",
-    "spaces": 24,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -55895,9 +55561,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "15 openings remaining",
-    "availability": "open",
-    "spaces": 15,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -68890,9 +68556,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -69290,9 +68955,8 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -76206,9 +75870,8 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -76246,9 +75909,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "30 openings remaining",
-    "availability": "open",
-    "spaces": 30,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -76926,9 +76589,9 @@
     "ageMin": 8,
     "ageMax": 0,
     "ageText": "8 yrs +",
-    "openings": "3 openings remaining",
-    "availability": "open",
-    "spaces": 3,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -78246,9 +77909,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "5 openings remaining",
-    "availability": "open",
-    "spaces": 5,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -78686,9 +78349,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "33 openings remaining",
+    "openings": "14 openings remaining",
     "availability": "open",
-    "spaces": 33,
+    "spaces": 14,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -80309,9 +79972,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "24 openings remaining",
+    "openings": "9 openings remaining",
     "availability": "open",
-    "spaces": 24,
+    "spaces": 9,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -82198,9 +81861,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -82282,9 +81944,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -82322,9 +81983,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -82384,9 +82044,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -82424,9 +82083,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -82464,9 +82122,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -82708,9 +82365,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -82770,9 +82427,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -82810,9 +82467,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -82850,9 +82507,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 1,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -82890,9 +82547,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -82930,9 +82587,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -84236,9 +83893,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "24 openings remaining",
-    "availability": "open",
-    "spaces": 24,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -84560,9 +84217,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "48 openings remaining",
+    "openings": "20 openings remaining",
     "availability": "open",
-    "spaces": 48,
+    "spaces": 20,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -84965,9 +84622,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "48 openings remaining",
-    "availability": "open",
-    "spaces": 48,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -109819,9 +109476,9 @@
     "ageMin": 0,
     "ageMax": 0,
     "ageText": "All ages,",
-    "openings": "14 openings remaining",
+    "openings": "12 openings remaining",
     "availability": "open",
-    "spaces": 14,
+    "spaces": 12,
     "firstDate": "2026-10-23",
     "lastDate": "2026-10-23"
   },
@@ -109863,9 +109520,9 @@
     "ageMin": 0,
     "ageMax": 0,
     "ageText": "All ages,",
-    "openings": "33 openings remaining",
+    "openings": "31 openings remaining",
     "availability": "open",
-    "spaces": 33,
+    "spaces": 31,
     "firstDate": "2026-10-28",
     "lastDate": "2026-10-28"
   },
@@ -109885,9 +109542,9 @@
     "ageMin": 0,
     "ageMax": 0,
     "ageText": "All ages,",
-    "openings": "31 openings remaining",
+    "openings": "30 openings remaining",
     "availability": "open",
-    "spaces": 31,
+    "spaces": 30,
     "firstDate": "2026-10-29",
     "lastDate": "2026-10-29"
   },
@@ -113418,9 +113075,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "12 openings remaining",
+    "openings": "11 openings remaining",
     "availability": "open",
-    "spaces": 12,
+    "spaces": 11,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -114538,9 +114195,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "25 openings remaining",
+    "openings": "24 openings remaining",
     "availability": "open",
-    "spaces": 25,
+    "spaces": 24,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -115258,9 +114915,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "20 openings remaining",
+    "openings": "19 openings remaining",
     "availability": "open",
-    "spaces": 20,
+    "spaces": 19,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -115698,9 +115355,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "8 openings remaining",
+    "openings": "4 openings remaining",
     "availability": "open",
-    "spaces": 8,
+    "spaces": 4,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -116138,9 +115795,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "11 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 11,
+    "spaces": 6,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -117517,9 +117174,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "13 openings remaining",
+    "openings": "7 openings remaining",
     "availability": "open",
-    "spaces": 13,
+    "spaces": 7,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -118014,9 +117671,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "2 openings remaining",
-    "availability": "open",
-    "spaces": 2,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -123899,9 +123556,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +",
-    "openings": "30 openings remaining",
-    "availability": "open",
-    "spaces": 30,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -126539,9 +126196,9 @@
     "ageMin": 8,
     "ageMax": 12,
     "ageText": "Age at least 8 yrs but less than 12 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-10-25",
     "lastDate": "2026-12-13"
   },
@@ -126771,9 +126428,9 @@
     "ageMin": 17,
     "ageMax": 0,
     "ageText": "17 yrs +,",
-    "openings": "6 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 5,
     "firstDate": "2026-10-25",
     "lastDate": "2026-11-15"
   },
@@ -127227,9 +126884,9 @@
     "ageMin": 10,
     "ageMax": 15,
     "ageText": "Age at least 10 yrs but less than 15 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-10-20",
     "lastDate": "2026-12-08"
   },
@@ -127352,30 +127009,6 @@
     "spaces": 2,
     "firstDate": "2026-10-09",
     "lastDate": "2026-10-30"
-  },
-  {
-    "id": 127727,
-    "title": "Jr Golf | Train (age 11-14) | Beginner",
-    "calendarId": -55,
-    "centerId": 126,
-    "facilityIds": [
-      150
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/jr-golf-train-age-11-14-beginner/127727?locale=en-US",
-    "description": "This beginner 4-week program introduces putting, chipping, and full swing. A focused 4-week program that builds solid fundamentals in Aim, Posture, Grip, and Swing Motion, plus the key putting, chipping, and full-swing skills that help young golfers progress quickly.<br>Level: Beginner<br />Number of Classes: 4<br />Class Duration: 60 mins each<br />Min/Max number of participants: 6<br />Rental clubs available<br>Classes are conducted in rain or shine.<br>Class cancellation / refund policy: 7 days' notice is required for cancellation and refund.",
-    "instructors": [
-      "Steve M."
-    ],
-    "priceText": "$159.00",
-    "free": false,
-    "ageMin": 10,
-    "ageMax": 15,
-    "ageText": "Age at least 10 yrs but less than 15 yrs,",
-    "openings": "5 openings remaining",
-    "availability": "open",
-    "spaces": 5,
-    "firstDate": "2026-09-26",
-    "lastDate": "2026-10-17"
   },
   {
     "id": 127728,
@@ -127539,9 +127172,9 @@
     "ageMin": 18,
     "ageMax": 0,
     "ageText": "18 yrs +,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-31"
   },
@@ -129925,9 +129558,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "24 openings remaining",
+    "openings": "23 openings remaining",
     "availability": "open",
-    "spaces": 24,
+    "spaces": 23,
     "firstDate": "2026-11-07",
     "lastDate": "2026-11-28",
     "prices": [
@@ -130290,9 +129923,9 @@
     "ageMin": 13,
     "ageMax": 0,
     "ageText": "13 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-11-05",
     "lastDate": "2026-12-17",
     "prices": [
@@ -144656,9 +144289,9 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -144736,9 +144369,9 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -148099,9 +147732,9 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -148379,9 +148012,9 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -148819,9 +148452,9 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -148859,9 +148492,9 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -148939,9 +148572,9 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -181735,9 +181368,8 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -182851,9 +182483,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "20 openings remaining",
+    "openings": "11 openings remaining",
     "availability": "open",
-    "spaces": 20,
+    "spaces": 11,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -183175,9 +182807,9 @@
     "ageMin": 65,
     "ageMax": 0,
     "ageText": "65 yrs +",
-    "openings": "28 openings remaining",
+    "openings": "16 openings remaining",
     "availability": "open",
-    "spaces": 28,
+    "spaces": 16,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -183575,9 +183207,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "28 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 28,
+    "spaces": 5,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -183967,9 +183599,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-15",
     "lastDate": "2026-11-15",
     "prices": [
@@ -187326,9 +186958,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "50 openings remaining",
+    "openings": "21 openings remaining",
     "availability": "open",
-    "spaces": 50,
+    "spaces": 21,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -187766,9 +187398,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "50 openings remaining",
-    "availability": "open",
-    "spaces": 50,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -191671,46 +191303,6 @@
     ]
   },
   {
-    "id": 131936,
-    "title": "Reserve In Advance: Aquafit",
-    "calendarId": -27,
-    "centerId": 54,
-    "facilityIds": [
-      421
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-aquafit/131936?locale=en-US",
-    "description": "Set your own pace! Improve cardiovascular fitness, increase strength and tone muscles. Reserve in advance is available for this activity, check-in prior to activity start time to avoid losing your reservation. Please arrive early and stay until the end of the class to ensure safety and enjoyment for everyone. Participants arriving 5 minutes after class start time will not be admitted. Drop-ins are subject to remaining spots available. No waitlist.<br />Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.<br />If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.",
-    "instructors": [],
-    "priceText": "from $3.70",
-    "free": false,
-    "ageMin": 14,
-    "ageMax": 0,
-    "ageText": "14 yrs +,",
-    "openings": "28 openings remaining",
-    "availability": "open",
-    "spaces": 28,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17",
-    "prices": [
-      {
-        "price": "$3.70",
-        "description": "Child (14 yrs) fee for up to 14 years old"
-      },
-      {
-        "price": "$5.55",
-        "description": "Youth (15-25 yrs) fee for 15 up to 25 years old"
-      },
-      {
-        "price": "$7.40",
-        "description": "Adult (26-64 yrs) fee for 26 up to 64 years old"
-      },
-      {
-        "price": "$5.55",
-        "description": "Senior (65+ yrs) fee for 65 or more years old"
-      }
-    ]
-  },
-  {
     "id": 131937,
     "title": "Reserve In Advance: Aquafit",
     "calendarId": -27,
@@ -194076,9 +193668,9 @@
     "ageMin": 0,
     "ageMax": 1,
     "ageText": "Age at least 4m but less than 1 yr,",
-    "openings": "3 openings remaining",
+    "openings": "4 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 4,
     "firstDate": "2026-10-19",
     "lastDate": "2026-11-18"
   },
@@ -194450,9 +194042,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-11-18"
   },
@@ -195528,9 +195120,9 @@
     "ageMin": 2,
     "ageMax": 3,
     "ageText": "Age at least 2 yrs but less than 3 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-10-20",
     "lastDate": "2026-11-12"
   },
@@ -196804,9 +196396,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14"
   },
@@ -198916,9 +198508,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -199136,9 +198728,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -199466,9 +199058,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -199858,9 +199450,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -200034,9 +199626,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "6 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 5,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -200826,9 +200418,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -200980,9 +200572,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -201046,9 +200638,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -201244,9 +200836,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -201464,9 +201056,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "8 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 8,
+    "spaces": 6,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -201486,9 +201078,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "8 openings remaining",
+    "openings": "7 openings remaining",
     "availability": "open",
-    "spaces": 8,
+    "spaces": 7,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -201662,9 +201254,9 @@
     "ageMin": 1,
     "ageMax": 2,
     "ageText": "Age at least 1 yr but less than 2 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -201882,9 +201474,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "2 openings remaining",
-    "availability": "open",
-    "spaces": 2,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -201929,28 +201521,6 @@
     "openings": "2 openings remaining",
     "availability": "open",
     "spaces": 2,
-    "firstDate": "2026-11-08",
-    "lastDate": "2026-12-20"
-  },
-  {
-    "id": 133108,
-    "title": "Preschool 1: Octopus",
-    "calendarId": -27,
-    "centerId": 54,
-    "facilityIds": [
-      385
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/preschool-1-octopus/133108?locale=en-US",
-    "description": "Prerequisite: age: 3-5 years. Preschool 1 is a transitional level which transfers the preschooler to the care of the instructor. Preschoolers will have fun learning to get in and out of the water. They’ll learn how to put their face in the water, blow bubbles in the water, and how to float and glide. A non-refundable exam/admin fee of $3.25 is applicable.",
-    "instructors": [],
-    "priceText": "$62.75",
-    "free": false,
-    "ageMin": 3,
-    "ageMax": 6,
-    "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "3 openings remaining",
-    "availability": "open",
-    "spaces": 3,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -202432,9 +202002,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -202586,9 +202156,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -202652,9 +202222,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -202674,9 +202244,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -202965,30 +202535,6 @@
     "lastDate": "2026-10-18"
   },
   {
-    "id": 133216,
-    "title": "Jr Golf | FUNdamentals (age 5-7) | Skill Development",
-    "calendarId": -55,
-    "centerId": 34,
-    "facilityIds": [
-      793
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/jr-golf-fundamentals-age-5-7-skill-development/133216?locale=en-US",
-    "description": "<b>Level 2: Building Skills &amp; Confidence — Advancing Your Child’s Golf Game</b><br />This 4-week program is designed for young golfers ready to build on the basics and take their skills to the next level. Through engaging practice sessions, kids will refine their putting, chipping, and full swings while learning key aspects of golf rules and etiquette. It’s a great way to boost confidence, improve technique, and deepen their understanding of the game — all in a fun and supportive setting.<br /><u>Program Details:</u><ul><li>Duration: 4 sessions (45 minutes each)</li><li>Equipment: Golf clubs provided if needed, so there’s no need to purchase equipment</li><li>Weather: Sessions run rain or shine, with access to a covered, heated practice range</li></ul><br /><u>Cancellation Policy:</u><ul><li>Cancellations require a 7-day notice for a full refund</li></ul><br />This program is ideal for kids who have some golf experience or have completed the beginner level and are excited to keep progressing. Our friendly coaches help each child develop their skills at their own pace, fostering a positive learning environment that encourages growth and a lifelong love for golf.<b><br /></b><b>Help your child strengthen their skills and passion for golf — sign up today!</b>",
-    "instructors": [
-      "Derek W."
-    ],
-    "priceText": "$159.00",
-    "free": false,
-    "ageMin": 5,
-    "ageMax": 8,
-    "ageText": "Age at least 5 yrs but less than 8 yrs,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-09-26",
-    "lastDate": "2026-10-17"
-  },
-  {
     "id": 133217,
     "title": "Jr Golf | FUNdamentals (age 5-7) | Course Ready Development",
     "calendarId": -55,
@@ -203028,9 +202574,8 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "7 openings remaining",
-    "availability": "open",
-    "spaces": 7,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -205500,9 +205045,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "35 openings remaining",
+    "openings": "21 openings remaining",
     "availability": "open",
-    "spaces": 35,
+    "spaces": 21,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -206180,9 +205725,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "35 openings remaining",
-    "availability": "open",
-    "spaces": 35,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -209020,9 +208565,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "3 openings remaining",
-    "availability": "open",
-    "spaces": 3,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -213455,9 +213000,9 @@
     "ageMin": 6,
     "ageMax": 10,
     "ageText": "Age at least 6 yrs but less than 10 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-02",
     "lastDate": "2026-12-04"
   },
@@ -213609,9 +213154,9 @@
     "ageMin": 6,
     "ageMax": 10,
     "ageText": "Age at least 6 yrs but less than 10 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-10-19",
     "lastDate": "2026-11-30"
   },
@@ -213807,9 +213352,9 @@
     "ageMin": 1,
     "ageMax": 120,
     "ageText": "Age at least 1 yr but less than 120 yrs,",
-    "openings": "28 openings remaining",
+    "openings": "24 openings remaining",
     "availability": "open",
-    "spaces": 28,
+    "spaces": 24,
     "firstDate": "2026-10-31",
     "lastDate": "2026-10-31"
   },
@@ -214593,9 +214138,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "15 openings remaining",
+    "openings": "7 openings remaining",
     "availability": "open",
-    "spaces": 15,
+    "spaces": 7,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -214665,9 +214210,9 @@
     "ageMin": 19,
     "ageMax": 0,
     "ageText": "19 yrs +",
-    "openings": "15 openings remaining",
-    "availability": "open",
-    "spaces": 15,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -215565,9 +215110,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "50 openings remaining",
+    "openings": "40 openings remaining",
     "availability": "open",
-    "spaces": 50,
+    "spaces": 40,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -217831,9 +217376,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -217871,9 +217415,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -217911,9 +217454,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -217951,9 +217493,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -217991,9 +217532,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218031,9 +217571,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218071,9 +217610,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218111,9 +217649,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218151,9 +217688,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218191,9 +217727,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218231,9 +217766,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218271,9 +217805,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218311,9 +217844,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218351,9 +217883,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218391,9 +217922,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218431,9 +217961,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218471,9 +218000,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218511,9 +218039,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218552,9 +218079,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "9 openings remaining",
-    "availability": "open",
-    "spaces": 9,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218592,9 +218118,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218632,9 +218157,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218672,9 +218196,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218712,9 +218235,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218752,9 +218274,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218792,9 +218313,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218832,9 +218352,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218872,9 +218391,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218912,9 +218430,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -218952,9 +218469,8 @@
     "ageMin": 12,
     "ageMax": 0,
     "ageText": "12 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "Closed",
+    "availability": "closed",
     "firstDate": "2026-10-17",
     "lastDate": "2026-10-17",
     "prices": [
@@ -226122,9 +225638,9 @@
     "ageMin": 15,
     "ageMax": 0,
     "ageText": "15 yrs +,",
-    "openings": "12 openings remaining",
+    "openings": "13 openings remaining",
     "availability": "open",
-    "spaces": 12,
+    "spaces": 13,
     "firstDate": "2026-11-23",
     "lastDate": "2026-11-23"
   },
@@ -226144,9 +225660,9 @@
     "ageMin": 15,
     "ageMax": 0,
     "ageText": "15 yrs +,",
-    "openings": "11 openings remaining",
+    "openings": "12 openings remaining",
     "availability": "open",
-    "spaces": 11,
+    "spaces": 12,
     "firstDate": "2026-11-30",
     "lastDate": "2026-11-30"
   },
@@ -226166,9 +225682,9 @@
     "ageMin": 15,
     "ageMax": 0,
     "ageText": "15 yrs +,",
-    "openings": "8 openings remaining",
+    "openings": "9 openings remaining",
     "availability": "open",
-    "spaces": 8,
+    "spaces": 9,
     "firstDate": "2026-12-07",
     "lastDate": "2026-12-07"
   },
@@ -226188,9 +225704,9 @@
     "ageMin": 15,
     "ageMax": 0,
     "ageText": "15 yrs +,",
-    "openings": "8 openings remaining",
+    "openings": "9 openings remaining",
     "availability": "open",
-    "spaces": 8,
+    "spaces": 9,
     "firstDate": "2026-12-14",
     "lastDate": "2026-12-14"
   },
@@ -238313,9 +237829,9 @@
     "ageMin": 0,
     "ageMax": 1,
     "ageText": "Age at least 4m but less than 1 yr,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-15"
   },
@@ -238553,9 +238069,9 @@
     "ageMin": 40,
     "ageMax": 0,
     "ageText": "40 yrs +,",
-    "openings": "5 openings remaining",
+    "openings": "4 openings remaining",
     "availability": "open",
-    "spaces": 5,
+    "spaces": 4,
     "firstDate": "2026-10-16",
     "lastDate": "2026-12-18",
     "prices": [
@@ -238617,9 +238133,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -238657,9 +238173,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -238697,9 +238213,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "6 openings remaining",
-    "availability": "open",
-    "spaces": 6,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -239281,9 +238797,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-15"
   },
@@ -239545,9 +239061,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "8 openings remaining",
+    "openings": "7 openings remaining",
     "availability": "open",
-    "spaces": 8,
+    "spaces": 7,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-15"
   },
@@ -239699,9 +239215,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-15"
   },
@@ -239919,9 +239435,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-04",
     "lastDate": "2026-12-16"
   },
@@ -242055,9 +241571,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-04",
     "lastDate": "2026-12-16"
   },
@@ -242263,9 +241779,9 @@
     "ageMin": 2,
     "ageMax": 3,
     "ageText": "Age at least 2 yrs but less than 3 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-05",
     "lastDate": "2026-12-17"
   },
@@ -242373,9 +241889,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-05",
     "lastDate": "2026-12-17"
   },
@@ -243935,9 +243451,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-22",
     "lastDate": "2026-10-22",
     "prices": [
@@ -244007,9 +243523,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-05",
     "lastDate": "2026-12-17"
   },
@@ -245032,42 +244548,6 @@
     ]
   },
   {
-    "id": 136693,
-    "title": "Swimming: Private or Semi-Private Lesson",
-    "calendarId": -27,
-    "centerId": 50,
-    "facilityIds": [
-      372
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/136693?locale=en-US",
-    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
-    "instructors": [],
-    "priceText": "from $28.88",
-    "free": false,
-    "ageMin": 3,
-    "ageMax": 0,
-    "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17",
-    "prices": [
-      {
-        "price": "$36.10",
-        "description": "Child fee for up to 14 years old"
-      },
-      {
-        "price": "$36.10",
-        "description": "Adult fee for 15 up to 64 years old"
-      },
-      {
-        "price": "$28.88",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
     "id": 136694,
     "title": "Swimming: Private or Semi-Private Lesson",
     "calendarId": -27,
@@ -245124,78 +244604,6 @@
     "spaces": 0,
     "firstDate": "2026-10-31",
     "lastDate": "2026-10-31",
-    "prices": [
-      {
-        "price": "$36.10",
-        "description": "Child fee for up to 14 years old"
-      },
-      {
-        "price": "$36.10",
-        "description": "Adult fee for 15 up to 64 years old"
-      },
-      {
-        "price": "$28.88",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
-    "id": 136702,
-    "title": "Swimming: Private or Semi-Private Lesson",
-    "calendarId": -27,
-    "centerId": 50,
-    "facilityIds": [
-      372
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/136702?locale=en-US",
-    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
-    "instructors": [],
-    "priceText": "from $28.88",
-    "free": false,
-    "ageMin": 3,
-    "ageMax": 0,
-    "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17",
-    "prices": [
-      {
-        "price": "$36.10",
-        "description": "Child fee for up to 14 years old"
-      },
-      {
-        "price": "$36.10",
-        "description": "Adult fee for 15 up to 64 years old"
-      },
-      {
-        "price": "$28.88",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
-    "id": 136703,
-    "title": "Swimming: Private or Semi-Private Lesson",
-    "calendarId": -27,
-    "centerId": 50,
-    "facilityIds": [
-      372
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/136703?locale=en-US",
-    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
-    "instructors": [],
-    "priceText": "from $28.88",
-    "free": false,
-    "ageMin": 3,
-    "ageMax": 0,
-    "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17",
     "prices": [
       {
         "price": "$36.10",
@@ -245340,78 +244748,6 @@
     "spaces": 0,
     "firstDate": "2026-10-31",
     "lastDate": "2026-10-31",
-    "prices": [
-      {
-        "price": "$36.10",
-        "description": "Child fee for up to 14 years old"
-      },
-      {
-        "price": "$36.10",
-        "description": "Adult fee for 15 up to 64 years old"
-      },
-      {
-        "price": "$28.88",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
-    "id": 136716,
-    "title": "Swimming: Private or Semi-Private Lesson",
-    "calendarId": -27,
-    "centerId": 50,
-    "facilityIds": [
-      372
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/136716?locale=en-US",
-    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
-    "instructors": [],
-    "priceText": "from $28.88",
-    "free": false,
-    "ageMin": 3,
-    "ageMax": 0,
-    "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17",
-    "prices": [
-      {
-        "price": "$36.10",
-        "description": "Child fee for up to 14 years old"
-      },
-      {
-        "price": "$36.10",
-        "description": "Adult fee for 15 up to 64 years old"
-      },
-      {
-        "price": "$28.88",
-        "description": "Senior fee for 65 or more years old"
-      }
-    ]
-  },
-  {
-    "id": 136718,
-    "title": "Swimming: Private or Semi-Private Lesson",
-    "calendarId": -27,
-    "centerId": 50,
-    "facilityIds": [
-      372
-    ],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/136718?locale=en-US",
-    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
-    "instructors": [],
-    "priceText": "from $28.88",
-    "free": false,
-    "ageMin": 3,
-    "ageMax": 0,
-    "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17",
     "prices": [
       {
         "price": "$36.10",
@@ -245623,9 +244959,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-10-25",
     "lastDate": "2026-10-25",
     "prices": [
@@ -246528,9 +245864,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "12 openings remaining",
+    "openings": "4 openings remaining",
     "availability": "open",
-    "spaces": 12,
+    "spaces": 4,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -246639,9 +245975,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "12 openings remaining",
+    "openings": "10 openings remaining",
     "availability": "open",
-    "spaces": 12,
+    "spaces": 10,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -246758,9 +246094,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "12 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 12,
+    "spaces": 1,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -246877,9 +246213,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +",
-    "openings": "12 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 12,
+    "spaces": 6,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19",
     "prices": [
@@ -249389,9 +248725,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "2 openings remaining",
-    "availability": "open",
-    "spaces": 2,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -249895,9 +249231,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -250093,9 +249429,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 2,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -250643,9 +249979,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -250665,9 +250001,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -252449,9 +251785,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "7 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 7,
+    "spaces": 6,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19"
   },
@@ -253293,9 +252629,9 @@
     "ageMin": 2,
     "ageMax": 3,
     "ageText": "Age at least 2 yrs but less than 3 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -253527,9 +252863,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -255086,9 +254422,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-04",
     "lastDate": "2026-12-16"
   },
@@ -255108,9 +254444,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "6 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 5,
     "firstDate": "2026-11-04",
     "lastDate": "2026-12-16"
   },
@@ -255328,9 +254664,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "5 openings remaining",
+    "openings": "4 openings remaining",
     "availability": "open",
-    "spaces": 5,
+    "spaces": 4,
     "firstDate": "2026-11-08",
     "lastDate": "2026-12-20"
   },
@@ -255438,9 +254774,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "2 openings remaining",
+    "openings": "1 opening remaining",
     "availability": "open",
-    "spaces": 2,
+    "spaces": 1,
     "firstDate": "2026-11-04",
     "lastDate": "2026-12-16"
   },
@@ -256545,9 +255881,9 @@
     "ageMin": 6,
     "ageMax": 0,
     "ageText": "6 yrs +",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "2 openings remaining",
+    "availability": "open",
+    "spaces": 2,
     "firstDate": "2026-10-18",
     "lastDate": "2026-10-18",
     "prices": [
@@ -257552,9 +256888,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14"
   },
@@ -259108,9 +258444,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "5 openings remaining",
+    "openings": "6 openings remaining",
     "availability": "open",
-    "spaces": 5,
+    "spaces": 6,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14"
   },
@@ -259460,9 +258796,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "1 opening remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 1,
+    "spaces": 2,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -259576,9 +258912,9 @@
     "ageMin": 18,
     "ageMax": 0,
     "ageText": "18 yrs +,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-10-31",
     "lastDate": "2026-11-14"
   },
@@ -265725,9 +265061,9 @@
     "ageMin": 14,
     "ageMax": 0,
     "ageText": "14 yrs +,",
-    "openings": "35 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 35,
+    "spaces": 5,
     "firstDate": "2026-10-19",
     "lastDate": "2026-10-19"
   },
@@ -266666,26 +266002,6 @@
     "spaces": 35,
     "firstDate": "2026-10-29",
     "lastDate": "2026-10-29"
-  },
-  {
-    "id": 139357,
-    "title": "Reserve In Advance: Aquafit",
-    "calendarId": -27,
-    "centerId": 50,
-    "facilityIds": [],
-    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/reserve-in-advance-aquafit/139357?locale=en-US",
-    "description": "Set your own pace! Improve cardiovascular fitness, increase strength and tone muscles. Reserve in advance is available for this activity, check-in prior to activity start time to avoid losing your reservation. Please arrive early and stay until the end of the class to ensure safety and enjoyment for everyone. Participants arriving 5 minutes after class start time will not be admitted. Drop-ins are subject to remaining spots available. No waitlist.<br />Customers with a 10 Visit Be Active Pass will be required to pay the drop-in rate at the time of registration for a reserve in advance activity. On the day of your drop-in activity, please visit the front desk to have this charge refunded and a visit taken from your 10 Visit Be Active Pass. Customers with a valid Annual, One Month or Recurring Monthly Be Active Pass will be registered at no charge.<br />If you are unable to attend, please withdraw from the drop-in activity for the consideration to others. Withdraw online up until the day prior to the activity start date or contact a recreation facility prior to the start of the activity.",
-    "instructors": [],
-    "priceText": "",
-    "free": false,
-    "ageMin": 14,
-    "ageMax": 0,
-    "ageText": "14 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
-    "firstDate": "2026-10-17",
-    "lastDate": "2026-10-17"
   },
   {
     "id": 139358,
@@ -273715,9 +273031,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "6 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 5,
     "firstDate": "2026-10-19",
     "lastDate": "2026-11-18"
   },
@@ -273737,9 +273053,9 @@
     "ageMin": 6,
     "ageMax": 15,
     "ageText": "Age at least 6 yrs but less than 15 yrs,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "2 openings remaining",
+    "availability": "open",
+    "spaces": 2,
     "firstDate": "2026-10-19",
     "lastDate": "2026-11-18"
   },
@@ -274844,9 +274160,9 @@
     "ageMin": 19,
     "ageMax": 99,
     "ageText": "Age at least 19 yrs but less than 99 yrs,",
-    "openings": "7 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 7,
+    "spaces": 5,
     "firstDate": "2026-11-07",
     "lastDate": "2026-12-19",
     "prices": [
@@ -275043,9 +274359,9 @@
     "ageMin": 16,
     "ageMax": 0,
     "ageText": "16 yrs +,",
-    "openings": "3 openings remaining",
+    "openings": "2 openings remaining",
     "availability": "open",
-    "spaces": 3,
+    "spaces": 2,
     "firstDate": "2026-10-25",
     "lastDate": "2026-10-25",
     "prices": [
@@ -304186,9 +303502,9 @@
     "ageMin": 20,
     "ageMax": 0,
     "ageText": "20 yrs +,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-08",
     "lastDate": "2026-11-15",
     "prices": [
@@ -304302,9 +303618,9 @@
     "ageMin": 6,
     "ageMax": 13,
     "ageText": "Age at least 6 yrs but less than 13 yrs,",
-    "openings": "6 openings remaining",
+    "openings": "5 openings remaining",
     "availability": "open",
-    "spaces": 6,
+    "spaces": 5,
     "firstDate": "2026-10-20",
     "lastDate": "2026-11-19"
   },
@@ -305780,9 +305096,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-28",
     "lastDate": "2026-10-28",
     "prices": [
@@ -305816,9 +305132,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-04",
     "lastDate": "2026-11-04",
     "prices": [
@@ -305960,9 +305276,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-04",
     "lastDate": "2026-11-04",
     "prices": [
@@ -305996,9 +305312,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-18",
     "lastDate": "2026-11-18",
     "prices": [
@@ -306144,9 +305460,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-02",
     "lastDate": "2026-11-02",
     "prices": [
@@ -306292,9 +305608,9 @@
     "ageMin": 3,
     "ageMax": 7,
     "ageText": "Age at least 3 yrs but less than 7 yrs,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-10-20",
     "lastDate": "2026-11-19"
   },
@@ -306444,9 +305760,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14",
     "prices": [
@@ -306480,9 +305796,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14",
     "prices": [
@@ -306516,9 +305832,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14",
     "prices": [
@@ -306552,9 +305868,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "Full",
-    "availability": "full",
-    "spaces": 0,
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14",
     "prices": [
@@ -306660,9 +305976,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-02",
     "lastDate": "2026-12-14",
     "prices": [
@@ -306732,9 +306048,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-15",
     "prices": [
@@ -307114,9 +306430,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-15",
     "prices": [
@@ -307222,9 +306538,9 @@
     "ageMin": 3,
     "ageMax": 0,
     "ageText": "3 yrs +,",
-    "openings": "1 opening remaining",
-    "availability": "open",
-    "spaces": 1,
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
     "firstDate": "2026-11-03",
     "lastDate": "2026-12-15",
     "prices": [
@@ -307864,9 +307180,9 @@
     "ageMin": 3,
     "ageMax": 6,
     "ageText": "Age at least 3 yrs but less than 6 yrs,",
-    "openings": "4 openings remaining",
+    "openings": "3 openings remaining",
     "availability": "open",
-    "spaces": 4,
+    "spaces": 3,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
   },
@@ -308755,5 +308071,965 @@
     "spaces": 2,
     "firstDate": "2026-11-06",
     "lastDate": "2026-12-18"
+  },
+  {
+    "id": 141577,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141577?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141578,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141578?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141579,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141579?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141580,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141580?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141581,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141581?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141582,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141582?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141583,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141583?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141584,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141584?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141585,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141585?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141586,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141586?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141587,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141587?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141588,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141588?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141589,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141589?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141590,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141590?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141591,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141591?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141596,
+    "title": "CPR-C Recertification",
+    "calendarId": -27,
+    "centerId": 50,
+    "facilityIds": [],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/cpr-c-recertification/141596?locale=en-US",
+    "description": "This is a recertification course for anyone who currently holds a CPR 'C' (valid for three years) that has expired. It is not a full course. AED (Automated External Defibrillator) training is part of this course. There is a non-refundable exam fee of $4.00. 100% attendance is required.",
+    "instructors": [],
+    "priceText": "from $8.00",
+    "free": false,
+    "ageMin": 14,
+    "ageMax": 0,
+    "ageText": "14 yrs +,",
+    "openings": "12 openings remaining",
+    "availability": "open",
+    "spaces": 12,
+    "firstDate": "2026-10-20",
+    "lastDate": "2026-10-20",
+    "prices": [
+      {
+        "price": "$8.00",
+        "description": "Standard charge"
+      },
+      {
+        "price": "$34.00",
+        "description": "Adult fee for 19 up to 64 years old"
+      },
+      {
+        "price": "$30.00",
+        "description": "Youth fee for up to 18 years old"
+      },
+      {
+        "price": "$24.00",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141597,
+    "title": "Swimmer 3",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimmer-3/141597?locale=en-US",
+    "description": "Prerequisite: Completed Swimmer 2. These swimmers will learn how to dive and will do in-water somersaults and handstands to develop weight-transfer skills. They’ll learn Swim to Survive® skills, whip kick on back and will further develop their front crawl and back crawl. A non-refundable exam/admin fee of $3.25 is applicable.",
+    "instructors": [],
+    "priceText": "$67.55",
+    "free": false,
+    "ageMin": 6,
+    "ageMax": 15,
+    "ageText": "Age at least 6 yrs but less than 15 yrs,",
+    "openings": "8 openings remaining",
+    "availability": "open",
+    "spaces": 8,
+    "firstDate": "2026-11-07",
+    "lastDate": "2026-12-19"
+  },
+  {
+    "id": 141598,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141598?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-07",
+    "lastDate": "2026-12-19",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141599,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141599?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-07",
+    "lastDate": "2026-12-19",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141600,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141600?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-07",
+    "lastDate": "2026-12-19",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141601,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141601?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-07",
+    "lastDate": "2026-12-19",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141602,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141602?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-07",
+    "lastDate": "2026-12-19",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141603,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141603?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141604,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141604?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141605,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141605?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "Full",
+    "availability": "full",
+    "spaces": 0,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141606,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141606?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
+  },
+  {
+    "id": 141607,
+    "title": "Swimming: Private or Semi-Private Lesson",
+    "calendarId": -27,
+    "centerId": 54,
+    "facilityIds": [
+      385
+    ],
+    "url": "https://ca.apm.activecommunities.com/burnaby/Activity_Search/swimming-private-or-semi-private-lesson/141607?locale=en-US",
+    "description": "Private or semi-private lessons are available for people of all ages and abilities who need some extra help to complete their level or focus on a specific skill. For semi-private lessons, participants must be at the same level. Please bring progress card to each lesson.",
+    "instructors": [],
+    "priceText": "from $202.05",
+    "free": false,
+    "ageMin": 3,
+    "ageMax": 0,
+    "ageText": "3 yrs +,",
+    "openings": "1 opening remaining",
+    "availability": "open",
+    "spaces": 1,
+    "firstDate": "2026-11-08",
+    "lastDate": "2026-12-20",
+    "prices": [
+      {
+        "price": "$252.56",
+        "description": "Child fee for up to 14 years old"
+      },
+      {
+        "price": "$252.56",
+        "description": "Adult fee for 15 up to 64 years old"
+      },
+      {
+        "price": "$202.05",
+        "description": "Senior fee for 65 or more years old"
+      }
+    ]
   }
 ]
