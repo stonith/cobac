@@ -25,8 +25,48 @@
     "centerId": 56
   },
   {
+    "id": 2432,
+    "name": "BGC Chipping Green 1",
+    "centerId": 126
+  },
+  {
+    "id": 2433,
+    "name": "BGC Chipping Green 2",
+    "centerId": 126
+  },
+  {
+    "id": 2397,
+    "name": "BGC Driving Range Stalls 1-4",
+    "centerId": 126
+  },
+  {
+    "id": 2396,
+    "name": "BGC Driving Range Stalls 1-6",
+    "centerId": 126
+  },
+  {
+    "id": 2426,
+    "name": "BGC Driving Range Stalls 31-34",
+    "centerId": 126
+  },
+  {
+    "id": 2425,
+    "name": "BGC Driving Range Stalls 31-38",
+    "centerId": 126
+  },
+  {
     "id": 150,
     "name": "BGC Golf Course",
+    "centerId": 126
+  },
+  {
+    "id": 2428,
+    "name": "BGC Putting Green 1",
+    "centerId": 126
+  },
+  {
+    "id": 2429,
+    "name": "BGC Putting Green 2",
     "centerId": 126
   },
   {
