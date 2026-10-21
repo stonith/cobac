@@ -35,26 +35,6 @@
     "centerId": 126
   },
   {
-    "id": 2397,
-    "name": "BGC Driving Range Stalls 1-4",
-    "centerId": 126
-  },
-  {
-    "id": 2396,
-    "name": "BGC Driving Range Stalls 1-6",
-    "centerId": 126
-  },
-  {
-    "id": 2426,
-    "name": "BGC Driving Range Stalls 31-34",
-    "centerId": 126
-  },
-  {
-    "id": 2425,
-    "name": "BGC Driving Range Stalls 31-38",
-    "centerId": 126
-  },
-  {
     "id": 150,
     "name": "BGC Golf Course",
     "centerId": 126
@@ -70,6 +50,26 @@
     "centerId": 126
   },
   {
+    "id": 2397,
+    "name": "BGC Stalls 1-4",
+    "centerId": 126
+  },
+  {
+    "id": 2396,
+    "name": "BGC Stalls 1-6",
+    "centerId": 126
+  },
+  {
+    "id": 2426,
+    "name": "BGC Stalls 31-34",
+    "centerId": 126
+  },
+  {
+    "id": 2425,
+    "name": "BGC Stalls 31-38",
+    "centerId": 126
+  },
+  {
     "id": 153,
     "name": "BON Active Studio",
     "centerId": 63
@@ -77,11 +77,6 @@
   {
     "id": 149,
     "name": "BON Arts Room",
-    "centerId": 63
-  },
-  {
-    "id": 172,
-    "name": "BON Banquet Floor",
     "centerId": 63
   },
   {
