@@ -785,11 +785,6 @@
     "centerId": 70
   },
   {
-    "id": 998,
-    "name": "SCH Brantford Room A",
-    "centerId": 70
-  },
-  {
     "id": 1029,
     "name": "SCH Buckingham Gym",
     "centerId": 110
@@ -885,6 +880,11 @@
     "centerId": 121
   },
   {
+    "id": 1075,
+    "name": "SCH Gilmore Gym",
+    "centerId": 123
+  },
+  {
     "id": 1139,
     "name": "SCH Gilpin Staff Room",
     "centerId": 127
@@ -948,11 +948,6 @@
     "id": 1163,
     "name": "SCH Montecito Staff Room",
     "centerId": 30
-  },
-  {
-    "id": 1364,
-    "name": "SCH Nelson Gym",
-    "centerId": 31
   },
   {
     "id": 1320,

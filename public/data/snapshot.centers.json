@@ -148,10 +148,6 @@
     "phone": "(604) 294-1936"
   },
   {
-    "id": 100,
-    "name": "Confederation Park"
-  },
-  {
     "id": 154,
     "name": "Confederation Park Elementary School",
     "lat": 49.2835,
@@ -218,6 +214,14 @@
     "lng": -122.918,
     "address": "8525 Forest Grove Dr, Burnaby",
     "phone": "(604) 297-4529"
+  },
+  {
+    "id": 123,
+    "name": "Gilmore Community School",
+    "lat": 49.2844,
+    "lng": -123.0136,
+    "address": "50 Gilmore Ave, Burnaby",
+    "phone": "(604) 297-4831"
   },
   {
     "id": 127,
