@@ -420,11 +420,6 @@
     "centerId": 50
   },
   {
-    "id": 365,
-    "name": "ECC 25m Pool Lane 2",
-    "centerId": 50
-  },
-  {
     "id": 364,
     "name": "ECC 25m Pool Lane 4",
     "centerId": 50
@@ -845,11 +840,6 @@
     "centerId": 153
   },
   {
-    "id": 1069,
-    "name": "SCH Clinton Room A",
-    "centerId": 153
-  },
-  {
     "id": 1100,
     "name": "SCH Clinton Staff Room",
     "centerId": 153
@@ -907,11 +897,6 @@
   {
     "id": 1275,
     "name": "SCH Lochdale Gym",
-    "centerId": 4
-  },
-  {
-    "id": 1328,
-    "name": "SCH Lochdale Room A",
     "centerId": 4
   },
   {
