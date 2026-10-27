@@ -25,6 +25,11 @@
     "centerId": 56
   },
   {
+    "id": 1549,
+    "name": "BGC Banquet Room",
+    "centerId": 126
+  },
+  {
     "id": 2432,
     "name": "BGC Chipping Green 1",
     "centerId": 126
@@ -830,11 +835,6 @@
     "centerId": 152
   },
   {
-    "id": 1036,
-    "name": "SCH Clinton Gym",
-    "centerId": 153
-  },
-  {
     "id": 1100,
     "name": "SCH Clinton Staff Room",
     "centerId": 153
@@ -1043,11 +1043,6 @@
     "id": 1490,
     "name": "SUM Lounge",
     "centerId": 174
-  },
-  {
-    "id": 2285,
-    "name": "Training Room 124",
-    "centerId": 196
   },
   {
     "id": 1499,
