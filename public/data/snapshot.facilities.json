@@ -555,11 +555,6 @@
     "centerId": 54
   },
   {
-    "id": 416,
-    "name": "EDP Lobby",
-    "centerId": 54
-  },
-  {
     "id": 421,
     "name": "EDP Main Pool",
     "centerId": 54
@@ -942,11 +937,6 @@
   {
     "id": 1419,
     "name": "SCH Sperling Library",
-    "centerId": 162
-  },
-  {
-    "id": 1369,
-    "name": "SCH Sperling Staff Room",
     "centerId": 162
   },
   {
