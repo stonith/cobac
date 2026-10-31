@@ -215,11 +215,6 @@
     "centerId": 60
   },
   {
-    "id": 25,
-    "name": "BSR Meeting Room",
-    "centerId": 60
-  },
-  {
     "id": 22,
     "name": "BSR Multi-purpose Room 1/2",
     "centerId": 60
@@ -855,19 +850,9 @@
     "centerId": 121
   },
   {
-    "id": 1075,
-    "name": "SCH Gilmore Gym",
-    "centerId": 123
-  },
-  {
     "id": 1139,
     "name": "SCH Gilpin Staff Room",
     "centerId": 127
-  },
-  {
-    "id": 1135,
-    "name": "SCH Inman Gym",
-    "centerId": 134
   },
   {
     "id": 1099,

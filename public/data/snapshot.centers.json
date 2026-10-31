@@ -208,14 +208,6 @@
     "phone": "(604) 297-4529"
   },
   {
-    "id": 123,
-    "name": "Gilmore Community School",
-    "lat": 49.2844,
-    "lng": -123.0136,
-    "address": "50 Gilmore Ave, Burnaby",
-    "phone": "(604) 297-4831"
-  },
-  {
     "id": 127,
     "name": "Gilpin Elementary School",
     "lat": 49.2432,
@@ -310,10 +302,6 @@
     "lng": -122.950023,
     "address": "7789 18th Street, Burnaby",
     "phone": "604-421-3200"
-  },
-  {
-    "id": 146,
-    "name": "Rosser Elementary School"
   },
   {
     "id": 148,
