@@ -85,6 +85,11 @@
     "centerId": 63
   },
   {
+    "id": 172,
+    "name": "BON Banquet Floor",
+    "centerId": 63
+  },
+  {
     "id": 110,
     "name": "BON Banquet Hall",
     "centerId": 63
@@ -160,6 +165,11 @@
     "centerId": 63
   },
   {
+    "id": 189,
+    "name": "BON Multi-purpose Room 1",
+    "centerId": 63
+  },
+  {
     "id": 191,
     "name": "BON Multi-purpose Room 1/2",
     "centerId": 63
@@ -215,6 +225,11 @@
     "centerId": 60
   },
   {
+    "id": 25,
+    "name": "BSR Meeting Room",
+    "centerId": 60
+  },
+  {
     "id": 22,
     "name": "BSR Multi-purpose Room 1/2",
     "centerId": 60
@@ -252,6 +267,11 @@
   {
     "id": 1915,
     "name": "CAM Meeting Room Large",
+    "centerId": 185
+  },
+  {
+    "id": 1916,
+    "name": "CAM Meeting Room Small",
     "centerId": 185
   },
   {
@@ -550,6 +570,11 @@
     "centerId": 54
   },
   {
+    "id": 416,
+    "name": "EDP Lobby",
+    "centerId": 54
+  },
+  {
     "id": 421,
     "name": "EDP Main Pool",
     "centerId": 54
@@ -575,6 +600,11 @@
     "centerId": 147
   },
   {
+    "id": 637,
+    "name": "PK Confederation Track",
+    "centerId": 100
+  },
+  {
     "id": 628,
     "name": "PK Edmonds Covered Picnic Area 1",
     "centerId": 61
@@ -592,6 +622,11 @@
   {
     "id": 1581,
     "name": "RBR Ice B",
+    "centerId": 180
+  },
+  {
+    "id": 1585,
+    "name": "RBR Multi-purpose Room 1 (201)",
     "centerId": 180
   },
   {
@@ -700,6 +735,21 @@
     "centerId": 158
   },
   {
+    "id": 874,
+    "name": "SCA Studio 105",
+    "centerId": 158
+  },
+  {
+    "id": 911,
+    "name": "SCA Studio 106",
+    "centerId": 158
+  },
+  {
+    "id": 2312,
+    "name": "SCA Studio 107",
+    "centerId": 158
+  },
+  {
     "id": 897,
     "name": "SCA Studio 200",
     "centerId": 158
@@ -727,6 +777,11 @@
   {
     "id": 970,
     "name": "SCA Studio 206",
+    "centerId": 158
+  },
+  {
+    "id": 733,
+    "name": "SCA Studio 207",
     "centerId": 158
   },
   {
@@ -938,6 +993,11 @@
     "id": 1415,
     "name": "SCH Stoney Creek Staff Room",
     "centerId": 170
+  },
+  {
+    "id": 1439,
+    "name": "SCH Stride Avenue Portable",
+    "centerId": 172
   },
   {
     "id": 1065,

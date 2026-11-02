@@ -16,6 +16,10 @@
     "phone": "(604) 297-4531"
   },
   {
+    "id": 49,
+    "name": "Barnet Marine Park"
+  },
+  {
     "id": 56,
     "name": "Bill Copeland Sports Centre (BCS)",
     "lat": 49.2524,
@@ -46,6 +50,10 @@
     "lng": -122.9666,
     "address": "6512 Brantford Ave, Burnaby",
     "phone": "(604) 297-4831"
+  },
+  {
+    "id": 106,
+    "name": "Brunette River Conservation Area"
   },
   {
     "id": 110,
@@ -146,6 +154,14 @@
     "lng": -123.0012,
     "address": "4585 Albert St, Burnaby",
     "phone": "(604) 294-1936"
+  },
+  {
+    "id": 100,
+    "name": "Confederation Park",
+    "lat": 49.2836,
+    "lng": -122.9999,
+    "address": "250 Willingdon Ave, Burnaby",
+    "phone": "(604) 294-7222"
   },
   {
     "id": 154,
@@ -349,6 +365,14 @@
     "lat": 49.2588,
     "lng": -122.9032,
     "address": "2740 Beaverbrook Cres, Burnaby",
+    "phone": "(604) 297-4831"
+  },
+  {
+    "id": 172,
+    "name": "Stride Avenue Community School",
+    "lat": 49.2109,
+    "lng": -122.954,
+    "address": "7014 Stride Ave, Burnaby",
     "phone": "(604) 297-4831"
   },
   {
