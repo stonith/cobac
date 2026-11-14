@@ -850,11 +850,6 @@
     "centerId": 145
   },
   {
-    "id": 1052,
-    "name": "SCH Cascade Heights Gym",
-    "centerId": 151
-  },
-  {
     "id": 1060,
     "name": "SCH Cascade Heights Room B",
     "centerId": 151
@@ -902,11 +897,6 @@
   {
     "id": 1112,
     "name": "SCH Forest Grove Committee Room A/B",
-    "centerId": 121
-  },
-  {
-    "id": 1068,
-    "name": "SCH Forest Grove Gym",
     "centerId": 121
   },
   {
@@ -987,11 +977,6 @@
   {
     "id": 1034,
     "name": "SCH Stoney Creek Community Room",
-    "centerId": 170
-  },
-  {
-    "id": 1414,
-    "name": "SCH Stoney Creek Gym",
     "centerId": 170
   },
   {
