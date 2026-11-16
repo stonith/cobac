@@ -73,7 +73,11 @@
   },
   {
     "id": 125,
-    "name": "Burnaby Lake Sports Complex West (BLW)"
+    "name": "Burnaby Lake Sports Complex West (BLW)",
+    "lat": 49.2531,
+    "lng": -122.9694,
+    "address": "3677 Kensington Ave, Burnaby",
+    "phone": "(604) 294-7222"
   },
   {
     "id": 126,
