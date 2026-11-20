@@ -20,11 +20,6 @@
     "centerId": 56
   },
   {
-    "id": 45,
-    "name": "BCS Lakeview Room",
-    "centerId": 56
-  },
-  {
     "id": 1549,
     "name": "BGC Banquet Room",
     "centerId": 126
@@ -253,11 +248,6 @@
     "id": 31,
     "name": "BSR Multi-purpose Room 3",
     "centerId": 60
-  },
-  {
-    "id": 155,
-    "name": "BVM Activity Room",
-    "centerId": 159
   },
   {
     "id": 235,
