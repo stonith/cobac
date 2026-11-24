@@ -40,11 +40,6 @@
     "centerId": 126
   },
   {
-    "id": 2429,
-    "name": "BGC Putting Green 2",
-    "centerId": 126
-  },
-  {
     "id": 2397,
     "name": "BGC Stalls 1-4",
     "centerId": 126
@@ -818,11 +813,6 @@
     "id": 965,
     "name": "SCH Brantford Gym",
     "centerId": 70
-  },
-  {
-    "id": 1029,
-    "name": "SCH Buckingham Gym",
-    "centerId": 110
   },
   {
     "id": 1080,
