@@ -148,14 +148,6 @@
     "phone": "(604) 320-2222"
   },
   {
-    "id": 153,
-    "name": "Clinton Elementary School",
-    "lat": 49.2125,
-    "lng": -122.9791,
-    "address": "5858 Clinton St, Burnaby",
-    "phone": "(604) 297-4577"
-  },
-  {
     "id": 37,
     "name": "Confederation Community Centre (CON)",
     "lat": 49.2823,
@@ -238,14 +230,6 @@
     "lng": -122.9844,
     "address": "5490 Eglinton St, Burnaby",
     "phone": "(604) 297-4531"
-  },
-  {
-    "id": 134,
-    "name": "Inman Elementary School",
-    "lat": 49.2393,
-    "lng": -123.017,
-    "address": "3963 Brandon St, Burnaby",
-    "phone": "(604) 297-4572"
   },
   {
     "id": 147,

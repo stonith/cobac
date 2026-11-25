@@ -55,11 +55,6 @@
     "centerId": 126
   },
   {
-    "id": 2425,
-    "name": "BGC Stalls 31-38",
-    "centerId": 126
-  },
-  {
     "id": 2427,
     "name": "BGC Stalls 35-38",
     "centerId": 126
@@ -860,11 +855,6 @@
     "centerId": 152
   },
   {
-    "id": 1100,
-    "name": "SCH Clinton Staff Room",
-    "centerId": 153
-  },
-  {
     "id": 1103,
     "name": "SCH Confederation Park Room A",
     "centerId": 154
@@ -888,11 +878,6 @@
     "id": 1139,
     "name": "SCH Gilpin Staff Room",
     "centerId": 127
-  },
-  {
-    "id": 1099,
-    "name": "SCH Inman Staff Room",
-    "centerId": 134
   },
   {
     "id": 1160,
@@ -962,11 +947,6 @@
   {
     "id": 1034,
     "name": "SCH Stoney Creek Community Room",
-    "centerId": 170
-  },
-  {
-    "id": 1415,
-    "name": "SCH Stoney Creek Staff Room",
     "centerId": 170
   },
   {
