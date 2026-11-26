@@ -335,6 +335,11 @@
     "centerId": 41
   },
   {
+    "id": 1553,
+    "name": "CSC Conference Room",
+    "centerId": 41
+  },
+  {
     "id": 1558,
     "name": "CSC Conference Room 1",
     "centerId": 41
@@ -805,19 +810,9 @@
     "centerId": 47
   },
   {
-    "id": 965,
-    "name": "SCH Brantford Gym",
-    "centerId": 70
-  },
-  {
     "id": 1080,
     "name": "SCH Buckingham Staff Room",
     "centerId": 110
-  },
-  {
-    "id": 990,
-    "name": "SCH Cameron Gym",
-    "centerId": 143
   },
   {
     "id": 1054,
@@ -953,11 +948,6 @@
     "id": 1439,
     "name": "SCH Stride Avenue Portable",
     "centerId": 172
-  },
-  {
-    "id": 1065,
-    "name": "SCH Suncrest Gym",
-    "centerId": 175
   },
   {
     "id": 1462,
