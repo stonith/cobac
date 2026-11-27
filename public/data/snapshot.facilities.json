@@ -815,11 +815,6 @@
     "centerId": 110
   },
   {
-    "id": 1054,
-    "name": "SCH Cameron Staff Room",
-    "centerId": 143
-  },
-  {
     "id": 1064,
     "name": "SCH Capitol Hill Staff Room",
     "centerId": 145
@@ -837,16 +832,6 @@
   {
     "id": 1085,
     "name": "SCH Chaffey-Burke Gym",
-    "centerId": 152
-  },
-  {
-    "id": 1091,
-    "name": "SCH Chaffey-Burke Library",
-    "centerId": 152
-  },
-  {
-    "id": 1134,
-    "name": "SCH Chaffey-Burke Staff Room",
     "centerId": 152
   },
   {
